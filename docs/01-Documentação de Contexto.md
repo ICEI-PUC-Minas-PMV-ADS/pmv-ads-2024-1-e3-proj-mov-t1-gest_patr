@@ -20,7 +20,11 @@ Implementar ou iniciar a Gestão Patrimonial em uma empresa é desafiador pois i
 Criar um aplicativo gerencial de fácil utilização e manejo para facilitar a identificação e classicação dos bens
 
 ## Justificativa
-A criação desse aplicativo gerencial visa facilitar a Gestão Patrimonial diante dos desafios que é identificar, classificar e avaliar os bens de caráter permanente da empresa. Existem poucos 
+A gestão patrimonial é um processo fundamental para garantir o controle e a valorização do patrimônio de uma empresa ou de uma pessoa física com o objetivo de controlar e otimizar o uso dos recursos, avaliar e gerenciar riscos, e garantir a preservação do patrimônio. 
+
+A gestão de patrimônio  um conjunto de práticas e estratégias que visam garantir a segurança e a rentabilidade do patrimônio com isso o processo é divido em etapas. Inventário, Avaliação dos bens, Manutenção preventiva, Gestão de contratos, Controle de movimentação
+
+Esse processo é complexo e cada parte exige muito cuidado e tempo. As leis tributárias mudam com frequência, equipamentos precisam ser renovados, e no caso de empresas Inclui a administração de ativos fixos, como imóveis, equipamentos e estoques, além de bens intangíveis, como marcas e patentese que impactam da gestão de patrimônio.O uso de tecnologia é essencial para otimizar o tempo e  garantir que os dados estejam íntegros, protegidos e assertivos. A utilização de ferramentas tecnológicas influenciam para maximizar o valor do patrimônio para os acionistas e investidores. De acordo com uma pesquisa feita em 2023 pelo Ministério do Desenvolvimento, Indústria, Comércio e Serviços, Brasil teve a abertura de  2,7 milhões de novas empresas e o fechamento de 738.190 negócios. Todo essas empresas precisaram realizar  a gestão de patrimônio. Isso demonstra que o mercado de softwares de  gestão patrimonial tem muito espaço porque é uma aplicação que se adapta a todos os tipos de negócios.
 
 ## Público-Alvo
 Empresas privadas, de grande ou pequeno porte, que necessitam implementar ou melhorar a forma de Gestão Patrimonial.
