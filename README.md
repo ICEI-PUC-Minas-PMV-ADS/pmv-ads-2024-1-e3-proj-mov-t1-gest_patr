@@ -6,7 +6,7 @@
 
 `1 / 2024 - Eixo 3`
 
-Projeto consiste no desenvolvimento de um sistema de controle de bens patrimoniais de uma empresa. Os bens podem ser cadeiras, computadores, mesas e qualquer móvel ou equipamento que agregue valor à empresa e precise ter sua localização controlada.
+O projeto consiste no desenvolvimento de um sistema de controle de bens patrimoniais de uma empresa. Os bens podem ser cadeiras, computadores, mesas e qualquer móvel ou equipamento que agregue valor à empresa e precise ter sua localização controlada.
 
 ## Integrantes
 
