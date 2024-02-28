@@ -6,7 +6,7 @@
 
 `1 / 2024 - Eixo 3`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Projeto consiste no desenvolvimento de um sistema de controle de bens patrimoniais de uma empresa. Os bens podem ser cadeiras, computadores, mesas e qualquer móvel ou equipamento que agregue valor à empresa e precise ter sua localização controlada.
 
 ## Integrantes
 
