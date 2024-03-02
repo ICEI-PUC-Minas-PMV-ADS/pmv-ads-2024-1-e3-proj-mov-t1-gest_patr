@@ -74,15 +74,23 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003| O sistema deverá possuir a opção de criar usuários apenas para consulta de bens | BAIXA | 
 |RF-004| O sistema deverá permitir cadastrar fotos aos bens. | ALTA |
 |RF-005| O usuário deverá estar logado para acessar o sistema. | ALTA |
-| RF-1 | O sistema deverá cadastrar os setores da empresa, setores estes onde os bens poderão transitar. | Média |
+|RF-006| O sistema deverá cadastrar os setores da empresa, setores estes onde os bens poderão transitar. | Média |
+|RF-007| O sistema deverá cadastrar os detalhes dos bens, como marca e modelo. | Média |
+|RF-008| O sistema deverá permitir cadastramento dos bens por QRCode ou nome | Média |
+|RF-009| O sistema deverá poder ser usado offline | Média |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito                                     |Prioridade |
 |-------|-------------------------------------------------------------------|----|
 |RNF-001| O sistema poderá ser acessível por vários usuários ao mesmo tempo. | ALTA | 
-|RNF-002| O sistema deverá estar disponível tanto para iOS quanto Android | ALTA |
-|RNF-003| Garantir boas práticas de desenvolvimento evitando um SQL Injection. | ALTA | 
+|RNF-002| O sistema deve ser projetado pensando na evalução de seus componentes | MÉDIA | 
+|RNF-003| O sistema deverá estar disponível tanto para iOS quanto Android | ALTA |
+|RNF-004| Garantir boas práticas de desenvolvimento evitando um SQL Injection. | MÉDIA | 
+|RNF-005| Deve ser de fácil manutenbilidade  | ALTA | 
+|RNF-006| Deve ter baixa taxa de falhas | ALTA | 
+|RNF-007| O sistema deve carregar suas páginas em menos de um segundo | ALTA | 
+|RNF-008| O sistema deve garantir a segurança dos dados de seus usuários | ALTA | 
 
 
 ## Restrições
