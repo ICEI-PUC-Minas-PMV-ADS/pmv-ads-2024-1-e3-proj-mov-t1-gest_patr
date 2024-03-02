@@ -63,7 +63,7 @@ Os indicadores estabelecidos para a avaliação do desempenho do aplicativo do P
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, foi aplicado uma técnica de priorização de requisitos.
 
 ### Requisitos Funcionais
 
@@ -99,10 +99,10 @@ As questões que limitam a execução do projeto são apresentadas na tabela a s
 			
 | Código | Descrição | Prioridade |
 | --- | --- | --- |
-| RE-1 | A entrega de cada etapa deverá cumprir o prazo definido. | Alta | 
-| RE-2 | O sistema deverá ser desenvolvido utilizando-se linguagens de programação que não requeiram licença de software paga. | Baixa |
-| RE-3 | O sistema não poderá utilizar trechos de programas já existentes. | Alta |
-
+| RE-01 | A entrega de cada etapa deverá cumprir o prazo definido. | Alta | 
+| RE-02 | O sistema deverá ser desenvolvido utilizando-se linguagens de programação que não requeiram licença de software paga. | Baixa |
+| RE-03 | O sistema não poderá utilizar trechos de programas já existentes. | Alta |
+| RE-04 | A entrega de cada etapa deverá cumprir o prazo definido. | Alta | 
 ## Diagrama de Casos de Uso
 
 ![Caso de uso](img/02-caso-de-uso.png)
@@ -130,12 +130,7 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
 
-![Simple Project Timeline](img/02-project-timeline.png)
 
 ## Gestão de Orçamento
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
-
-![Orçamento](img/02-orcamento.png)
