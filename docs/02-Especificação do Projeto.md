@@ -78,6 +78,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-007| O sistema deverá cadastrar os detalhes dos bens, como marca e modelo. | Média |
 |RF-008| O sistema deverá permitir cadastramento dos bens por QRCode ou nome | Média |
 |RF-009| O sistema deverá poder ser usado offline | Média |
+|RF-010| O sistema deverá gerar um relatório com o total de bens. |Baixa|
+|RF-011| O sistema deverá permitir a edição e exclusão dos bens	|Média| 
 
 ### Requisitos não Funcionais
 
@@ -91,6 +93,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-006| Deve ter baixa taxa de falhas | ALTA | 
 |RNF-007| O sistema deve carregar suas páginas em menos de um segundo | ALTA | 
 |RNF-008| O sistema deve garantir a segurança dos dados de seus usuários | ALTA | 
+|RNF-009| O sistema deve ser implementado em React Native. |Alta|
+|RNF-010| O sistema deve ser implementado com Node.js como backend|	Alta|
 
 
 ## Restrições
@@ -109,11 +113,12 @@ As questões que limitam a execução do projeto são apresentadas na tabela a s
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
+Ao longo do projeto, os requisitos podem mudar e o impacto desta mudança deve ser analisado e os riscos avaliados. "Para que a análise de impacto de uma mudança possa ser realizada de forma adequada, é necessário garantir que as ligações entre os requisitos ou entre os requisitos e outros elementos do sistema sejam conhecidas e possam ser utilizadas como base para essa análise." (REINEHR, 2020).
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
+![AnáliseRequisitos](img/02-analise-matriz.png)
 
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
+
+![Matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
 
 
 # Gerenciamento de Projeto
@@ -133,4 +138,4 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 
 ## Gestão de Orçamento
-
+![GestãoOrçamento](img/02-orcamento.png)
