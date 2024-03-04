@@ -113,10 +113,19 @@ As questões que limitam a execução do projeto são apresentadas na tabela a s
 
 # Matriz de Rastreabilidade
 
-Ao longo do projeto, os requisitos podem mudar e o impacto desta mudança deve ser analisado e os riscos avaliados. "Para que a análise de impacto de uma mudança possa ser realizada de forma adequada, é necessário garantir que as ligações entre os requisitos ou entre os requisitos e outros elementos do sistema sejam conhecidas e possam ser utilizadas como base para essa análise." (REINEHR, 2020).
+
+
+A técnica MoSCoW foi aplicada para priorização dos requsitos:
+
+Must Have (Tenho que fazer)
+Should Have (Devo fazer)
+Could Have (Poderia fazer)
+Won’t Have (Não vou fazer)
+Nesse sentido a ordem de importância das tarefas vai seguindo uma ordem decrescente, em que "Must Have" são as tarefas mais relevantes e as "Won’t Have" são tarefas que podem ficar para depois.
 
 ![AnáliseRequisitos](img/02-analise-matriz.png)
 
+Ao longo do projeto, os requisitos podem mudar e o impacto desta mudança deve ser analisado e os riscos avaliados. "Para que a análise de impacto de uma mudança possa ser realizada de forma adequada, é necessário garantir que as ligações entre os requisitos ou entre os requisitos e outros elementos do sistema sejam conhecidas e possam ser utilizadas como base para essa análise." (REINEHR, 2020).
 
 ![Matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
 
@@ -126,6 +135,13 @@ Ao longo do projeto, os requisitos podem mudar e o impacto desta mudança deve s
 De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
 
 ## Gerenciamento de Tempo
+Segundo Vargas (2018), o gerenciamento do cronograma tem como principal objetivo garantir que o projeto seja concluído dentro do prazo determinado.
+
+Com diagramas bem organizados, que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
+
+Para construir um bom diagrama, deve-se partir de um conjunto de atividades definidas, sequenciando-as de acordo com as dependências conhecidas entre si, estimando as durações das atividades individualmente e desenvolvendo a estrutura do projeto, em termos das tarefas e suas interações. É preciso, ademais, definir uma abordagem de ciclo de vida mais adequada ao projeto em questão.
+
+O diagrama de rede pode ser entendido como um gráfico que mostra as tarefas que precisam ser realizadas para a finalização de um projeto. Além de mostrar as relações contínuas de atividades, mostra como fazer as atividades e o cronograma determina quando fazer as tarefas do projeto.
 
 ![Gerenciamento de tempo](img/02-gerenciamento-de-tempo.png)
 
@@ -135,6 +151,51 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 ## Gerenciamento de Equipe
 
+O eficaz gerenciamento do tempo é crucial para garantir que o projeto Gest-Patri atinja altos níveis de produtividade. É imperativo realizar uma gestão eficiente das tarefas e das equipes envolvidas para garantir o sucesso do projeto.
+
+A Gestão do Tempo e a Coordenação de Tarefas, juntamente com a infraestrutura utilizada para gerenciamento de recursos, são detalhadas na seção de Metodologia.
+
+A seguir, delineamos o planejamento que guiará e facilitará o gerenciamento de tempo durante o projeto.
+
+>**Planejar o uso do tempo**
+
+- Estabelecer métodos para gerenciar efetivamente o tempo do projeto;
+- Obter documentação relevante para o desenvolvimento do projeto;
+- Atribuir responsabilidades aos membros da equipe;
+- Elaborar um cronograma de atividades;
+- Estimar a alocação de tempo para as atividades.
+
+>**Analisar e quantificar o tempo necessário para cada atividade**
+- Recursos humanos: desenvolvedores e gerentes de projeto;
+- Recursos materiais: seis computadores com software de desenvolvimento instalado;
+- Acesso ao MarvelApp;
+- Adquirir recursos temporais
+
+>**Recursos**
+Acesso ao MarvelApp através de contas vinculadas (Gmail);
+Envolvimento dos alunos e membros da equipe como desenvolvedores e gerentes;
+Desenvolver habilidades da equipe
+
+>**Atualização da equipe**
+- Treinamento da equipe em React Native;
+- Treinamento da equipe em gerenciamento de tempo e projetos;
+- Treinamento na utilização do MarvelApp;
+- Desenvolvimento de habilidades interpessoais.
+- Gerenciar o tempo da equipe
+
+>**Manter a documentação atualizada**
+- Considerar outros fatores que possam influenciar no uso do tempo do projeto;
+- Planejar as entregas de acordo com o cronograma;
+- Atualizar o plano de gerenciamento do tempo conforme necessário.
+- Controlar o uso do tempo
+
+>**Controle de desvio**
+- Identificar e controlar os motivos;
+- Determinar se o desvio é devido a erro ou falta de conhecimentos;
+- Corrigir problemas identificados;
+- Replanejar a tarefa se for necessário;
+- Monitorar o desempenho e o progresso das atividades;
+- Atualizar o plano de gerenciamento do tempo com base nas informações obtidas.
 
 
 ## Gestão de Orçamento
