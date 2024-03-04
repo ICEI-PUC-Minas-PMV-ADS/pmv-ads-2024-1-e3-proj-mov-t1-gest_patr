@@ -13,11 +13,7 @@ const SearchModal = ({ visible, toggleModal }) => {
     >
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
-        <Searchbar
-      placeholder="QRCode/Nome do bem"
-      onChangeText={setSearchQuery}
-      value={searchQuery}
-    />
+        <Searchbar/>
           <Button title="Fechar" onPress={toggleModal} />
         </View>
       </View>

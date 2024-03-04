@@ -1,17 +1,23 @@
-import {NavigationContainer} from '@react-navigation/native'; 
-import {createDrawerNavigator} from '@react-navigation/drawer';
+import * as React from 'react';
+import { Drawer } from 'react-native-paper';
 
-const Drawer = createDrawerNavigator();
+const SideMenu = () => {
+  const [active, setActive] = React.useState('');
 
-export default function Menu() {
   return (
-    <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Perfil">
-        <Drawer.Screen name="Perfil" component={Profile} />
-        <Drawer.Screen name="Configurações" component={Settings} />
-        <Drawer.Screen name="Cadastro de Bens" component={Assets} />
-        <Drawer.Screen name="Busca de Bens" component={Search} />
-      </Drawer.Navigator>
-    </NavigationContainer>
+    <Drawer.Section title="Menu">
+      <Drawer.Item
+        label="First Item"
+        active={active === 'first'}
+        onPress={() => setActive('first')}
+      />
+      <Drawer.Item
+        label="Second Item"
+        active={active === 'second'}
+        onPress={() => setActive('second')}
+      />
+    </Drawer.Section>
   );
-}
+};
+
+export default SideMenu;

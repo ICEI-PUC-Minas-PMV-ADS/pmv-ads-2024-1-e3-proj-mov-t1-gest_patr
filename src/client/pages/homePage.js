@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { StyleSheet, View, SafeAreaView, Text, Modal, Image } from "react-native";
 import { Button } from "react-native-paper";
 import SideMenu from '../components/SideMenu';
-import logo2 from '../logo2.png'
+import logo from '../logo.png'
 import SearchBar from "../components/SearchBar";
 import AppBar from "../components/AppBar";
 
@@ -42,7 +42,7 @@ const HomePage = () => {
       <SafeAreaView style={styles.content}>
         <View ref={anchorRef}>
           <View style={styles.container}>
-        <Image source={logo2} style={styles.logo} className="App-logo" alt="logo" />
+        <Image source={logo} style={styles.logo} className="App-logo" alt="logo" />
 </View>
           <View style={styles.content}>
             <Text style={styles.title}>Bem-vindo ao Controle de Patrimônio</Text>
@@ -52,14 +52,14 @@ const HomePage = () => {
           </View>
           <View style={styles.fixToText}>
             <Button 
-              theme={{colors: {primary:"gold"}}}
+              theme={{colors: {primary:"#6d85db"}}}
               icon="plus" 
               mode="contained" 
               onPress={() => {}}>
               Cadastrar
             </Button>
             <Button
-              theme={{colors: {primary:"gold"}}}
+              theme={{colors: {primary:"#6d85db"}}}
               icon="search-web"
               mode="contained"
               title="Right button"
@@ -96,9 +96,12 @@ const HomePage = () => {
 };
 
 const styles = StyleSheet.create({
+  header: {
+    backgroundColor: "#98a9e8",
+  },
   container: {
     flex: 1,
-    backgroundColor: "black",
+    backgroundColor: "white",
   },
   title: {
     fontSize: 20,
@@ -107,7 +110,7 @@ const styles = StyleSheet.create({
     borderColor: "black",
     borderWidth: 1,
     paddingHorizontal: 6,
-    backgroundColor: "white",
+    backgroundColor: "#c6d0f5",
     color: "black",
     margin: 10,
     borderRadius: 5,
@@ -128,19 +131,19 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "space-around",
     alignItems: "center",
-    backgroundColor: "black",
+    backgroundColor: "white",
   },
   modalContent: {
-    backgroundColor: "gold",
+    backgroundColor: "#98a9e8",
     padding: 30,
     borderRadius: 5,
     marginHorizontal: 5,
     elevation: 5,
   },
   logo: {
-    marginLeft: 105,
-    width: 100,
-    height: 100,
+    marginLeft: 90,
+    width: 150,
+    height: 150,
   },
 });
 
