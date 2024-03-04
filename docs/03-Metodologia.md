@@ -45,9 +45,7 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
-
-Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
+ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
 - Scrum Master: Amanda ;
 - Product Owner: Sara Pereira;
 - Equipe de Desenvolvimento: Andrey Bibiano, Thiago, Leonardo;
@@ -62,9 +60,12 @@ Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum 
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+| Ferramenta | Descrição | 
+| --- | --- | 
+| Editor de código | VSCode, Geany | 
+| Ferramentas de comunicação | MS Teams, Whatsapp | 
+| Ferramentas de desenho de tela | DIA, Canvas, Libreoffice, GIMP, MARVEL APP |
+
 
 O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
 
