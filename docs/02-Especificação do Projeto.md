@@ -86,11 +86,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito                                     |Prioridade |
 |-------|-------------------------------------------------------------------|----|
 |RNF-001| O sistema poderá ser acessível por vários usuários ao mesmo tempo. | ALTA | 
-|RNF-002| O sistema deve ser projetado pensando na evalução de seus componentes | MÉDIA | 
+|RNF-002| O sistema deve ser projetado pensando na evolução de seus componentes | MÉDIA | 
 |RNF-003| O sistema deverá estar disponível tanto para iOS quanto Android | ALTA |
-|RNF-004| Garantir boas práticas de desenvolvimento evitando um SQL Injection. | MÉDIA | 
-|RNF-005| Deve ser de fácil manutenbilidade  | ALTA | 
-|RNF-006| Deve ter baixa taxa de falhas | ALTA | 
+|RNF-004| As APIs devem garantir boas práticas de desenvolvimento evitando-se um SQL Injection. | MÉDIA | 
+|RNF-005| O sistema deve ser de fácil manutenibilidade  | ALTA | 
+|RNF-006| O sistema deve apresentar uma baixa taxa de falhas, como travamento do aplicativo | ALTA | 
 |RNF-007| O sistema deve carregar suas páginas em menos de um segundo | ALTA | 
 |RNF-008| O sistema deve garantir a segurança dos dados de seus usuários | ALTA | 
 |RNF-009| O sistema deve ser implementado em React Native. |Alta|
