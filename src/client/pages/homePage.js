@@ -4,7 +4,6 @@ import { Button } from "react-native-paper";
 import SideMenu from '../components/SideMenu';
 import logo from '../logo.png'
 import SearchBar from "../components/SearchBar";
-import AppBar from "../components/AppBar";
 
 const HomePage = () => {
   const [searchVisible, setSearchVisible] = useState(false);
@@ -31,14 +30,9 @@ const HomePage = () => {
     setMenuVisible(false);
   };
 
-  const openMenu = () => { 
-    setMenuVisible(true);
-  };
-
 
   return (
     <View style={styles.container}>
-      <AppBar  openMenu={openMenu}/>
       <SafeAreaView style={styles.content}>
         <View ref={anchorRef}>
           <View style={styles.container}>
