@@ -199,4 +199,15 @@ Desenvolver habilidades da equipe
 
 
 ## Gestão de Orçamento
+
+|  | Quantidade | Descrição | Valor Unitário | Valor Total | 
+| --- | --- | --- | --- | --- |
+| Recursos Humanos | 7 | - Desenvolvedor - Designer - Gerente de projetos | R$ 3.500,00 | R$ 245.000,00 | 
+| Hardware | 7 | Notebook | R$ 4.000,00 | R$ 28.000,00 | 
+| Rede | 7 | Internet Local - Provedor de Acesso | R$ 100,00 | R$ 700,00 |
+| TOTAL| |  |  | R$ 273.700,00 |
+
+
+
+
 ![GestãoOrçamento](img/02-orcamento.png)
