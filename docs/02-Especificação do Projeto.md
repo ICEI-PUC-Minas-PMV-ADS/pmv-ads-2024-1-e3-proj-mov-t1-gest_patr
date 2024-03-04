@@ -123,7 +123,31 @@ Could Have (Poderia fazer)
 Won’t Have (Não vou fazer)
 Nesse sentido a ordem de importância das tarefas vai seguindo uma ordem decrescente, em que "Must Have" são as tarefas mais relevantes e as "Won’t Have" são tarefas que podem ficar para depois.
 
-![AnáliseRequisitos](img/02-analise-matriz.png)
+| Importância	| Código	|Tipo |	Critério de Aceitação |	Descrição |
+| --- | --- | --- | --- | --- | 
+| Must have	|RF-001| 	Funcional	|	|O sistema deverá cadastrar os usuários do sistema.|
+| Should have	|RF-002| 	Funcional|	|	O sistema deverá permitir ao usuário buscar bens por filtros.|
+|Must have	|RF-003| 	Funcional	|	|O sistema deverá possuir a opção de criar usuários apenas para consulta de bens|
+|Must have	|RF-004| 	Funcional	|	|O sistema deverá permitir cadastrar fotos aos bens.|
+|Must have	|RF-005| 	Funcional	|	|O usuário deverá estar logado para acessar o sistema.|
+|Should have	|RF-006| 	Funcional| |		O sistema deverá cadastrar os setores da empresa, setores estes onde os bens poderão transitar.|
+|Should have	|RF-007| 	Funcional| |		O sistema deverá cadastrar os detalhes dos bens, como marca e modelo.|
+|Must have	|RF-008| 	Funcional|		|O sistema deverá permitir cadastramento dos bens por QRCode ou nome|
+|Could have	|RF-009| 	Funcional|		|O sistema deverá poder ser usado offline|
+|Could have	|RF-010|	Funcional|		|O sistema deverá gerar um relatório com o total de bens.|
+|Could have	|RF-011|	Funcional|		|O sistema deverá permitir a edição e exclusão dos bens|
+|Must have	|RNF-001| 	Não-Funcional|	|	O sistema poderá ser acessível por vários usuários ao mesmo tempo. |
+|Should have	|RNF-002| 	Não-Funcional| |		O sistema deve ser projetado pensando na evalução de seus componentes|
+|Must have	|RNF-003| 	Não-Funcional|	|	O sistema deverá estar disponível tanto para iOS quanto Android|
+|Could have	|RNF-004| 	Não-Funcional|	|	Garantir boas práticas de desenvolvimento evitando um SQL Injection.|
+|Should have	|RNF-005| 	Não-Funcional| |		Deve ser de fácil manutenbilidade|
+|Must have	|RNF-006| 	Não-Funcional|		|Deve ter baixa taxa de falhas |
+|Should have	|RNF-007| 	Não-Funcional|	|	O sistema deve carregar suas páginas em menos de um segundo|
+|Must have	|RNF-008| 	Não-Funcional|		|O sistema deve garantir a segurança dos dados de seus usuários |
+|Must have	|RNF-009| 	Não-Funcional|		|O sistema deve ser implementado em React Native|
+|Must have	|RNF-010| 	Não-Funcional|		|O sistema deve ser implementado com Node.js como backend|
+
+
 
 Ao longo do projeto, os requisitos podem mudar e o impacto desta mudança deve ser analisado e os riscos avaliados. "Para que a análise de impacto de uma mudança possa ser realizada de forma adequada, é necessário garantir que as ligações entre os requisitos ou entre os requisitos e outros elementos do sistema sejam conhecidas e possam ser utilizadas como base para essa análise." (REINEHR, 2020).
 
