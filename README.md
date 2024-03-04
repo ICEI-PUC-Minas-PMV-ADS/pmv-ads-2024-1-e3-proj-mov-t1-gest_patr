@@ -25,7 +25,7 @@ O projeto consiste no desenvolvimento de um sistema de controle de bens patrimon
 
 ## Instruções de utilização
 <ol>
-<li>Baixar repositório<li>
+<li>Baixar repositório</li>
 <li>Abrir o projeto no Xcode ou seu editor de código</li>
 <li>Realizar a instalação das dependencias no folder server com o comando **npm install**</li>
 <li>Realizar a instalação das dependências no folder client com o comando **npm install**</li>
