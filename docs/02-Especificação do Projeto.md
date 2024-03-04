@@ -207,7 +207,3 @@ Desenvolver habilidades da equipe
 | Rede | 7 | Internet Local - Provedor de Acesso | R$ 100,00 | R$ 700,00 |
 | TOTAL| |  |  | R$ 273.700,00 |
 
-
-
-
-![GestãoOrçamento](img/02-orcamento.png)
