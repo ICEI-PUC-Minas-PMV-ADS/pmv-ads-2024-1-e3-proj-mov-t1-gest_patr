@@ -1,101 +1,101 @@
+// app.js
 import React from "react";
 import { Provider as PaperProvider } from "react-native-paper"; 
-import { View, TouchableOpacity, Touchable, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context"; 
-import HomePage from "./pages/homePage";
 import { DrawerContent } from "./components/DrawerContent"; 
-import {NavigationContainer} from '@react-navigation/native';
-import {createDrawerNavigator} from '@react-navigation/drawer';
+import HomePage from "./pages/homePage";
+import DetailsPage from "./pages/detailsPage";
+import GoodsPage from "./pages/goodsPage";
+import SectorPage from "./pages/sectorPage";
+// import SettingsPage from "./pages/settingsPage";
+import { NavigationContainer } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const Drawer = createDrawerNavigator();
 
 function App() {
 
-  function HomeScreen({navigation}) {
+  function HomeScreen() {
     return (
       <SafeAreaProvider> 
-      <PaperProvider> 
-        <View style={style.body}>
-          <TouchableOpacity
-            // onPress={() => navigation.navigate("Details")}
-            >
-              <HomePage/>
-          </TouchableOpacity>
-        </View>
-        </PaperProvider>
-    </SafeAreaProvider>
-  )
-  };
-
-  function DetailsScreen(navigation) {
-    return (
-      <SafeAreaProvider>
-        <PaperProvider>
-          <View style={style.body}>
-            <Text>Details Screen</Text>
-            <TouchableOpacity
-              style={{
-                backgroundColor: "blue",
-                padding: 20,
-                borderRadius: 5,
-                marginTop: 20,
-              }}
-              onPress={() => navigation.navigate("Home")}
-              >
-                <Text style={{color: "white"}}>Go to Home</Text>  
-            </TouchableOpacity>
+        <PaperProvider> 
+          <View style={styles.body}>
+            <HomePage/>
           </View>
         </PaperProvider>
-      </SafeAreaProvider>   
-    );
+      </SafeAreaProvider>
+    )
   };
+
+  function DetailsScreen() {
+    return (
+     <SafeAreaProvider> 
+        <PaperProvider> 
+          <View style={styles.body}>
+            <DetailsPage/>
+          </View>
+        </PaperProvider>
+      </SafeAreaProvider>
+    )
+  };
+
   function GoodsScreen(){
     return(
       <SafeAreaProvider>
         <PaperProvider>
-          <View style={style.body}>
-            <Text>Goods Screen</Text>
+          <View style={styles.body}>
+            <GoodsPage/>
           </View>
         </PaperProvider>
       </SafeAreaProvider>
     )
   };
+  
   function SectorScreen(){
     return(
       <SafeAreaProvider>
         <PaperProvider>
-          <View style={style.body}>
-            <Text>Sector Screen</Text>
+          <View style={styles.body}>
+            <SectorPage/>
           </View>
         </PaperProvider>
       </SafeAreaProvider>
     )
   };
+
   function SettingsScreen(){
     return(
       <SafeAreaProvider>
         <PaperProvider>
-          <View style={style.body}>
-            <Text>Settings Screen</Text>
+          <View style={styles.body}>
+            <SettingsPage/>
           </View>
         </PaperProvider>
       </SafeAreaProvider>
     )
   };
+
   return (
     <NavigationContainer>
-      <Drawer.Navigator drawerContent={(props) => <DrawerContent{...props}/>} initialRouteName="Home">
-        <Drawer.Screen name="Home" component={HomeScreen} />
-        <Drawer.Screen name="Details" component={DetailsScreen} />
-        <Drawer.Screen name="Goods" component={GoodsScreen} />
-        <Drawer.Screen name="Sector" component={SectorScreen} />
-        <Drawer.Screen name="Settings" component={SettingsScreen} />
+      <Drawer.Navigator drawerContent={(props) => <DrawerContent {...props}/>} >
+        <Drawer.Screen name="Gestão de Patrimônio" component={HomeScreen} />
+        <Drawer.Screen name="Perfil" component={DetailsScreen} />
+        <Drawer.Screen name="Bens" component={GoodsScreen} />
+        <Drawer.Screen name="Setor" component={SectorScreen} />
+        <Drawer.Screen name="Configurações" component={SettingsScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
   
 }
 
-const style = StyleSheet.create({
-})
+const styles = StyleSheet.create({
+  body: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+});
+
 export default App;
