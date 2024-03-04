@@ -25,7 +25,14 @@ O projeto consiste no desenvolvimento de um sistema de controle de bens patrimon
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+1 - Baixar repositório
+2 - Abrir o projeto no Xcode ou seu editor de código
+3 - Realizar a instalação das dependencias no folder server com o comando **npm install**
+4 - Realizar a instalação das dependências no folder client com o comando **npm install**
+5 - Executar o servidor com o comando **npm start** no terminal do folder server
+6 - Executar o aplicativo com o comando **npm start** no terminal do folder client
+7 - Escolher se quer abrir o app no navegador (w) ou Android Studio
+8 - Se utlizar o navegador o aplicativo vai abrir automaticamente , caso contrário é necessário configurar para para compilar o apk no Android Studio
 
 # Documentação
 
