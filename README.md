@@ -24,15 +24,16 @@ O projeto consiste no desenvolvimento de um sistema de controle de bens patrimon
 * Prof. Will Ricardo dos Santos Machado
 
 ## Instruções de utilização
-
-1 - Baixar repositório
-2 - Abrir o projeto no Xcode ou seu editor de código
-3 - Realizar a instalação das dependencias no folder server com o comando **npm install**
-4 - Realizar a instalação das dependências no folder client com o comando **npm install**
-5 - Executar o servidor com o comando **npm start** no terminal do folder server
-6 - Executar o aplicativo com o comando **npm start** no terminal do folder client
-7 - Escolher se quer abrir o app no navegador (w) ou Android Studio
-8 - Se utlizar o navegador o aplicativo vai abrir automaticamente , caso contrário é necessário configurar para para compilar o apk no Android Studio
+<ol>
+<li>1 - Baixar repositório<li>
+<li>2 - Abrir o projeto no Xcode ou seu editor de código</li>
+<li>3 - Realizar a instalação das dependencias no folder server com o comando **npm install**</li>
+<li>4 - Realizar a instalação das dependências no folder client com o comando **npm install**</li>
+<li>5 - Executar o servidor com o comando **npm start** no terminal do folder server</li>
+<li>6 - Executar o aplicativo com o comando **npm start** no terminal do folder client</li>
+<li>7 - Escolher se quer abrir o app no navegador (w) ou Android Studio</li>
+<li>8 - Se utlizar o navegador o aplicativo vai abrir automaticamente , caso contrário é necessário configurar para para compilar o apk no Android Studio</li>
+</ol>
 
 # Documentação
 
