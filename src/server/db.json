@@ -1,0 +1,87 @@
+
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "user",
+      "email": "user",
+      "role": "user"
+    }
+  ],
+  "goods": [
+    {
+      "id": 1,
+      "name": "cadeira",
+      "price": 30
+    },
+    {
+      "id": 2,
+      "name": "cadeira",
+      "price": 40
+    }
+  ],
+  "sectors": [
+  {
+    "id": 1,
+    "name": "Administrativo"
+  }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

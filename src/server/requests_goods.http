@@ -1,0 +1,31 @@
+### Goods
+GET http://localhost:8080/goods
+
+
+### CREATE
+POST http://localhost:8080/goods
+content-type: application/json
+
+{
+        "id": 1,
+        "name": "cadeira",
+        "price": 30,
+      }
+
+### UPDATE
+PUT http://localhost:8080/goods/3
+content-type: application/json
+
+{
+        "id": 1,
+        "name": "cadeira",
+        "price": 30,
+
+      },
+
+
+### GET Goods
+GET http://localhost:8080/goods/3
+
+### DELETE Goods
+DELETE http://localhost:8080/goods/3

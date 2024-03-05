@@ -1,0 +1,30 @@
+### Sectors
+GET http://localhost:8081/sectors
+
+
+### CREATE
+POST http://localhost:8081/sectors
+content-type: application/json
+{
+      "id": 1,
+      "name": "admin",
+      "email": "admin",
+      "role": "admin"
+    }
+### UPDATE
+PUT http://localhost:8081/sectors/3
+content-type: application/json
+
+{
+      "id": 2,
+      "name": "user",
+      "email": "user",
+      "role": "user"
+    },
+
+
+### GET Sectors
+GET http://localhost:8081/sectors/3
+
+### DELETE Sectors
+DELETE http://localhost:8081/sectors/3

@@ -1,0 +1,30 @@
+### Users
+GET http://localhost:8081/users
+
+
+### CREATE
+POST http://localhost:8081/users
+content-type: application/json
+{
+      "id": 1,
+      "name": "admin",
+      "email": "admin",
+      "role": "admin"
+    }
+### UPDATE
+PUT http://localhost:8081/users/3
+content-type: application/json
+
+{
+      "id": 2,
+      "name": "user",
+      "email": "user",
+      "role": "user"
+    },
+
+
+### GET Users
+GET http://localhost:8081/users/3
+
+### DELETE Users
+DELETE http://localhost:8081/users/3
