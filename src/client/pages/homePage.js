@@ -1,33 +1,16 @@
 import React, { useState, useRef } from "react";
 import { StyleSheet, View, SafeAreaView, Text, Modal, Image } from "react-native";
 import { Button } from "react-native-paper";
-import SideMenu from '../components/SideMenu';
 import logo from '../logo.png'
 import SearchBar from "../components/SearchBar";
 
 const HomePage = () => {
   const [searchVisible, setSearchVisible] = useState(false);
-  const [menuVisible, setMenuVisible] = useState(false);
-  const [data, setData] = React.useState(null);
   const anchorRef = useRef(null);
 
-  React.useEffect(() => {
-    fetch("http://localhost:8080/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
 
   const toggleSearch = () => {
     setSearchVisible(!searchVisible);
-  };
-
-  const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
-  };
-
-  const closeMenu = () => {
-    setMenuVisible(false);
   };
 
 
@@ -40,9 +23,6 @@ const HomePage = () => {
 </View>
           <View style={styles.content}>
             <Text style={styles.title}>Bem-vindo ao Controle de Patrimônio</Text>
-            <View style={styles.content}>
-            <p>{!data ? "Loading..." : data}</p>            
-          </View>
           </View>
           <View style={styles.fixToText}>
             <Button 
@@ -75,15 +55,6 @@ const HomePage = () => {
             </View>
           </View>
         </Modal>
-
-      
-        <Modal
-        visible={menuVisible}
-        animationType='slide'
-        transparent={true}
-        onRequestClose={toggleMenu}>
-        <SideMenu visible={menuVisible} closeMenu={closeMenu} anchor={anchorRef.current} /> 
-      </Modal>
       </SafeAreaView>
     </View>
   );
