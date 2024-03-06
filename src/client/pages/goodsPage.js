@@ -37,7 +37,7 @@ const GoodsPage = () => {
             name={good.name}
             price={good.price}
             sector={good.sector}
-            data_purchase={good.date_purchase}
+            date_purchase={good.date_purchase}
             brand={good.brand}
             purchase_site={good.purchase_site}
             warranty={good.warranty}

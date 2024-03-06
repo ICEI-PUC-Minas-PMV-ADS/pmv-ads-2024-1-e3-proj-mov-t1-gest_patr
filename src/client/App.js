@@ -4,17 +4,30 @@ import { Provider as PaperProvider } from "react-native-paper";
 import { View, StyleSheet } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context"; 
 import { DrawerContent } from "./components/DrawerContent"; 
+// import Route from "./src/navigation/route";
 import HomePage from "./pages/homePage";
 import DetailsPage from "./pages/detailsPage";
 import GoodsPage from "./pages/goodsPage";
 import SectorPage from "./pages/sectorPage";
 // import SettingsPage from "./pages/settingsPage";
+// import UserProvider from './src/contexts/UserContext';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+
 
 const Drawer = createDrawerNavigator();
 
 function App() {
+  
+  // function RouteScreen() {
+  //   return(
+  //     <UserProvider>
+  //     <NavigationContainer>
+  //       <Route />
+  //     </NavigationContainer>
+  //   </UserProvider>
+  //   )
+  // };
 
   function HomeScreen() {
     return (

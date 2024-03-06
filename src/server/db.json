@@ -7,31 +7,24 @@
       "role": "user"
     },
     {
-      "id": "540c",
-      "name": "admin",
-      "email": "admin",
-      "role": "admin"
-    },
-    {
-      "id": "c4cb",
-      "name": "test",
-      "email": "admin",
-      "role": "admin"
-    },
-    {
-      "id": "58e9",
-      "name": "test",
-      "email": "admin",
-      "role": "admin"
-    },
-    {
-      "id": "cbdc",
+      "id": "686c",
       "name": "test",
       "email": "admin",
       "role": "admin"
     }
   ],
-  "goods": [],
+  "goods": [
+    {
+      "id": "1",
+      "name": "Bem 1",
+      "price": 100,
+      "sector": "ADM",
+      "date_purchase": "2019-01",
+      "brand": "Marca 1",
+      "purchase_site": "Site 1",
+      "warranty": "no"
+    }
+  ],
   "sectors": [
     {
       "id": "0eb6",
