@@ -1,30 +1,29 @@
+@TOKEN=eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.bQTnz6AuMJvmXXQsVPrxeQNvzDkimo7VNXxHeSBfClLufmCVZRUuyTwJF311JHuh
 ### Users
 GET http://localhost:8081/users
 
-
-### CREATE
+### REGISTER
 POST http://localhost:8081/users
 content-type: application/json
+
 {
-      "id": 1,
-      "name": "admin",
-      "email": "admin",
-      "role": "admin"
-    }
-### UPDATE
-PUT http://localhost:8081/users/3
+  "name": "test",
+  "email": "admin",
+  "role": "admin"
+}
+
+### LOGIN
+PUT http://localhost:8081/users/1
 content-type: application/json
 
 {
-      "id": 2,
-      "name": "user",
-      "email": "user",
-      "role": "user"
-    },
-
+  "name": "user",
+  "email": "user",
+  "role": "user"
+}
 
 ### GET Users
-GET http://localhost:8081/users/3
+GET http://localhost:8081/users/1
 
 ### DELETE Users
-DELETE http://localhost:8081/users/3
+DELETE http://localhost:8081/users/1

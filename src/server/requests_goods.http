@@ -1,31 +1,46 @@
+
 ### Goods
 GET http://localhost:8081/goods
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 
 ### CREATE
 POST http://localhost:8081/goods
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 
-{
-        "id": 1,
-        "name": "cadeira",
-        "price": 30,
-      }
+ {
+      "name": "gaveteiro",
+      "price": 30,
+      "sector": "ADM",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
 
 ### UPDATE
-PUT http://localhost:8081/goods/3
+PUT http://localhost:8081/goods/1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 
 {
-        "id": 1,
-        "name": "cadeira",
-        "price": 30,
+"name": "cadeira",
+      "price": 30,
+      "sector": "RECP",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
 
       },
 
 
 ### GET Goods
-GET http://localhost:8081/goods/3
+GET http://localhost:8081/goods/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 
 ### DELETE Goods
-DELETE http://localhost:8081/goods/3
+DELETE http://localhost:8081/goods/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c

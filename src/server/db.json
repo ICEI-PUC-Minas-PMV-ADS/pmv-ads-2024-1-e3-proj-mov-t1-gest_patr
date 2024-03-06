@@ -1,98 +1,41 @@
-
 {
   "users": [
     {
-      "id": 1,
+      "id": "2",
+      "name": "user",
+      "email": "user",
+      "role": "user"
+    },
+    {
+      "id": "540c",
       "name": "admin",
       "email": "admin",
       "role": "admin"
     },
     {
-      "id": 2,
-      "name": "user",
-      "email": "user",
-      "role": "user"
-    }
-  ],
-  "goods": [
-    {
-      "id": 1,
-      "name": "cadeira",
-      "price": 30,
-      "sector": 1,
-      "date_purchase": "2020-01-01",
-      "brand": "marca1",
-      "purchase_site": "site1",
-      "warranty": "no",
-      "image": "https://picsum.photos/700"
+      "id": "c4cb",
+      "name": "test",
+      "email": "admin",
+      "role": "admin"
     },
     {
-      "id": 2,
-      "name": "cadeira",
-      "price": 40,
-      "sector": 1,
-      "date_purchase": "2020-01-01",
-      "brand": "marca1",
-      "purchase_site": "site1",
-      "warranty": "no"
+      "id": "58e9",
+      "name": "test",
+      "email": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "cbdc",
+      "name": "test",
+      "email": "admin",
+      "role": "admin"
     }
   ],
+  "goods": [],
   "sectors": [
-  {
-    "id": 1,
-    "name": "Administrativo"
-  }
+    {
+      "id": "0eb6",
+      "name": "Desenvolvimento"
+    }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
