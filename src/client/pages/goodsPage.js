@@ -28,19 +28,16 @@ const GoodsPage = () => {
   
       
   return (
-    <View style={styles.container}>
-        <SafeAreaView style={styles.content}>
-        <View ref={anchorRef}>
+    <SafeAreaView style={styles.container}>
+<View style={styles.content}>
     <ScrollView style={styles.scrollViewContent}>
                 {/* Render GoodsCard for each item in goods */}
                 {goods.map(good => (
                     <GoodsCard key={good.id} name={good.name} price={good.price} />
                 ))}
             </ScrollView>
-        </View>
-            </SafeAreaView>
-
     </View>
+    </SafeAreaView>
   );
 };
 
@@ -56,8 +53,9 @@ const styles = StyleSheet.create({
         justifyContent: "center",
       },
     scrollViewContent: {
-        flex: 1,
-        paddingVertical: 10,
+      flexGrow: 1,
+      paddingVertical: 10,
+      paddingHorizontal: 10,
       },
 
   });

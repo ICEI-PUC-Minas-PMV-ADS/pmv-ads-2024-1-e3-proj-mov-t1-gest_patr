@@ -22,7 +22,7 @@ const HomePage = () => {
         <Image source={logo} style={styles.logo} className="App-logo" alt="logo" />
 </View>
           <View style={styles.content}>
-            <Text style={styles.title}>Bem-vindo ao Controle de Patrimônio</Text>
+            <Text style={styles.title}>Bem-vindo a Gestão de Patrimônio</Text>
           </View>
           <View style={styles.fixToText}>
             <Button 
@@ -107,6 +107,7 @@ const styles = StyleSheet.create({
   },
   logo: {
     marginLeft: 90,
+    marginBottom: 30,
     width: 150,
     height: 150,
   },
