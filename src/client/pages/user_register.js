@@ -1,38 +1,42 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Alert } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextInput, Button, Headline } from 'react-native-paper';
 import Container from '../components/Container';
 import Body from '../components/Body';
 import Input from '../components/Input';
 import logo from '../logo.png'
+
+
 import { useNavigation } from '@react-navigation/native';
-import {useUser} from '../contexts/UserContext';
 
-import {login} from '../services/auth.services';
+import {register} from '../services/auth.services';
 
-const Login = () => {
+const Register = () => {
 
   const navigation = useNavigation();
-  const {setSigned, setName} = useUser();
-
+  
+  const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-   const handleLogin= () => {
+  const handleRegister = () => {
 
-    login({
+    register({
+      name: name,
       email: email,
       password: password
     }).then( res => {
       console.log(res);
 
-      if(res && res.user){
-        setSigned(true);
-        setName(res.user.name);
-        AsyncStorage.setItem('@TOKEN_KEY', res.accessToken).then();
+      if(res){
+
+        Alert.alert('Atenção', 'Usuário Cadastrado com sucesso!',[
+          { text: "OK", onPress: () => navigation.goBack() }
+        ]);
+
       }else{
-         Alert.alert('Atenção', 'Usuário ou senha inválidos!');
+
+         Alert.alert('Atenção', 'Usuário não cadastrado! Tente novamente mais tarde =D');
       }
 
     });
@@ -41,18 +45,24 @@ const Login = () => {
 
   return (
     <Container>
-      <View style={styles.header}>
-      <Image source={logo} style={styles.logo} className="App-logo" alt="logo" />
-      </View>
+       <View style={styles.header}>
+        <Image source={logo} style={styles.logo} className="App-logo" alt="logo" />
+</View>
 
       <Headline style={styles.textHeader}>Gestão de Patrimônio</Headline>
 
       <Body>
+      <Input
+          label="Nome"
+          value={name}
+          onChangeText={(text) => setName(text)}
+          left={<TextInput.Icon name="account" />}
+        />
         <Input
           label="Email"
           value={email}
           onChangeText={(text) => setEmail(text)}
-          left={<TextInput.Icon name="account" />}
+          left={<TextInput.Icon name="email" />}
         />
         <Input
           label="Senha"
@@ -64,14 +74,14 @@ const Login = () => {
         <Button
           style={styles.button}
           mode="contained"
-          onPress={handleLogin}>
-          LOGIN
+          onPress={handleRegister}>
+          REGISTRAR
         </Button>
         <Button
           style={styles.button}
           mode="outlined"
-          onPress={() => navigation.navigate('Register')}>
-          Registrar
+          onPress={() => navigation.goBack()}>
+          Cancelar
         </Button>
       </Body>
     </Container>
@@ -92,4 +102,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Login;
+export default Register;

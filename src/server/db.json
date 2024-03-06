@@ -18,12 +18,23 @@
     {
       "id": 1,
       "name": "cadeira",
-      "price": 30
+      "price": 30,
+      "sector": 1,
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
     },
     {
       "id": 2,
       "name": "cadeira",
-      "price": 40
+      "price": 40,
+      "sector": 1,
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no"
     }
   ],
   "sectors": [

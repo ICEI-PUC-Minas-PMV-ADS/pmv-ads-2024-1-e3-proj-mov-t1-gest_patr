@@ -1,9 +1,9 @@
 ### Goods
-GET http://localhost:8080/goods
+GET http://localhost:8081/goods
 
 
 ### CREATE
-POST http://localhost:8080/goods
+POST http://localhost:8081/goods
 content-type: application/json
 
 {
@@ -13,7 +13,7 @@ content-type: application/json
       }
 
 ### UPDATE
-PUT http://localhost:8080/goods/3
+PUT http://localhost:8081/goods/3
 content-type: application/json
 
 {
@@ -25,7 +25,7 @@ content-type: application/json
 
 
 ### GET Goods
-GET http://localhost:8080/goods/3
+GET http://localhost:8081/goods/3
 
 ### DELETE Goods
-DELETE http://localhost:8080/goods/3
+DELETE http://localhost:8081/goods/3

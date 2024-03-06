@@ -1,0 +1,16 @@
+import React from 'react';
+import { Button } from 'react-native-paper';
+
+const button = (props) => {
+  return (
+    <Button
+    theme={{colors: {primary:"#6d85db"}}}
+    icon="search-web"
+    mode="contained"
+    title="Right button"
+    {...props}      
+      />)
+    ;
+};
+
+export default button;
