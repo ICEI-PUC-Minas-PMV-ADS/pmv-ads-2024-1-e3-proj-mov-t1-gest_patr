@@ -54,7 +54,7 @@ const SectorPage = () => {
   return (
     <View style={styles.container}>
       <SafeAreaView style={styles.content}>
-        <ScrollView contentContainerStyle={styles.scrollViewContent}>
+        <ScrollView contentContainerStyle={styles.scrollView}>
           {sectors.map((sector) => (
             <SectorsList
               key={sector.id}
@@ -66,7 +66,7 @@ const SectorPage = () => {
           <Input
             value={inputValue}
             onChangeText={setInputValue}
-            placeholder="Enter sector name"
+            placeholder="Entre novo setor"
           />
           <Button onPress={handleAddSector}>Adicionar</Button>
         </View>
@@ -85,12 +85,14 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     justifyContent: "center",
   },
-  scrollViewContent: {
-    flex: 1,
-    justifyContent: "space-evenly",
+  scrollView: {
+    backgroundColor: "white",
+    marginHorizontal: 0,
+    minHeight: "100%",
   },
   inputContainer: {
-    marginTop: 20,
+    marginTop: 10,
+    marginBottom:20
   },
 });
 
