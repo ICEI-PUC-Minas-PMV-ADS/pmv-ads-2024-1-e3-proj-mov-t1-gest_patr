@@ -10,10 +10,6 @@ const SectorPage = () => {
   const [sectors, setSectors] = useState([]);
   const [inputValue, setInputValue] = useState('');
 
-  useEffect(() => {
-    fetchSectors();
-  }, []);
-
   const fetchSectors = async () => { 
     try {
       const sectorsData = await getSectors();
@@ -26,6 +22,10 @@ const SectorPage = () => {
       console.error('Error fetching data:', error);
     }
   };
+
+  useEffect(() => {
+    fetchSectors();
+  }, []);
 
   const handleAddSector = () => {
     insertSectors({ name: inputValue }) 
@@ -44,7 +44,7 @@ const SectorPage = () => {
       <SafeAreaView style={styles.content}>
         <ScrollView contentContainerStyle={styles.scrollView}>
           {sectors.map((sector) => (
-            <SectorsList key={sector.id} name={sector.name} />
+            <SectorsList key={sector.id} id={sector.id} name={sector.name} fetchSectors={fetchSectors} />
           ))}
         </ScrollView>
         <View style={styles.inputContainer}>

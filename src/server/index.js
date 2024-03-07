@@ -1,11 +1,14 @@
-const express = require('express');
-const cors = require('cors');
-const { createProxyMiddleware } = require('http-proxy-middleware');
+const express = require("express");
+const cors = require("cors");
+const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const app = express();
 
 // Proxy requests to JSON Server
-app.use('/api', createProxyMiddleware({ target: 'http://localhost:8080', changeOrigin: true }));
+app.use(
+  "/api",
+  createProxyMiddleware({ target: "http://localhost:8080", changeOrigin: true })
+);
 
 app.use(cors());
 

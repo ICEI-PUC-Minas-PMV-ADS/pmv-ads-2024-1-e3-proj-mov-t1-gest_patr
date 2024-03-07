@@ -56,36 +56,11 @@
   ],
   "sectors": [
     {
-      "id": "0eb6",
-      "name": "Desenvolvimento"
-    },
-    {
-      "id": "e841",
-      "name": "Administrativo"
-    },
-    {
-      "id": "69b2",
-      "name": "Administrativo"
-    },
-    {
-      "name": "Recapcao",
-      "id": "a7f6"
-    },
-    {
-      "id": "03da",
-      "name": "Teste"
-    },
-    {
-      "id": "8629",
-      "name": "test2"
-    },
-    {
-      "id": "e855",
-      "name": "Teste"
-    },
-    {
       "id": "c419",
       "name": "test3"
+    },
+    {
+      "id": "ab7a"
     }
   ]
 }

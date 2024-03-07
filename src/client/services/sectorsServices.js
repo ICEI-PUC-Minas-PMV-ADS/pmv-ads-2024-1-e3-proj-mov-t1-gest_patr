@@ -35,22 +35,16 @@ export const insertSectors = async (param) => {
   }
 }
 
-export const updateSector = async (param) => {
-  try{
-    return await API.put(`${BASE_URL}/sectors/${param.id}`, param).then( 
-      response => {
-        return response.data;
-      },
-      error =>{
-        console.log(error);
-        return  null;
-      }
-    );
-  }catch(error){
-    console.log(error);
+export const updateSector = async (id) => {
+  try {
+    const response = await API.put(`${BASE_URL}/sectors/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error updating sector:', error);
     return null;
   }
-}
+};
+
 
 export const deleteSector = async (id) => {
   try{
