@@ -5,8 +5,8 @@ const button = (props) => {
   return (
     <Button
     theme={{colors: {primary:"#6d85db"}}}
-    icon="search-web"
-    mode="contained"
+    icon="plus"
+    mode="contained-tonal"
     title="Right button"
     {...props}      
       />)

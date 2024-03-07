@@ -106,7 +106,7 @@ function App() {
 const styles = StyleSheet.create({
   body: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
     alignItems: 'center'
   }
 });
