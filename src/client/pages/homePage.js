@@ -28,14 +28,14 @@ const HomePage = () => {
             <Button 
               theme={{colors: {primary:"#6d85db"}}}
               icon="plus" 
-              mode="contained" 
+              mode="contained-tonal" 
               onPress={() => {}}>
               Cadastrar
             </Button>
             <Button
               theme={{colors: {primary:"#6d85db"}}}
               icon="search-web"
-              mode="contained"
+              mode="contained-tonal"
               title="Right button"
               onPress={toggleSearch}>
               Buscar

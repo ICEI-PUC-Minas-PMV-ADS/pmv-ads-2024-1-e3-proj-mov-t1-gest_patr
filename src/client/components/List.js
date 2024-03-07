@@ -20,17 +20,16 @@ const SectorsList = ({ id, name }) => {
             <Button 
               theme={{colors: {primary:"#6d85db"}}}
               icon="pen" 
-              mode="contained" 
-              onPress={() => {}}>
+              mode="contained-tonal" 
+              onPress={() => {}}/>
+              
 
-            </Button>
             <Button
               theme={{colors: {primary:"#6d85db"}}}
               icon="cancel"
-              mode="contained"
-              onPress={() => {}}>
+              mode="contained-tonal"
+              onPress={() => {}}/>
 
-            </Button>
           </View>
           </List.Accordion>
           </List.Section>

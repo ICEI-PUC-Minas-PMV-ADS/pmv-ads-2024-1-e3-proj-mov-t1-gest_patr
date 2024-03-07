@@ -38,15 +38,15 @@ const SectorPage = () => {
         "Authorization": "Bearer eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.jYW04zLDHfR1v7xdrW3lCGZrMIsVe0vWCfVkN2DRns2c3MN-mcp_-RE6TN9umSBYoNV-mnb31wFf8iun3fB6aDS6m_OXAiURVEKrPFNGlR38JSHUtsFzqTOj-wFrJZN4RwvZnNGSMvK3wzzUriZqmiNLsG8lktlEn6KA4kYVaM61_NpmPHWAjGExWv7cjHYupcjMSmR8uMTwN5UuAwgW6FRstCJEfoxwb0WKiyoaSlDuIiHZJ0cyGhhEmmAPiCwtPAwGeaL1yZMcp0p82cpTQ5Qb-7CtRov3N4DcOHgWYk6LomPR5j5cCkePAz87duqyzSMpCB0mCOuE3CU2VMtGeQ"
 
       },
-      body: JSON.stringify({ name: inputValue }) // Use the input value here
+      body: JSON.stringify({ name: inputValue }) 
     })
     .then((res) => {
       if (!res.ok) {
         throw new Error('Network response was not ok');
       }
-      // Fetch sectors again to update the list
+  
       fetchSectors();
-      setInputValue(''); // Clear input value after adding sector
+      setInputValue(''); 
     })
     .catch((error) => console.error("Error adding sector:", error));
   };
