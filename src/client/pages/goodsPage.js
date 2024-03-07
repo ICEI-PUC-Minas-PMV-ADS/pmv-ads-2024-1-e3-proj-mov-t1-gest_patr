@@ -27,7 +27,7 @@ const GoodsPage = () => {
 
   return (
     <View style={styles.container}>
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={styles.content}>
     <View ref={anchorRef}>
       <ScrollView style={styles.scrollView}>
         {/* Render GoodsCard for each item in goods */}
@@ -53,6 +53,7 @@ const GoodsPage = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    width:'100%',
     paddingTop: StatusBar.currentHeight,
     backgroundColor: "white",
   },
