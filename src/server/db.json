@@ -11,18 +11,47 @@
       "name": "test",
       "email": "admin",
       "role": "admin"
+    },
+    {
+      "id": "0f22",
+      "name": "test",
+      "email": "admin",
+      "role": "admin"
     }
   ],
   "goods": [
     {
-      "id": "1",
-      "name": "Bem 1",
-      "price": 100,
+      "id": "0",
+      "name": "gaveteiro",
+      "price": 30,
       "sector": "ADM",
-      "date_purchase": "2019-01",
-      "brand": "Marca 1",
-      "purchase_site": "Site 1",
-      "warranty": "no"
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "614b",
+      "name": "gaveteiro",
+      "price": 30,
+      "sector": "ADM",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "name": "móvel",
+      "price": 30,
+      "sector": "RECP",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700",
+      "id": "1aa1"
     }
   ],
   "sectors": [
@@ -37,6 +66,22 @@
     {
       "id": "69b2",
       "name": "Administrativo"
+    },
+    {
+      "name": "Recapcao",
+      "id": "a7f6"
+    },
+    {
+      "id": "03da",
+      "name": "Teste"
+    },
+    {
+      "id": "8629",
+      "name": "test2"
+    },
+    {
+      "id": "e855",
+      "name": "Teste"
     }
   ]
 }

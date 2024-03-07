@@ -1,9 +1,9 @@
-import API from './webapi.services';
+import API from './webapiServices';
 import {BASE_URL} from './urls';
 
 export const getSectors = async () => {
   try{
-    return await API.get(`${BASE_URL}/660/sectors`).then( 
+    return await API.get(`${BASE_URL}/sectors`).then( 
       response => {
         return response.data;
       },
@@ -20,7 +20,7 @@ export const getSectors = async () => {
 
 export const insertSectors = async (param) => {
   try{
-    return await API.post(`${BASE_URL}/660/sectors`, param).then( 
+    return await API.post(`${BASE_URL}/sectors`, param).then( 
       response => {
         return response.data;
       },
@@ -37,7 +37,7 @@ export const insertSectors = async (param) => {
 
 export const updateSector = async (param) => {
   try{
-    return await API.put(`${BASE_URL}/660/sectors/${param.id}`, param).then( 
+    return await API.put(`${BASE_URL}/sectors/${param.id}`, param).then( 
       response => {
         return response.data;
       },
@@ -54,7 +54,7 @@ export const updateSector = async (param) => {
 
 export const deleteSector = async (id) => {
   try{
-    return await API.delete(`${BASE_URL}/660/sectors/${id}`).then( 
+    return await API.delete(`${BASE_URL}/sectors/${id}`).then( 
       response => {
         return response.data;
       },
