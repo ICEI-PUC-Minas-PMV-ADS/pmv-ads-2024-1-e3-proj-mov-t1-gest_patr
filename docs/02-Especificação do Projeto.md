@@ -53,7 +53,7 @@ Para superar esses desafios, é essencial investir em soluções tecnológicas d
 
 ### Descrição Geral da Proposta
 
-O aplicativo vem para sanar essa demanda, agilizando o processo de cadastro e facilitando a atualização dos dados. E além disso faz traz a facilidade para que o gestor da empresa possa gerenciar as quantidades, os dados e mais, dos bens da sua empresa na palma da mão, em qualquer lugar que estiver.
+O aplicativo foi desenvolvido para atender a essa demanda, visando agilizar o processo de cadastro e simplificar a atualização dos dados. Além disso, proporciona facilidade ao gestor da empresa para gerenciar as quantidades, os detalhes e outros aspectos dos bens da empresa diretamente na palma da mão, esteja onde estiver.
 
 ### Processo 1 – SITUAÇÃO ATUAL
 
