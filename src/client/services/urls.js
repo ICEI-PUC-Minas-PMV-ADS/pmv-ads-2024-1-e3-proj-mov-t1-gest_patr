@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://shiny-shrimps-brake.loca.lt/';
+export const BASE_URL = 'https://long-dryers-pay.loca.lt/';

@@ -1,6 +1,6 @@
 //GoodsPage.js
 import React, { useRef } from "react";
-import { StyleSheet, SafeAreaView, ScrollView, StatusBar, View } from "react-native";
+import { StyleSheet, SafeAreaView, ScrollView, View } from "react-native";
 import GoodsCard from "../components/Cards";
 
 const GoodsPage = () => {
@@ -28,9 +28,7 @@ const GoodsPage = () => {
   return (
     <View style={styles.container}>
     <SafeAreaView style={styles.content}>
-    <View ref={anchorRef}>
       <ScrollView style={styles.scrollView}>
-        {/* Render GoodsCard for each item in goods */}
         {goods.map((good) => (
           <GoodsCard
             key={good.id}
@@ -44,7 +42,7 @@ const GoodsPage = () => {
           />
         ))}
       </ScrollView>
-    </View>
+
     </SafeAreaView>
     </View>
   );
@@ -54,7 +52,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width:'100%',
-    paddingTop: StatusBar.currentHeight,
     backgroundColor: "white",
   },
   scrollView: {
