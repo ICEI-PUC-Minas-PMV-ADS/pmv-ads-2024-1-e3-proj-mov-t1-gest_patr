@@ -54,6 +54,11 @@ const styles = StyleSheet.create({
     width:'100%',
     backgroundColor: "white",
   },
+  content: {
+    flex: 1,
+    marginHorizontal: 20,
+    justifyContent: 'center',
+  },
   scrollView: {
     backgroundColor: "white",
     marginHorizontal: 0,
