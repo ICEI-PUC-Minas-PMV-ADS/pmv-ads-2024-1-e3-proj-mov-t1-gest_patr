@@ -1,25 +1,25 @@
 // sectorPage.js
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, ScrollView, SafeAreaView } from 'react-native';
-import SectorsList from '../components/List';
-import Button from '../components/Button';
-import Input from '../components/Input';
-import { getSectors, insertSectors } from '../services/sectorsServices'; 
+import React, { useEffect, useState } from "react";
+import { StyleSheet, View, ScrollView, SafeAreaView } from "react-native";
+import SectorsList from "../components/List";
+import Button from "../components/Button";
+import Input from "../components/Input";
+import { getSectors, insertSectors } from "../services/sectorsServices";
 
 const SectorPage = () => {
   const [sectors, setSectors] = useState([]);
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
 
-  const fetchSectors = async () => { 
+  const fetchSectors = async () => {
     try {
       const sectorsData = await getSectors();
       if (sectorsData && sectorsData.length > 0) {
         setSectors(sectorsData);
       } else {
-        console.error('No sectors data found');
+        console.error("No sectors data found");
       }
     } catch (error) {
-      console.error('Error fetching data:', error);
+      console.error("Error fetching data:", error);
     }
   };
 
@@ -28,15 +28,15 @@ const SectorPage = () => {
   }, []);
 
   const handleAddSector = () => {
-    insertSectors({ name: inputValue }) 
+    insertSectors({ name: inputValue })
       .then((res) => {
         if (!res) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         fetchSectors();
-        setInputValue('');
+        setInputValue("");
       })
-      .catch((error) => console.error('Error adding sector:', error));
+      .catch((error) => console.error("Error adding sector:", error));
   };
 
   return (
@@ -44,7 +44,12 @@ const SectorPage = () => {
       <SafeAreaView style={styles.content}>
         <ScrollView contentContainerStyle={styles.scrollView}>
           {sectors.map((sector) => (
-            <SectorsList key={sector.id} id={sector.id} name={sector.name} fetchSectors={fetchSectors} />
+            <SectorsList
+              key={sector.id}
+              id={sector.id}
+              name={sector.name}
+              fetchSectors={fetchSectors}
+            />
           ))}
         </ScrollView>
         <View style={styles.inputContainer}>
@@ -63,18 +68,18 @@ const SectorPage = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: '100%',
-    backgroundColor: 'white',
+    width: "100%",
+    backgroundColor: "white",
   },
   content: {
     flex: 1,
     marginHorizontal: 20,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   scrollView: {
-    backgroundColor: 'white',
+    backgroundColor: "white",
     marginHorizontal: 0,
-    minHeight: '100%',
+    minHeight: "100%",
   },
   inputContainer: {
     marginTop: 10,

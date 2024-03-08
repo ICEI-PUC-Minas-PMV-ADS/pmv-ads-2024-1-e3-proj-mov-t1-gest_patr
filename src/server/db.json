@@ -21,28 +21,6 @@
   ],
   "goods": [
     {
-      "id": "0",
-      "name": "gaveteiro",
-      "price": 30,
-      "sector": "ADM",
-      "date_purchase": "2020-01-01",
-      "brand": "marca1",
-      "purchase_site": "site1",
-      "warranty": "no",
-      "image": "https://picsum.photos/700"
-    },
-    {
-      "id": "614b",
-      "name": "gaveteiro",
-      "price": 30,
-      "sector": "ADM",
-      "date_purchase": "2020-01-01",
-      "brand": "marca1",
-      "purchase_site": "site1",
-      "warranty": "no",
-      "image": "https://picsum.photos/700"
-    },
-    {
       "name": "móvel",
       "price": 30,
       "sector": "RECP",
