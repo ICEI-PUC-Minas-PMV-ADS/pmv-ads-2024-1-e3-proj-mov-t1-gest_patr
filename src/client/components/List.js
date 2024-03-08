@@ -6,15 +6,16 @@ import { deleteSector, updateSector } from '../services/sectorsServices';
 const SectorsList = ({ id, name, fetchSectors }) => {
   const [expanded, setExpanded] = React.useState(false);
   const [visible, setVisible] = React.useState(false);
-  const [editedName, setEditedName] = React.useState(name);
-  const [editedId, setEditedId] = React.useState(id);
+  const [editedName, setEditedName] = React.useState(name || '');
+  const [editedId, setEditedId] = React.useState(id || '');
+  const [originalId, setOriginalId] = React.useState(id); 
 
   const showDialog = () => setVisible(true);
   const hideDialog = () => setVisible(false);
 
   const handleUpdate = async () => {
     try {
-      await updateSector(editedId, { name: editedName });
+      await updateSector(originalId, { name: editedName });
       showDialog();
     } catch (error) {
       console.error('Error updating sector:', error);
@@ -23,7 +24,7 @@ const SectorsList = ({ id, name, fetchSectors }) => {
 
   const confirmUpdate = async () => {
     try {
-      await updateSector(id, { name: editedName });
+      await updateSector(originalId, { name: editedName });
       hideDialog();
       fetchSectors();
     } catch (error) {
