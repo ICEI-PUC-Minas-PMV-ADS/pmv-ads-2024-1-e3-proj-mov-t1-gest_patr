@@ -1,29 +1,31 @@
 //GoodsPage.js
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { StyleSheet, SafeAreaView, ScrollView, View } from "react-native";
+import { getGoods } from "../services/goodsServices";
 import GoodsCard from "../components/Cards";
 
 const GoodsPage = () => {
   const [goods, setGoods] = React.useState([]);
   const anchorRef = useRef(null);
 
-  React.useEffect(() => {
-    fetch("http://localhost:8081/goods")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return res.json();
-      })
-      .then((data) => {
-        if (data && data.length > 0) {
-          setGoods(data);
-        } else {
-          console.error("No goods data found");
-        }
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+  const fetchGoods = async () => {
+    try {
+      const goodsData = await getGoods();
+      if (goodsData && goodsData.length > 0) {
+        setGoods(goodsData);
+      } else {
+        console.error("No goods data found");
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  }
+
+  useEffect(() => {
+    fetchGoods();
   }, []);
+  
+  
 
   return (
     <View style={styles.container}>
@@ -32,6 +34,7 @@ const GoodsPage = () => {
         {goods.map((good) => (
           <GoodsCard
             key={good.id}
+            id={good.id}
             name={good.name}
             price={good.price}
             sector={good.sector}
@@ -39,6 +42,7 @@ const GoodsPage = () => {
             brand={good.brand}
             purchase_site={good.purchase_site}
             warranty={good.warranty}
+            fetchGoods={fetchGoods}
           />
         ))}
       </ScrollView>
