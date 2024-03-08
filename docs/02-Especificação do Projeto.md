@@ -35,12 +35,25 @@ As seguintes histórias dos usuários foram registradas pelo entendimento do dia
 
 ### Análise da Situação Atual
 
-Mesmo com o avanço tecnológico, a gestão de patrimônio ainda é feita de forma arcaíca e manual, demandando tempo e recursos
-da empresa. As informações do bens tangíveis são, na maioria das vezes, inseridas em planilhas onde faz com que o acompanhamento seja trabalhoso e muitas vezes difícil de manutenção.
+ Apesar do avanço tecnológico, muitas empresas ainda adotam métodos arcaicos e manuais para a gestão de patrimônio. Isso resulta em um processo moroso e demanda recursos significativos da empresa. A inserção de informações sobre bens tangíveis em planilhas é uma prática comum, porém, isso torna o acompanhamento trabalhoso e muitas vezes difícil de manter.
+
+Essa abordagem manual apresenta várias limitações e desafios:
+
+- Ineficiência: A inserção manual de dados em planilhas consome tempo e recursos que poderiam ser direcionados para atividades mais estratégicas.
+
+- Erro humano: A manipulação manual de dados aumenta o risco de erros, o que pode levar a decisões equivocadas e prejuízos para a empresa.
+
+- Dificuldade de atualização: Manter as informações atualizadas em planilhas pode ser complicado, especialmente em empresas com um grande volume de ativos.
+
+- Falta de integração: As planilhas podem não estar integradas a outros sistemas da empresa, dificultando a obtenção de uma visão abrangente do patrimônio.
+
+- Segurança: As planilhas podem ser vulneráveis a falhas de segurança e perda de dados, especialmente se não forem devidamente protegidas.
+
+Para superar esses desafios, é essencial investir em soluções tecnológicas de gestão de patrimônio que automatizem e simplifiquem o processo. Essas soluções podem oferecer recursos como digitalização de documentos, rastreamento de ativos em tempo real, relatórios personalizados e integração com outros sistemas empresariais. Ao adotar uma abordagem mais moderna e eficiente para a gestão de patrimônio, as empresas podem melhorar sua eficácia operacional e garantir a proteção e valorização de seus ativos.
 
 ### Descrição Geral da Proposta
 
-O aplicativo vem para sanar essa demanda, agilizando o processo de cadastro e facilitando a atualização dos dados. E além disso faz traz a facilidade para que o gestor da empresa possa gerenciar as quantidades, os dados e mais, dos bens da sua empresa na palma da mão, em qualquer lugar que estiver.
+O aplicativo foi desenvolvido para atender a essa demanda, visando agilizar o processo de cadastro e simplificar a atualização dos dados. Além disso, proporciona facilidade ao gestor da empresa para gerenciar as quantidades, os detalhes e outros aspectos dos bens da empresa diretamente na palma da mão, esteja onde estiver.
 
 ### Processo 1 – SITUAÇÃO ATUAL
 
