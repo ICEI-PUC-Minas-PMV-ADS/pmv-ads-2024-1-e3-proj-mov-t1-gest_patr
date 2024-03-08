@@ -3,9 +3,11 @@ import { StyleSheet, View, SafeAreaView, Text, Modal, Image } from "react-native
 import { Button } from "react-native-paper";
 import logo from '../logo.png'
 import SearchBar from "../components/SearchBar";
+import QRCodeScanner from "../components/Qrcode";
 
 const HomePage = () => {
   const [searchVisible, setSearchVisible] = useState(false);
+  const [qrCodeScannerVisible, setQRCodeScannerVisible] = useState(false);
   const anchorRef = useRef(null);
 
 
@@ -13,6 +15,9 @@ const HomePage = () => {
     setSearchVisible(!searchVisible);
   };
 
+  const toggleQRCodeScanner = () => {
+    setQRCodeScannerVisible(!qrCodeScannerVisible);
+  };
 
   return (
     <View style={styles.container}>
@@ -29,7 +34,7 @@ const HomePage = () => {
               theme={{colors: {primary:"#6d85db"}}}
               icon="plus" 
               mode="contained-tonal" 
-              onPress={() => {}}>
+              onPress={toggleQRCodeScanner}>
               Cadastrar
             </Button>
             <Button
@@ -42,6 +47,7 @@ const HomePage = () => {
             </Button>
           </View>
         </View>
+        {/* Search modal */}
 
         <Modal
           visible={searchVisible}
@@ -52,6 +58,23 @@ const HomePage = () => {
             <View style={styles.modalContent}>
               <SearchBar/>
               <Button onPress={toggleSearch}>Fechar</Button>
+            </View>
+          </View>
+        </Modal>
+
+        {/* QRCodeScanner modal */}
+        <Modal
+          visible={qrCodeScannerVisible}
+          animationType="slide"
+          transparent={true}
+          onRequestClose={toggleQRCodeScanner}>
+          <View style={styles.modalContainer}>
+            <View style={styles.modalContent}>
+              <QRCodeScanner onScanned={(data) => {
+                console.log(data); // Handle scanned data
+                toggleQRCodeScanner(); // Close QRCodeScanner modal
+              }} />
+              <Button onPress={toggleQRCodeScanner}>Fechar</Button>
             </View>
           </View>
         </Modal>
