@@ -123,7 +123,7 @@ As seguintes histórias dos usuários foram registradas pelo entendimento do dia
 | Beatriz | Quero ter acesso aos ativos registrados | Para conseguir realizar avaliar os bens |
 | Gustavo | Quero poder verificar informações sobre o innventário | Para conseguir saber os gastos e otimizar o tempo do planejamento financeiro |
 | Sara | Quero saber informações sobre o balanço patrimonial da empresa | Para descobrir a saúde financeira e conseguir realizar uma análise riscos |
-| Daniel | Quero informações dos ativos sejam armazenadas semn uso de planilha | Para evitar que o setor de TI disperdice tempo |
+| Daniel | Quero informações dos ativos sejam armazenadas sem uso de planilha | Para evitar que o setor de TI disperdice tempo parando o trabalho para fazer planilhas |
 
 
 
