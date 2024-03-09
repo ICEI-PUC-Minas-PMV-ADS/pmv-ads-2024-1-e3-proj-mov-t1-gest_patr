@@ -91,7 +91,7 @@ Quadro 1 – Personas
 
 **Frustrações:** Muitas empresas tem dificuldade na gestão do patrimônio e isso dificulta a análise da realidade financeira delas.
 
-![ti](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/assets/128075432/ea55dbfe-1955-41fe-b17e-a83256431a49)![Persona3](https://user-images.githubusercontent.com/128602472/229170975-21a3019a-cee1-42d2-a05d-19b247d99232.jpg)
+![ti](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/assets/128075432/ea55dbfe-1955-41fe-b17e-a83256431a49)
 
 **Nome:** Daniel Akamoto
 
