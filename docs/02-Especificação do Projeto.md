@@ -37,11 +37,11 @@ Quadro 1 – Personas
  
 **Sexo:** Feminino
  
-**Idade:** 47 anos 
+**Idade:** 39 anos 
  
 **Localização:** Rio de Janeiro Capital
 
-**Ocupação:** Gestor de Ativos
+**Ocupação:** Gestora de Ativos
 
 **Qualificação:** Formada em Administração de Empresas na Unversidade Federal do Rio de Janeiro em 2018 
 
