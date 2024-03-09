@@ -11,7 +11,7 @@ Quadro 1 – Personas
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-eixo2_grupo3/assets/129327473/e08e40a8-656a-4627-a3c8-78d7147f582c)
 
 
-**Nome:** Carolina Martins
+**Nome:** Rafaela Silva
 
 **Sexo:** Feminino
 
@@ -19,42 +19,37 @@ Quadro 1 – Personas
 
 **Localização:** Belo Horizonte, Minas Gerais
 
-**Ocupação:** Empreendedora na área de produtos naturais para cabelos.
+**Ocupação:** Contadora
 
-**Qualificação:** Formada em Farmácia na Pontifícia Universidade Católica de Minas Gerais em 2015.
+**Qualificação:** Formada em Contabilidade na Pontifícia Universidade Católica de Minas Gerais em 2019.
 
-**História:** Vinda da periferia de Belo Horizonte, filha de uma faxineira e de um catador de recicláveis, Carolina cresceu observando as dificuldades financeiras dos pais, sempre valorizou todos os recursos dos pais e admirou o trabalho do pai junto ao meio ambiente. Apesar de todas as dificuldades conseguiu se formar na faculdade de Farmácia e hoje possui sua própria empresa de produtos naturais em barra para cabelos.
+**História:** Vinda da periferia de Belo Horizonte, entrou na PUC Minas como aluna bolsista no curso de Contabilidade. Apesar de todas as dificuldades conseguiu se formar e hoje possui uma carreira de 5 cinco anos na área com ênfase em controle gastos. 
 
-**Motivações:** Produzir cosméticos em barra visando a diminuição de embalagens plásticas no meio ambiente.
+**Motivações:** Realizar relatórios eficitens para fornecer informações sobre os tributos dos patrimônios para auxiliar as empresas na tomada de decisões.
 
-**Frustrações:** Pouca visibilidade em meio a tantos produtos industrializados já existentes de marcas conhecidas.
+**Frustrações:** A gestão de patrimônio é algo demorado e precisa verificar várias vezes porque é comum as empresas terem dificuldade em passar as informações certas.
 
 
  ![Persona 22](https://user-images.githubusercontent.com/128602472/229167298-d983987c-bd1d-430a-8f54-b09d832ee35f.jpg)
 
  
-**Nome:** Larissa Maria Machado 
+**Nome:** Beatriz Machado 
  
 **Sexo:** Feminino, Mulher Cis 
  
 **Idade:** 47 anos 
  
-**Localização:** Belo Horizonte, Minas Gerais 
+**Localização:** Rio de Janeiro Capital
 
-**Cargo na ONG:** Administradora
+**Ocupação:** Supervisora de Gestão de Patrimônios Ativos
 
-**Ocupação:** Administradora de uma pequena empresa de cosméticos e voluntária na administração de uma ONG de acolhimento a mulheres vítimas de violência doméstica.
+**Qualificação:** Formada em Administração de Empresas na Unversidade Federal do Rio de Janeiro em 2018 
 
-**Qualificação:** Formada em Administração de Empresas na Pontifícia Universidade Católica de Minas Gerais em 2010
- 
-**Uma frase:** “Toda vez que uma mulher se defende, sem nem perceber que isso é possível, sem qualquer pretensão, ela defende todas as mulheres.”
+**História:** Trabalha em uma empresa de Engenharia de Civil no Leblon, há 7 que ela atua na área e faz 3 anos que está para SUM Engenharia Corporativa como Supervisora de Gestão de Patrimônios Ativos. É responsável por solucionar problemas relacionados a depreciação, obsolência e manutenção de ativos 
 
-**História:** Vinda da periferia de Belo Horizonte, filha de uma dona de casa e de um mecânico alcoólatra, Larissa cresceu observando sua mãe passar por todo o tipo de violência possível dentro de seu relacionamento, física, emocional e de gênero. Somente quando adulta seus pais se divorciaram, quando ela pode dar mais suporte para sua mãe, tanto financeiro quanto psicológico. Quando mais velha, ingressou na faculdade de Administração e hoje presta serviço de forma voluntária a uma ONG de acolhimento a mulheres vítimas de violência doméstica. 
+**Motivações:** Desenvolver relatórios de ativos que demonstram a situação financeira da empresa para conseguir contribuir no crescimento dela
 
-**Motivações:** Ajudar mulheres que não tem suporte a saírem de ambientes de violência doméstica, o mais cedo possível, para que não passem anos em sofrimento como sua mãe. 
-
-**Frustrações**: Insuficiência de políticas públicas vindas do estado, para acolher e reintegrar essas mulheres, assim como  baixa punição para os agressores.
-
+**Frustrações**: Falta de coerência nos dados entre setores ao ponto de prolongar a análise de ativos e como consequência da gestão deles.
 
 ![hompose](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/assets/128075432/5e2c8d33-9036-401e-aaa9-a69c75e3394a)
 
@@ -78,27 +73,23 @@ Quadro 1 – Personas
 
 ![Persona3](https://user-images.githubusercontent.com/128602472/229170975-21a3019a-cee1-42d2-a05d-19b247d99232.jpg)
 
-**Nome:** Rafaela Borges Silveira
+**Nome:** Sara Borges Silveira
 
-**Sexo:** Feminino, Mulher Cis
+**Sexo:** Feminino
 
-**Idade:** 31 anos
+**Idade:** 25 anos
 
-**Localização:** Belo Horizonte, Minas Gerais
+**Localização:** São Paulo capital
 
-**Cargo na ONG:** Capitalizadora de recursos
+**Ocupação:** Analista de investimentos
 
-**Ocupação:** Assistente social da prefeitura de Belo Horizonte e voluntária como capitalizadora de recursos em uma ONG de suporte a mulheres que sofreram violência doméstica.
+**Qualificação:** Formada em Economia na Universidade de São Paulo em 2020
 
-**Qualificação:** Formada em Gestão Financeira na Pontifícia Universidade Católica de Minas Gerais em 2019
+**História:** Sara se tornou especialista de investimentos no Banco Itaú há 3 anos e passou por empresas do mercado de seguros e uma starup de tecnologia.
 
-**Uma frase:** ”Eu não estou aceitando as coisas que eu não posso mudar, estou mudando as coisas que eu não posso aceitar”.
+**Motivações:** Analisar os detalhes da saúde financeira das empresas para identificar quais investimentos são mais indicados para elas.
 
-**História:** Vítima de violência doméstica aos de 17 anos, por um ex-namorado, Rafaela achou que sua situação não tinha solução, até ser resgatada por uma assistente social. A partir disso, deu continuidade a seus estudos e decidiu retribuir o suporte que lhe foi prestado. Atualmente casada, é mãe de uma menina.
-
-**Motivações:** Encontrar patrocinadores, incentivos públicos e doadores dispostos a ajudar projetos e voluntários que zelam pelo bem estar, saúde e recuperação de vítimas de violência doméstica.
-
-**Frustrações:** A falta de uma solução para gerir, captar e direcionar os valores recebidos para manutenção de projetos sociais.
+**Frustrações:** Muitas empresas tem dificuldade na gestão do patrimônio e isso dificulta a análise da realidade financeira delas.
 
 | Nome | Ocupação | Motivações | Frustações |
 |---|---|---|---|
