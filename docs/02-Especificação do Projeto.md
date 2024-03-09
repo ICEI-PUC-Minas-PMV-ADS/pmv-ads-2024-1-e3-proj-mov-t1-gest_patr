@@ -8,6 +8,80 @@ Agora serão apresentadas no quadro a seguir as personas levantadas durante o pr
 
 Quadro 1 – Personas
 
+![SaraMaria2](https://user-images.githubusercontent.com/128602472/228576983-a43d0673-e65d-4e8c-b73f-c9982aba701f.jpg)
+
+**Nome:** Sara Maria Ferreira Alves 
+
+**Sexo:** Feminino, Mulher Cis
+
+**Idade:** 54 anos
+
+**Localização:** São Paulo / SP
+
+**Cargo na ONG:** Psicóloga
+
+**Ocupação:**  Assistente social em Hospital Público e psicóloga voluntária em projeto social qua ajuda vítimas de violência doméstica.
+
+**Qualificação:** Formada em Psicologia na  Universidade Estadual de Campinas em 2003
+
+**Uma frase:** “Novas folhas, novas flores, na infinita bênção do recomeço.”
+
+**História:** Paulista de família humilde, casada e mãe de dois filhos. Até então dedicada a auxiliar no desenvolvimento de pessoas, dentro do contexto profissional. Compilada a trazer seu conhecimento e experiências para ajudar mulheres, após sofrer o trauma de perder uma amiga vítima de violência.
+
+**Motivações:** Auxiliar mulheres com orientações profissionais, para que não se sujeitem a quaisquer tipo de violência, ou orientando vítimas para que tenham um recomeço.
+
+**Frustrações:** A falta de uma solução para direcionamento e organização no atendimento as vítimas.
+
+
+ ![Persona 22](https://user-images.githubusercontent.com/128602472/229167298-d983987c-bd1d-430a-8f54-b09d832ee35f.jpg)
+
+ 
+**Nome:** Larissa Maria Machado 
+ 
+**Sexo:** Feminino, Mulher Cis 
+ 
+**Idade:** 47 anos 
+ 
+**Localização:** Belo Horizonte, Minas Gerais 
+
+**Cargo na ONG:** Administradora
+
+**Ocupação:** Administradora de uma pequena empresa de cosméticos e voluntária na administração de uma ONG de acolhimento a mulheres vítimas de violência doméstica.
+
+**Qualificação:** Formada em Administração de Empresas na Pontifícia Universidade Católica de Minas Gerais em 2010
+ 
+**Uma frase:** “Toda vez que uma mulher se defende, sem nem perceber que isso é possível, sem qualquer pretensão, ela defende todas as mulheres.”
+
+**História:** Vinda da periferia de Belo Horizonte, filha de uma dona de casa e de um mecânico alcoólatra, Larissa cresceu observando sua mãe passar por todo o tipo de violência possível dentro de seu relacionamento, física, emocional e de gênero. Somente quando adulta seus pais se divorciaram, quando ela pode dar mais suporte para sua mãe, tanto financeiro quanto psicológico. Quando mais velha, ingressou na faculdade de Administração e hoje presta serviço de forma voluntária a uma ONG de acolhimento a mulheres vítimas de violência doméstica. 
+
+**Motivações:** Ajudar mulheres que não tem suporte a saírem de ambientes de violência doméstica, o mais cedo possível, para que não passem anos em sofrimento como sua mãe. 
+
+**Frustrações**: Insuficiência de políticas públicas vindas do estado, para acolher e reintegrar essas mulheres, assim como  baixa punição para os agressores.
+
+![Persona3](https://user-images.githubusercontent.com/128602472/229170975-21a3019a-cee1-42d2-a05d-19b247d99232.jpg)
+
+**Nome:** Rafaela Borges Silveira
+
+**Sexo:** Feminino, Mulher Cis
+
+**Idade:** 31 anos
+
+**Localização:** Belo Horizonte, Minas Gerais
+
+**Cargo na ONG:** Capitalizadora de recursos
+
+**Ocupação:** Assistente social da prefeitura de Belo Horizonte e voluntária como capitalizadora de recursos em uma ONG de suporte a mulheres que sofreram violência doméstica.
+
+**Qualificação:** Formada em Gestão Financeira na Pontifícia Universidade Católica de Minas Gerais em 2019
+
+**Uma frase:** ”Eu não estou aceitando as coisas que eu não posso mudar, estou mudando as coisas que eu não posso aceitar”.
+
+**História:** Vítima de violência doméstica aos de 17 anos, por um ex-namorado, Rafaela achou que sua situação não tinha solução, até ser resgatada por uma assistente social. A partir disso, deu continuidade a seus estudos e decidiu retribuir o suporte que lhe foi prestado. Atualmente casada, é mãe de uma menina.
+
+**Motivações:** Encontrar patrocinadores, incentivos públicos e doadores dispostos a ajudar projetos e voluntários que zelam pelo bem estar, saúde e recuperação de vítimas de violência doméstica.
+
+**Frustrações:** A falta de uma solução para gerir, captar e direcionar os valores recebidos para manutenção de projetos sociais.
+
 | Nome | Ocupação | Motivações | Frustações |
 |---|---|---|---|
 | Rafaella | Auxiliar Administrativa | Recebeu a tarefa de catalogar e classificar todos os bens da empresa em que trabalha, porém nunca foi feito nenhum trabalho desses anteriormente |
