@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "25390187-74c3-4822-bfd9-962b464829ae"
+      }
+    },
+    "android": {
+      "package": "com.sara_cristina.apppatrimonio"
+    }
+  }
+}
