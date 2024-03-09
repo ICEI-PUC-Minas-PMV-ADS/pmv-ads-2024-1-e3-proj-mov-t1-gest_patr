@@ -56,8 +56,7 @@ Quadro 1 – Personas
 **Frustrações**: Insuficiência de políticas públicas vindas do estado, para acolher e reintegrar essas mulheres, assim como  baixa punição para os agressores.
 
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-eixo2_grupo3/assets/129327473/e08e40a8-656a-4627-a3c8-78d7147f582c)
-
+![hompose](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/assets/128075432/5e2c8d33-9036-401e-aaa9-a69c75e3394a)
 
 **Nome:** Carolina Martins
 
