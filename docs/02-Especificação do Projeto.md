@@ -35,17 +35,17 @@ Quadro 1 – Personas
  
 **Nome:** Beatriz Machado 
  
-**Sexo:** Feminino, Mulher Cis 
+**Sexo:** Feminino
  
 **Idade:** 47 anos 
  
 **Localização:** Rio de Janeiro Capital
 
-**Ocupação:** Supervisora de Gestão de Patrimônios Ativos
+**Ocupação:** Gestor de Ativos
 
 **Qualificação:** Formada em Administração de Empresas na Unversidade Federal do Rio de Janeiro em 2018 
 
-**História:** Trabalha em uma empresa de Engenharia de Civil no Leblon, há 7 que ela atua na área e faz 3 anos que está para SUM Engenharia Corporativa como Supervisora de Gestão de Patrimônios Ativos. É responsável por solucionar problemas relacionados a depreciação, obsolência e manutenção de ativos 
+**História:** Trabalha em uma empresa de Engenharia de Civil no Leblon, há 7 que ela atua na área e faz 3 anos que está para SUM Engenharia Corporativa na Gestão de Patrimônios Ativos. É responsável por solucionar problemas relacionados a depreciação, obsolência e manutenção de ativos 
 
 **Motivações:** Desenvolver relatórios de ativos que demonstram a situação financeira da empresa para conseguir contribuir no crescimento dela
 
@@ -53,23 +53,23 @@ Quadro 1 – Personas
 
 ![hompose](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/assets/128075432/5e2c8d33-9036-401e-aaa9-a69c75e3394a)
 
-**Nome:** Carolina Martins
+**Nome:** Gustavo Alburque
 
-**Sexo:** Feminino
+**Sexo:** Masculino
 
-**Idade:** 35 anos
+**Idade:** 38 anos
 
-**Localização:** Belo Horizonte, Minas Gerais
+**Localização:** Curitiba, santa Catarina
 
-**Ocupação:** Empreendedora na área de produtos naturais para cabelos.
+**Ocupação:** Analista financeiro
 
-**Qualificação:** Formada em Farmácia na Pontifícia Universidade Católica de Minas Gerais em 2015.
+**Qualificação:** Formado em Administração de empresas na Pontifícia Universidade Católica de Santa Catarina em 2016.
 
-**História:** Vinda da periferia de Belo Horizonte, filha de uma faxineira e de um catador de recicláveis, Carolina cresceu observando as dificuldades financeiras dos pais, sempre valorizou todos os recursos dos pais e admirou o trabalho do pai junto ao meio ambiente. Apesar de todas as dificuldades conseguiu se formar na faculdade de Farmácia e hoje possui sua própria empresa de produtos naturais em barra para cabelos.
+**História:** Há 10 trabalho com planejamento financeiro. Atualmente trabalha para MK - Finanças onde planeja, gera e analisa os recursos financeiros da empresa para encontrar riscos e controlar gastos 
 
-**Motivações:** Produzir cosméticos em barra visando a diminuição de embalagens plásticas no meio ambiente.
+**Motivações:** Produzir resultados que impactam nas decisões dos clientes da empresa
 
-**Frustrações:** Pouca visibilidade em meio a tantos produtos industrializados já existentes de marcas conhecidas.
+**Frustrações:** Dificuldade em otimizar o tempo do planejamento financeiro por causa da demora na entrega dos ativos
 
 ![Persona3](https://user-images.githubusercontent.com/128602472/229170975-21a3019a-cee1-42d2-a05d-19b247d99232.jpg)
 
@@ -91,6 +91,26 @@ Quadro 1 – Personas
 
 **Frustrações:** Muitas empresas tem dificuldade na gestão do patrimônio e isso dificulta a análise da realidade financeira delas.
 
+![ti](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/assets/128075432/ea55dbfe-1955-41fe-b17e-a83256431a49)![Persona3](https://user-images.githubusercontent.com/128602472/229170975-21a3019a-cee1-42d2-a05d-19b247d99232.jpg)
+
+**Nome:** Daniel Akamoto
+
+**Sexo:** Feminino
+
+**Idade:** 24 anos
+
+**Localização:** São Paulo capital
+
+**Ocupação:** Analista de infraestrutura
+
+**Qualificação:** Formado em Sistemas de informação na Universidade Makenzie em 2022
+
+**História:** Trabalha para empresa de produtos sustentáveis. Responsável por planejar, coordenar, fiscalizar, prestar assistência técnica e execução de projetos e obras de grande porte na área de infraestrutura.
+
+**Motivações:** Trabalhar com tecnologia e encontrar soluções
+
+**Frustrações:** Quando a empresa realiza a balanço de patrimônio sempre surge uma sobrecarga no setor porque faz com que tenha parar o seu trabalho para organizar planilhas.
+
 | Nome | Ocupação | Motivações | Frustações |
 |---|---|---|---|
 | Rafaella | Auxiliar Administrativa | Recebeu a tarefa de catalogar e classificar todos os bens da empresa em que trabalha, porém nunca foi feito nenhum trabalho desses anteriormente |
@@ -98,7 +118,7 @@ Quadro 1 – Personas
 | Paulo | TI | Foi encarregado de manter o controle dos equipamentos da empresa em que trabalha, só que acha muito trabalhoso fazer isso em uma planilha |
 | Beatriz | Empreendedora | Possui uma empresa de porte médio onde precisa catalogar todos os bens, desde mobiliário até frota |			
 
-Fonte: Elaborado pelos autores com dados extraídos das entrevistas
+
 
 
 ## Histórias de Usuários
