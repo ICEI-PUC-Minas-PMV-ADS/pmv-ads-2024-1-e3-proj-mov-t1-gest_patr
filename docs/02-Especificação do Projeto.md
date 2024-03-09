@@ -118,14 +118,16 @@ As seguintes histórias dos usuários foram registradas pelo entendimento do dia
 
 | Pessoa | gostaria de | para |
 | --- | --- | --- |
-| Rafaella | Quero poder ter acasso rápido e fácil aos dados dos ativos identificados no inventátio | Para conseguir calcular os tributos com agilidade e precisão|
-| Beatriz | Quero catalogar os ativos | Para conseguir realizar o invetário |
-| Beatriz | Quero ter acesso aos ativos registrados | Para conseguir realizar avaliar os bens |
-| Gustavo | Quero poder verificar informações sobre o innventário | Para conseguir saber os gastos e otimizar o tempo do planejamento financeiro |
+| Rafaella | Quero poder ter acesso rápido e fácil aos dados dos ativos identificados no inventátio | Para conseguir calcular os tributos com agilidade e precisão|
+| Beatriz | Quero catalogar os ativos com fotos | Para conseguir realizar melhor controle do invetário |
+| Beatriz | Quero ter pode editar os dados dos bens | Para conseguir realizar uma correção ou atualização |
+| Gustavo | Quero poder verificar informações sobre o inventário | Para conseguir saber os gastos e otimizar o tempo do planejamento financeiro |
 | Sara | Quero saber informações sobre o balanço patrimonial da empresa | Para descobrir a saúde financeira e conseguir realizar uma análise riscos |
 | Daniel | Quero informações dos ativos sejam armazenadas sem uso de planilha | Para evitar que o setor de TI disperdice tempo parando o trabalho para fazer planilhas |
-
-
+| Sara | Preciso que somente pessoas autorizadas consigam fazer o cadastro | Para conseguir controlar a entrada e baixa dos bens |
+| Gustavo | Quero poder buscar por bens de acordo com setor | Para ter controle de onde os bens estão alocados na empresa |
+| Beatriz | Quero cadastrar os bens diretamente pela plaqueta de patrimônio | Para conseguir realizar o arquivamento mais rápido |
+| Rafaella | Quero poder consultar bens quando estiver offline | Para conseguir acessar o aplicativo em qualquer lugar|
 
 
 ## Modelagem do Processo de Negócio 
