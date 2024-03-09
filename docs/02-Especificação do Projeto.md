@@ -111,15 +111,6 @@ Quadro 1 – Personas
 
 **Frustrações:** Quando a empresa realiza a balanço de patrimônio sempre surge uma sobrecarga no setor porque faz com que tenha parar o seu trabalho para organizar planilhas.
 
-| Nome | Ocupação | Motivações | Frustações |
-|---|---|---|---|
-| Rafaella | Auxiliar Administrativa | Recebeu a tarefa de catalogar e classificar todos os bens da empresa em que trabalha, porém nunca foi feito nenhum trabalho desses anteriormente |
-| Gustavo | Empreendedor | Acabou de abrir uma pequena empresa de acessoria financeira, possui pouco funcionários porém como adquiriu computadores, mobiliarios e equipamentos novos, gostaria de manter o controle de onde e quem está utilizando cada um deles.. |
-| Paulo | TI | Foi encarregado de manter o controle dos equipamentos da empresa em que trabalha, só que acha muito trabalhoso fazer isso em uma planilha |
-| Beatriz | Empreendedora | Possui uma empresa de porte médio onde precisa catalogar todos os bens, desde mobiliário até frota |			
-
-
-
 
 ## Histórias de Usuários
 
@@ -128,10 +119,11 @@ As seguintes histórias dos usuários foram registradas pelo entendimento do dia
 | Pessoa | gostaria de | para |
 | --- | --- | --- |
 | Rafaella | Quero poder ter acasso rápido e fácil aos dados dos ativos identificados no inventátio | Para conseguir calcular os tributos com agilidade e precisão|
-| Beatriz | Poder inserir fotos do bem real | Evitar confusões quanto ao modelo e marca dos bens |
-| Gustavo | Poder cadastrar os bens e quem está utilizando ele no momento | Conseguir manter uma organizão da empresa |
-| Sara | Poder inserir fotos do bem real | Evitar confusões quanto ao modelo e marca dos bens |
-| Daniel | Poder cadastrar os bens utilizando diretamente o código de barra/QRCode de numeração | Facilitar o cadastro |
+| Beatriz | Quero catalogar os ativos | Para conseguir realizar o invetário |
+| Beatriz | Quero ter acesso aos ativos registrados | Para conseguir realizar avaliar os bens |
+| Gustavo | Quero poder verificar informações sobre o innventário | Para conseguir saber os gastos |
+| Sara | Quero saber informações sobre o balanço patrimonial da empresa | Para descobrir a saúde financeira e conseguir realizar uma análise riscos |
+| Daniel | Quero informações dos ativos sejam armazenadas semn uso de planilha | Para evitar que o setor de TI disperdice tempo |
 
 
 
