@@ -8,29 +8,26 @@ Agora serão apresentadas no quadro a seguir as personas levantadas durante o pr
 
 Quadro 1 – Personas
 
-![SaraMaria2](https://user-images.githubusercontent.com/128602472/228576983-a43d0673-e65d-4e8c-b73f-c9982aba701f.jpg)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-eixo2_grupo3/assets/129327473/e08e40a8-656a-4627-a3c8-78d7147f582c)
 
-**Nome:** Sara Maria Ferreira Alves 
 
-**Sexo:** Feminino, Mulher Cis
+**Nome:** Carolina Martins
 
-**Idade:** 54 anos
+**Sexo:** Feminino
 
-**Localização:** São Paulo / SP
+**Idade:** 35 anos
 
-**Cargo na ONG:** Psicóloga
+**Localização:** Belo Horizonte, Minas Gerais
 
-**Ocupação:**  Assistente social em Hospital Público e psicóloga voluntária em projeto social qua ajuda vítimas de violência doméstica.
+**Ocupação:** Empreendedora na área de produtos naturais para cabelos.
 
-**Qualificação:** Formada em Psicologia na  Universidade Estadual de Campinas em 2003
+**Qualificação:** Formada em Farmácia na Pontifícia Universidade Católica de Minas Gerais em 2015.
 
-**Uma frase:** “Novas folhas, novas flores, na infinita bênção do recomeço.”
+**História:** Vinda da periferia de Belo Horizonte, filha de uma faxineira e de um catador de recicláveis, Carolina cresceu observando as dificuldades financeiras dos pais, sempre valorizou todos os recursos dos pais e admirou o trabalho do pai junto ao meio ambiente. Apesar de todas as dificuldades conseguiu se formar na faculdade de Farmácia e hoje possui sua própria empresa de produtos naturais em barra para cabelos.
 
-**História:** Paulista de família humilde, casada e mãe de dois filhos. Até então dedicada a auxiliar no desenvolvimento de pessoas, dentro do contexto profissional. Compilada a trazer seu conhecimento e experiências para ajudar mulheres, após sofrer o trauma de perder uma amiga vítima de violência.
+**Motivações:** Produzir cosméticos em barra visando a diminuição de embalagens plásticas no meio ambiente.
 
-**Motivações:** Auxiliar mulheres com orientações profissionais, para que não se sujeitem a quaisquer tipo de violência, ou orientando vítimas para que tenham um recomeço.
-
-**Frustrações:** A falta de uma solução para direcionamento e organização no atendimento as vítimas.
+**Frustrações:** Pouca visibilidade em meio a tantos produtos industrializados já existentes de marcas conhecidas.
 
 
  ![Persona 22](https://user-images.githubusercontent.com/128602472/229167298-d983987c-bd1d-430a-8f54-b09d832ee35f.jpg)
