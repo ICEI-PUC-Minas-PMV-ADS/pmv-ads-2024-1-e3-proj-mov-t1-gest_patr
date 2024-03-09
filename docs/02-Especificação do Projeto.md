@@ -121,7 +121,7 @@ As seguintes histórias dos usuários foram registradas pelo entendimento do dia
 | Rafaella | Quero poder ter acasso rápido e fácil aos dados dos ativos identificados no inventátio | Para conseguir calcular os tributos com agilidade e precisão|
 | Beatriz | Quero catalogar os ativos | Para conseguir realizar o invetário |
 | Beatriz | Quero ter acesso aos ativos registrados | Para conseguir realizar avaliar os bens |
-| Gustavo | Quero poder verificar informações sobre o innventário | Para conseguir saber os gastos |
+| Gustavo | Quero poder verificar informações sobre o innventário | Para conseguir saber os gastos e otimizar o tempo do planejamento financeiro |
 | Sara | Quero saber informações sobre o balanço patrimonial da empresa | Para descobrir a saúde financeira e conseguir realizar uma análise riscos |
 | Daniel | Quero informações dos ativos sejam armazenadas semn uso de planilha | Para evitar que o setor de TI disperdice tempo |
 
