@@ -25,7 +25,7 @@ Quadro 1 – Personas
 
 **História:** Vinda da periferia de Belo Horizonte, entrou na PUC Minas como aluna bolsista no curso de Contabilidade. Apesar de todas as dificuldades conseguiu se formar e hoje possui uma carreira de 5 cinco anos na área com ênfase em controle gastos. 
 
-**Motivações:** Realizar relatórios eficitens para fornecer informações sobre os tributos dos patrimônios para auxiliar as empresas na tomada de decisões.
+**Motivações:** Realizar relatórios eficientes para fornecer informações sobre os tributos dos patrimônios para auxiliar as empresas na tomada de decisões.
 
 **Frustrações:** A gestão de patrimônio é algo demorado e precisa verificar várias vezes porque é comum as empresas terem dificuldade em passar as informações certas.
 
