@@ -129,6 +129,7 @@ As seguintes histórias dos usuários foram registradas pelo entendimento do dia
 | --- | --- | --- |
 | Rafaella | Poder cadastrar os bens de maneira rápida e fácil | Conseguir entregar a tarefa dentro do prazo |
 | Gustavo | Poder cadastrar os bens e quem está utilizando ele no momento | Conseguir manter uma organizão da empresa |
+| Sara | Poder inserir fotos do bem real | Evitar confusões quanto ao modelo e marca dos bens |
 | Paulo | Poder cadastrar os bens utilizando diretamente o código de barra/QRCode de numeração | Facilitar o cadastro |
 | Beatriz | Poder inserir fotos do bem real | Evitar confusões quanto ao modelo e marca dos bens |
 
