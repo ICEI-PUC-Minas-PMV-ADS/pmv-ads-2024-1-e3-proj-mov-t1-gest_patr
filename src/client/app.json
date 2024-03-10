@@ -5,7 +5,15 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9495feae-18cd-4a35-b374-797cbba9b89c"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.saracristina.apppatrimonio"
+    }
   },
   "name": "client"
 }
