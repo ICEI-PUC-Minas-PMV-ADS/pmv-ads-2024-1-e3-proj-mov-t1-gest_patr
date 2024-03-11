@@ -6,6 +6,14 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "extra": {
+      "eas": {
+        "projectId": "9495feae-18cd-4a35-b374-797cbba9b89c"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.saracristina.apppatrimonio"
+    },
     "plugins": [
       [
         "expo-camera",
