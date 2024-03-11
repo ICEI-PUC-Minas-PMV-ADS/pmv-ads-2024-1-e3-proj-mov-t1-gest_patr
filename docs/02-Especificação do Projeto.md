@@ -8,14 +8,108 @@ Agora serão apresentadas no quadro a seguir as personas levantadas durante o pr
 
 Quadro 1 – Personas
 
-| Nome | Ocupação | Motivações | Frustações |
-|---|---|---|---|
-| Rafaella | Auxiliar Administrativa | Recebeu a tarefa de catalogar e classificar todos os bens da empresa em que trabalha, porém nunca foi feito nenhum trabalho desses anteriormente |
-| Gustavo | Empreendedor | Acabou de abrir uma pequena empresa de acessoria financeira, possui pouco funcionários porém como adquiriu computadores, mobiliarios e equipamentos novos, gostaria de manter o controle de onde e quem está utilizando cada um deles.. |
-| Paulo | TI | Foi encarregado de manter o controle dos equipamentos da empresa em que trabalha, só que acha muito trabalhoso fazer isso em uma planilha |
-| Beatriz | Empreendedora | Possui uma empresa de porte médio onde precisa catalogar todos os bens, desde mobiliário até frota |			
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-eixo2_grupo3/assets/129327473/e08e40a8-656a-4627-a3c8-78d7147f582c)
 
-Fonte: Elaborado pelos autores com dados extraídos das entrevistas
+
+**Nome:** Rafaela Silva
+
+**Sexo:** Feminino
+
+**Idade:** 35 anos
+
+**Localização:** Belo Horizonte, Minas Gerais
+
+**Ocupação:** Contadora
+
+**Qualificação:** Formada em Contabilidade na Pontifícia Universidade Católica de Minas Gerais em 2019.
+
+**História:** Vinda da periferia de Belo Horizonte, entrou na PUC Minas como aluna bolsista no curso de Contabilidade. Apesar de todas as dificuldades conseguiu se formar e hoje possui uma carreira de 5 cinco anos na área com ênfase em controle gastos. 
+
+**Motivações:** Realizar relatórios eficientes para fornecer informações sobre os tributos dos patrimônios para auxiliar as empresas na tomada de decisões.
+
+**Frustrações:** A gestão de patrimônio é algo demorado e precisa verificar várias vezes porque é comum as empresas terem dificuldade em passar as informações certas.
+
+
+ ![Persona 22](https://user-images.githubusercontent.com/128602472/229167298-d983987c-bd1d-430a-8f54-b09d832ee35f.jpg)
+
+ 
+**Nome:** Beatriz Machado 
+ 
+**Sexo:** Feminino
+ 
+**Idade:** 39 anos 
+ 
+**Localização:** Rio de Janeiro Capital
+
+**Ocupação:** Gestora de Ativos
+
+**Qualificação:** Formada em Administração de Empresas na Unversidade Federal do Rio de Janeiro em 2018 
+
+**História:** Trabalha em uma empresa de Engenharia de Civil no Leblon, há 7 que ela atua na área e faz 3 anos que está para SUM Engenharia Corporativa na Gestão de Patrimônios Ativos. É responsável por solucionar problemas relacionados a depreciação, obsolência e manutenção de ativos 
+
+**Motivações:** Desenvolver relatórios de ativos que demonstram a situação financeira da empresa para conseguir contribuir no crescimento dela
+
+**Frustrações**: Falta de coerência nos dados entre setores ao ponto de prolongar a análise de ativos e como consequência da gestão deles.
+
+![hompose](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/assets/128075432/5e2c8d33-9036-401e-aaa9-a69c75e3394a)
+
+**Nome:** Gustavo Alburque
+
+**Sexo:** Masculino
+
+**Idade:** 38 anos
+
+**Localização:** Curitiba, santa Catarina
+
+**Ocupação:** Analista financeiro
+
+**Qualificação:** Formado em Administração de empresas na Pontifícia Universidade Católica de Santa Catarina em 2016.
+
+**História:** Há 10 trabalho com planejamento financeiro. Atualmente trabalha para MK - Finanças onde planeja, gera e analisa os recursos financeiros da empresa para encontrar riscos e controlar gastos 
+
+**Motivações:** Produzir resultados que impactam nas decisões dos clientes da empresa
+
+**Frustrações:** Dificuldade em otimizar o tempo do planejamento financeiro por causa da demora na entrega dos ativos
+
+![Persona3](https://user-images.githubusercontent.com/128602472/229170975-21a3019a-cee1-42d2-a05d-19b247d99232.jpg)
+
+**Nome:** Sara Borges Silveira
+
+**Sexo:** Feminino
+
+**Idade:** 25 anos
+
+**Localização:** São Paulo capital
+
+**Ocupação:** Analista de investimentos
+
+**Qualificação:** Formada em Economia na Universidade de São Paulo em 2020
+
+**História:** Sara se tornou especialista de investimentos no Banco Itaú há 3 anos e passou por empresas do mercado de seguros e uma starup de tecnologia.
+
+**Motivações:** Analisar os detalhes da saúde financeira das empresas para identificar quais investimentos são mais indicados para elas.
+
+**Frustrações:** Muitas empresas tem dificuldade na gestão do patrimônio e isso dificulta a análise da realidade financeira delas.
+
+![ti](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/assets/128075432/ea55dbfe-1955-41fe-b17e-a83256431a49)
+
+**Nome:** Daniel Akamoto
+
+**Sexo:** Feminino
+
+**Idade:** 24 anos
+
+**Localização:** São Paulo capital
+
+**Ocupação:** Analista de infraestrutura
+
+**Qualificação:** Formado em Sistemas de informação na Universidade Makenzie em 2022
+
+**História:** Trabalha para empresa de produtos sustentáveis. Responsável por planejar, coordenar, fiscalizar, prestar assistência técnica e execução de projetos e obras de grande porte na área de infraestrutura.
+
+**Motivações:** Trabalhar com tecnologia e encontrar soluções
+
+**Frustrações:** Quando a empresa realiza a balanço de patrimônio sempre surge uma sobrecarga no setor porque faz com que tenha parar o seu trabalho para organizar planilhas.
 
 
 ## Histórias de Usuários
@@ -24,11 +118,16 @@ As seguintes histórias dos usuários foram registradas pelo entendimento do dia
 
 | Pessoa | gostaria de | para |
 | --- | --- | --- |
-| Rafaella | Poder cadastrar os bens de maneira rápida e fácil | Conseguir entregar a tarefa dentro do prazo |
-| Gustavo | Poder cadastrar os bens e quem está utilizando ele no momento | Conseguir manter uma organizão da empresa |
-| Paulo | Poder cadastrar os bens utilizando diretamente o código de barra/QRCode de numeração | Facilitar o cadastro |
-| Beatriz | Poder inserir fotos do bem real | Evitar confusões quanto ao modelo e marca dos bens |
-
+| Rafaella | Quero poder ter acesso rápido e fácil aos dados dos ativos identificados no inventátio | Para conseguir calcular os tributos com agilidade e precisão|
+| Beatriz | Quero catalogar os ativos com fotos | Para conseguir realizar melhor controle do invetário |
+| Beatriz | Quero ter pode editar os dados dos bens | Para conseguir realizar uma correção ou atualização |
+| Gustavo | Quero poder verificar informações sobre o inventário | Para conseguir saber os gastos e otimizar o tempo do planejamento financeiro |
+| Sara | Quero saber informações sobre o balanço patrimonial da empresa | Para descobrir a saúde financeira e conseguir realizar uma análise riscos |
+| Daniel | Quero informações dos ativos sejam armazenadas sem uso de planilha | Para evitar que o setor de TI disperdice tempo parando o trabalho para fazer planilhas |
+| Sara | Preciso que somente pessoas autorizadas consigam fazer o cadastro | Para conseguir controlar a entrada e baixa dos bens |
+| Gustavo | Quero poder buscar por bens de acordo com setor | Para ter controle de onde os bens estão alocados na empresa |
+| Beatriz | Quero cadastrar os bens diretamente pela plaqueta de patrimônio | Para conseguir realizar o arquivamento mais rápido |
+| Rafaella | Quero poder consultar bens quando estiver offline | Para conseguir acessar o aplicativo em qualquer lugar|
 
 
 ## Modelagem do Processo de Negócio 
