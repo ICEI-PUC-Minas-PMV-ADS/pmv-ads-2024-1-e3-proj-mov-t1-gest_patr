@@ -1,43 +1,45 @@
 import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-import { BarCodeScanner } from 'expo-barcode-scanner';
+import { Camera } from 'expo-camera';
+import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-const QRCodeScanner = ({ onScanned }) => {
+export default function App() {
+  const [type, setType] = useState(Camera.Constants.Type.back);
   const [hasPermission, setHasPermission] = useState(null);
-  const [scanned, setScanned] = useState(false);
 
   useEffect(() => {
     (async () => {
-      const { status } = await BarCodeScanner.requestPermissionsAsync();
+      const { status } = await Camera.requestPermissionsAsync();
       setHasPermission(status === 'granted');
     })();
   }, []);
 
-  const handleBarCodeScanned = ({ type, data }) => {
-    setScanned(true);
-    const scannedData = {
-      id: data, 
-      date: new Date().toISOString(), 
-    };
-    onScanned && onScanned(scannedData);
-  };
-
   if (hasPermission === null) {
     return <Text>Solicitando permissão para acessar a câmera</Text>;
   }
-  if (hasPermission === false) {
+  if (!hasPermission) {
     return <Text>Sem acesso à câmera</Text>;
+  }
+
+  function toggleCameraType() {
+    setType(
+      type === Camera.Constants.Type.back
+        ? Camera.Constants.Type.front
+        : Camera.Constants.Type.back
+    );
   }
 
   return (
     <View style={styles.container}>
-      <BarCodeScanner
-        onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-        style={StyleSheet.absoluteFillObject}
-      />
+      <Camera style={styles.camera} type={type}>
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity style={styles.button} onPress={toggleCameraType}>
+            <Text style={styles.text}>Flip Camera</Text>
+          </TouchableOpacity>
+        </View>
+      </Camera>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -45,6 +47,22 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
   },
+  camera: {
+    flex: 1,
+  },
+  buttonContainer: {
+    flex: 1,
+    backgroundColor: 'transparent',
+    flexDirection: 'row',
+    margin: 20,
+  },
+  button: {
+    flex: 0.1,
+    alignSelf: 'flex-end',
+    alignItems: 'center',
+  },
+  text: {
+    fontSize: 18,
+    color: 'white',
+  },
 });
-
-export default QRCodeScanner;
