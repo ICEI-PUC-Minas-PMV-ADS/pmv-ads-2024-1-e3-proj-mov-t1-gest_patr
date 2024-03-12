@@ -19,23 +19,15 @@
       "role": "admin"
     }
   ],
-  "goods": [
-    {
-      "name": "móvel",
-      "price": 30,
-      "sector": "RECP",
-      "date_purchase": "2020-01-01",
-      "brand": "marca1",
-      "purchase_site": "site1",
-      "warranty": "no",
-      "image": "https://picsum.photos/700",
-      "id": "1aa1"
-    }
-  ],
+  "goods": [],
   "sectors": [
     {
       "id": "5d11",
       "name": "3"
+    },
+    {
+      "id": "ec0a",
+      "name": "Teste1"
     }
   ]
 }
