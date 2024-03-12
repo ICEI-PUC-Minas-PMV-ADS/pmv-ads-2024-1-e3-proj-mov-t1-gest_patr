@@ -21,15 +21,37 @@
   ],
   "goods": [
     {
-      "name": "móvel",
+      "id": "0821",
+      "name": "cadeira",
       "price": 30,
-      "sector": "RECP",
+      "sector": "ADM",
       "date_purchase": "2020-01-01",
       "brand": "marca1",
       "purchase_site": "site1",
       "warranty": "no",
-      "image": "https://picsum.photos/700",
-      "id": "1aa1"
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "2e5d",
+      "name": "mesa",
+      "price": 30,
+      "sector": "ADM",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "1809",
+      "name": "notebook",
+      "price": 30,
+      "sector": "ADM",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
     }
   ],
   "sectors": [
