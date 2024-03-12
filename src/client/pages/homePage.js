@@ -4,19 +4,34 @@ import { Button } from "react-native-paper";
 import logo from '../logo.png'
 import SearchBar from "../components/SearchBar";
 import QRCodeScanner from "../components/Qrcode";
+import GoodsCard from "../components/Cards";
 
 const HomePage = () => {
   const [searchVisible, setSearchVisible] = useState(false);
   const [qrCodeScannerVisible, setQRCodeScannerVisible] = useState(false);
+  const [searchResultsVisible, setSearchResultsVisible] = useState(false);
+  const [searchResults, setSearchResults] = useState([]);
   const anchorRef = useRef(null);
 
 
-  const toggleSearch = () => {
-    setSearchVisible(!searchVisible);
+  const onSearch = (filteredGoods) => {
+    setSearchResults(filteredGoods);
+    setSearchResultsVisible(true);
+    console.log(filteredGoods);
   };
 
+  const toggleSearch = () => {
+    setSearchVisible(!searchVisible);
+    if (!searchVisible) {
+      setSearchResults([]);
+    }
+  };
   const toggleQRCodeScanner = () => {
     setQRCodeScannerVisible(!qrCodeScannerVisible);
+  };
+
+  const toggleSearchResults = () => {
+    setSearchResultsVisible(!searchResultsVisible);
   };
 
   return (
@@ -56,7 +71,22 @@ const HomePage = () => {
           onRequestClose={toggleSearch}>
           <View style={styles.modalContainer}>
             <View style={styles.modalContent}>
-              <SearchBar/>
+              <SearchBar onSearch={onSearch}/>
+              {/* Display search results using GoodsCard */}
+      {searchResults.map((item, index) => (
+        <GoodsCard
+          key={index}
+          id={item.id}
+          name={item.name}
+          price={item.price}
+          sector={item.sector}
+          date_purchase={item.date_purchase}
+          brand={item.brand}
+          purchase_site={item.purchase_site}
+          warranty={item.warranty}
+          fetchGoods={() => {}}
+        />
+      ))}
               <Button onPress={toggleSearch}>Fechar</Button>
             </View>
           </View>
@@ -71,13 +101,14 @@ const HomePage = () => {
           <View style={styles.modalContainer}>
             <View style={styles.modalContent}>
               <QRCodeScanner onScanned={(data) => {
-                console.log(data); // Handle scanned data
-                toggleQRCodeScanner(); // Close QRCodeScanner modal
+                console.log(data); 
+                toggleQRCodeScanner(); 
               }} />
               <Button onPress={toggleQRCodeScanner}>Fechar</Button>
             </View>
           </View>
         </Modal>
+      
       </SafeAreaView>
     </View>
   );
@@ -127,6 +158,12 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginHorizontal: 5,
     elevation: 5,
+  },
+  searchResultsContainer: {
+    flex: 1,
+    justifyContent: "space-around",
+    alignItems: "center",
+    backgroundColor: "white",
   },
   logo: {
     marginLeft: 90,

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Searchbar } from 'react-native-paper';
-import { getGoods } from './goodsService'; 
+import { getGoods } from '../services/goodsServices';
 
 const SearchBar = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -12,7 +12,7 @@ const SearchBar = ({ onSearch }) => {
         const filteredGoods = goodsData.filter(
           (item) =>
             item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            item.qrCode.toLowerCase().includes(searchQuery.toLowerCase())
+            item.id.toLowerCase().includes(searchQuery.toLowerCase())
         );
         onSearch(filteredGoods);
       }
