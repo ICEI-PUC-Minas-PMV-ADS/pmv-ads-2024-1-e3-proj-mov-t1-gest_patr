@@ -19,7 +19,41 @@
       "role": "admin"
     }
   ],
-  "goods": [],
+  "goods": [
+    {
+      "id": "f6ee",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "ADM",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "2fb6",
+      "name": "móvel",
+      "price": 30,
+      "sector": "ADM",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "6cdd",
+      "name": "mesa",
+      "price": 30,
+      "sector": "ADM",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    }
+  ],
   "sectors": [
     {
       "id": "5d11",
