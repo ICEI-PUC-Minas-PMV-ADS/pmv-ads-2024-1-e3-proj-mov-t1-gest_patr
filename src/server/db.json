@@ -52,6 +52,28 @@
       "purchase_site": "site1",
       "warranty": "no",
       "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "b66a",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "ADM",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f205",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "ADM",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
     }
   ],
   "sectors": [

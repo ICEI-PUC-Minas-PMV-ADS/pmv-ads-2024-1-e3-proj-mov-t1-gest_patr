@@ -19,35 +19,32 @@ const GoodsPage = () => {
     } catch (error) {
       console.error("Error fetching data:", error);
     }
-  }
+  };
 
   useEffect(() => {
     fetchGoods();
   }, []);
-  
-  
 
   return (
     <View style={styles.container}>
-    <SafeAreaView style={styles.content}>
-      <ScrollView style={styles.scrollView}>
-        {goods.map((good) => (
-          <GoodsCard
-            key={good.id}
-            id={good.id}
-            name={good.name}
-            price={good.price}
-            sector={good.sector}
-            date_purchase={good.date_purchase}
-            brand={good.brand}
-            purchase_site={good.purchase_site}
-            warranty={good.warranty}
-            fetchGoods={fetchGoods}
-          />
-        ))}
-      </ScrollView>
-
-    </SafeAreaView>
+      <SafeAreaView style={styles.content}>
+        <ScrollView style={styles.scrollView}>
+          {goods.map((good) => (
+            <GoodsCard
+              key={good.id}
+              id={good.id}
+              name={good.name}
+              price={good.price}
+              sector={good.sector}
+              date_purchase={good.date_purchase}
+              brand={good.brand}
+              purchase_site={good.purchase_site}
+              warranty={good.warranty}
+              fetchGoods={fetchGoods}
+            />
+          ))}
+        </ScrollView>
+      </SafeAreaView>
     </View>
   );
 };
@@ -55,13 +52,13 @@ const GoodsPage = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width:'100%',
+    width: "100%",
     backgroundColor: "white",
   },
   content: {
     flex: 1,
     marginHorizontal: 20,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   scrollView: {
     backgroundColor: "white",

@@ -1,7 +1,15 @@
 import React, { useState, useRef } from "react";
-import { StyleSheet, View, SafeAreaView, Text, Modal, Image } from "react-native";
+import {
+  StyleSheet,
+  View,
+  SafeAreaView,
+  Text,
+  Modal,
+  Image,
+  ScrollView,
+} from "react-native";
 import { Button } from "react-native-paper";
-import logo from '../logo.png'
+import logo from "../logo.png";
 import SearchBar from "../components/SearchBar";
 import QRCodeScanner from "../components/Qrcode";
 import GoodsCard from "../components/Cards";
@@ -12,7 +20,6 @@ const HomePage = () => {
   const [searchResultsVisible, setSearchResultsVisible] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
   const anchorRef = useRef(null);
-
 
   const onSearch = (filteredGoods) => {
     setSearchResults(filteredGoods);
@@ -39,57 +46,68 @@ const HomePage = () => {
       <SafeAreaView style={styles.content}>
         <View ref={anchorRef}>
           <View style={styles.container}>
-        <Image source={logo} style={styles.logo} className="App-logo" alt="logo" />
-</View>
+            <Image
+              source={logo}
+              style={styles.logo}
+              className="App-logo"
+              alt="logo"
+            />
+          </View>
           <View style={styles.content}>
             <Text style={styles.title}>Bem-vindo a Gestão de Patrimônio</Text>
           </View>
           <View style={styles.fixToText}>
-            <Button 
-              theme={{colors: {primary:"#6d85db"}}}
-              icon="plus" 
-              mode="contained-tonal" 
-              onPress={toggleQRCodeScanner}>
+            <Button
+              theme={{ colors: { primary: "#6d85db" } }}
+              icon="plus"
+              mode="contained-tonal"
+              onPress={toggleQRCodeScanner}
+            >
               Cadastrar
             </Button>
             <Button
-              theme={{colors: {primary:"#6d85db"}}}
+              theme={{ colors: { primary: "#6d85db" } }}
               icon="search-web"
               mode="contained-tonal"
               title="Right button"
-              onPress={toggleSearch}>
+              onPress={toggleSearch}
+            >
               Buscar
             </Button>
           </View>
         </View>
-        {/* Search modal */}
 
+        {/* Search modal */}
         <Modal
           visible={searchVisible}
           animationType="slide"
           transparent={true}
-          onRequestClose={toggleSearch}>
-          <View style={styles.modalContainer}>
-            <View style={styles.modalContent}>
-              <SearchBar onSearch={onSearch}/>
-              {/* Display search results using GoodsCard */}
-      {searchResults.map((item, index) => (
-        <GoodsCard
-          key={index}
-          id={item.id}
-          name={item.name}
-          price={item.price}
-          sector={item.sector}
-          date_purchase={item.date_purchase}
-          brand={item.brand}
-          purchase_site={item.purchase_site}
-          warranty={item.warranty}
-          fetchGoods={() => {}}
-        />
-      ))}
-              <Button onPress={toggleSearch}>Fechar</Button>
+          onRequestClose={toggleSearch}
+        >
+          <ScrollView style={styles.scrollView}>
+            <View style={styles.modalContainer}>
+              <View style={styles.modalContent}>
+                <SearchBar onSearch={onSearch} />
+
+                {/* Display search results */}
+                {searchResults.map((item, index) => (
+                  <GoodsCard
+                    key={index}
+                    id={item.id}
+                    name={item.name}
+                    price={item.price}
+                    sector={item.sector}
+                    date_purchase={item.date_purchase}
+                    brand={item.brand}
+                    purchase_site={item.purchase_site}
+                    warranty={item.warranty}
+                    fetchGoods={() => {}}
+                  />
+                ))}
+                <Button onPress={toggleSearch}>Fechar</Button>
+              </View>
             </View>
-          </View>
+          </ScrollView>
         </Modal>
 
         {/* QRCodeScanner modal */}
@@ -97,18 +115,20 @@ const HomePage = () => {
           visible={qrCodeScannerVisible}
           animationType="slide"
           transparent={true}
-          onRequestClose={toggleQRCodeScanner}>
+          onRequestClose={toggleQRCodeScanner}
+        >
           <View style={styles.modalContainer}>
             <View style={styles.modalContent}>
-              <QRCodeScanner onScanned={(data) => {
-                console.log(data); 
-                toggleQRCodeScanner(); 
-              }} />
+              <QRCodeScanner
+                onScanned={(data) => {
+                  console.log(data);
+                  toggleQRCodeScanner();
+                }}
+              />
               <Button onPress={toggleQRCodeScanner}>Fechar</Button>
             </View>
           </View>
         </Modal>
-      
       </SafeAreaView>
     </View>
   );
@@ -170,6 +190,11 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     width: 150,
     height: 150,
+  },
+  scrollView: {
+    backgroundColor: "white",
+    marginHorizontal: 0,
+    minHeight: "100%",
   },
 });
 
