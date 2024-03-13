@@ -21,7 +21,7 @@
   ],
   "goods": [
     {
-      "id": "f6ee",
+      "id": "0821",
       "name": "cadeira",
       "price": 30,
       "sector": "ADM",
@@ -32,8 +32,8 @@
       "image": "https://picsum.photos/700"
     },
     {
-      "id": "2fb6",
-      "name": "móvel",
+      "id": "2e5d",
+      "name": "mesa",
       "price": 30,
       "sector": "ADM",
       "date_purchase": "2020-01-01",
@@ -43,8 +43,8 @@
       "image": "https://picsum.photos/700"
     },
     {
-      "id": "6cdd",
-      "name": "mesa",
+      "id": "1809",
+      "name": "notebook",
       "price": 30,
       "sector": "ADM",
       "date_purchase": "2020-01-01",
@@ -67,12 +67,7 @@
   ],
   "sectors": [
     {
-      "id": "5d11",
-      "name": "3"
-    },
-    {
-      "id": "ec0a",
-      "name": "Teste1"
+      "id": "5d11"
     }
   ]
 }

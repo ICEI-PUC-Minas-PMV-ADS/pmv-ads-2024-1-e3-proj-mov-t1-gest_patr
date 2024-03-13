@@ -105,7 +105,7 @@ function App() {
   return (
     <NavigationContainer>
       <Drawer.Navigator drawerContent={(props) => <DrawerContent {...props}/>} >
-        <Drawer.Screen name="Gestão de Patrimônio" component={HomeScreen} />
+        <Drawer.Screen name="Gestão Patrimonial" component={HomeScreen} />
         <Drawer.Screen name="Perfil" component={DetailsScreen} />
         <Drawer.Screen name="Bens" component={GoodsScreen} />
         <Drawer.Screen name="Setor" component={SectorScreen} />

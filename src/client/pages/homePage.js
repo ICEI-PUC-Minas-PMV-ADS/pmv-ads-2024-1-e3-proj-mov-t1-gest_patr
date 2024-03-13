@@ -54,7 +54,7 @@ const HomePage = () => {
             />
           </View>
           <View style={styles.content}>
-            <Text style={styles.title}>Bem-vindo a Gestão de Patrimônio</Text>
+            <Text style={styles.title}>Bem vindo ao app de gestão de patrimônio</Text>
           </View>
           <View style={styles.fixToText}>
             <Button
@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#98a9e8",
     padding: 30,
     borderRadius: 5,
-    marginHorizontal: 5,
+    margin: 5,
     elevation: 5,
   },
   searchResultsContainer: {
