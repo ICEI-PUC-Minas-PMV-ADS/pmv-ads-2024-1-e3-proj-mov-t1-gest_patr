@@ -59,6 +59,12 @@ export function DrawerContent(props) {
               }}
             />
             <DrawerItem
+              label="DashBoard"
+              onPress={() => {
+                props.navigation.navigate("Dashboard");
+              }}
+            />
+            <DrawerItem
               label="Confirgurações"
               onPress={() => {
                 props.navigation.navigate("Configurações");
