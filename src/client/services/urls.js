@@ -1,1 +1,3 @@
-export const BASE_URL = 'https://heavy-areas-chew.loca.lt/';
+
+export const BASE_URL = 'https://ten-places-happen.loca.lt/';
+
