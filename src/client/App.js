@@ -9,6 +9,7 @@ import HomePage from "./pages/homePage";
 import DetailsPage from "./pages/detailsPage";
 import GoodsPage from "./pages/goodsPage";
 import SectorPage from "./pages/sectorPage";
+import DashboardPage from "./pages/dashPage";
 // import SettingsPage from "./pages/settingsPage";
 // import UserProvider from './src/contexts/UserContext';
 import { NavigationContainer } from '@react-navigation/native';
@@ -77,6 +78,18 @@ function App() {
     )
   };
 
+  function DashboardScreen(){
+    return(
+      <SafeAreaProvider>
+        <PaperProvider>
+          <View style={styles.body}>
+            <DashboardPage/>
+          </View>
+        </PaperProvider>
+      </SafeAreaProvider>
+    )
+  };
+
   function SettingsScreen(){
     return(
       <SafeAreaProvider>
@@ -96,6 +109,7 @@ function App() {
         <Drawer.Screen name="Perfil" component={DetailsScreen} />
         <Drawer.Screen name="Bens" component={GoodsScreen} />
         <Drawer.Screen name="Setor" component={SectorScreen} />
+        <Drawer.Screen name="Dashboard" component={DashboardScreen} />
         <Drawer.Screen name="Configurações" component={SettingsScreen} />
       </Drawer.Navigator>
     </NavigationContainer>

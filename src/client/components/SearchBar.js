@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Searchbar } from 'react-native-paper';
-import { getGoods } from '../services/goodsServices';
+
+
+import { getGoods } from '../services/goodsServices'; 
+
 
 const SearchBar = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState('');
