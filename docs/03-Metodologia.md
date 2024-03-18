@@ -56,7 +56,7 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ![Diagrama de fluxo de trabalho](img/diagramafluxo.png) 
 
-![Backlog do Projeto](img/kanban.png)
+![Backlog do Projeto](img/Kanban.png)
 
 ### Ferramentas
 
