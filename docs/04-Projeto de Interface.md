@@ -20,21 +20,22 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 
 ## Wireframes
 
-| Login  | Cadastro | Login  | Cadastro |
+| Login  | Cadastro | Tela de Aviso  | Leitor QRCode |
 | ------------- | ------------- |------------- | ------------- |
-| ![Exemplo de tela de login](img/03-wireframe3.png)  | ![Exemplo de tela cadastro](img/03-wireframe2.png)  | ![Exemplodetela aviso](!img/03-wireframe1.png)  | ![ExemplodetelaleitordeQRCode](!img/03-wireframe5.png)  |
+| ![Exemplo de tela de login](img/03-wireframe3.png)  | ![Exemplo de tela cadastro](img/03-wireframe2.png)  | ![Exemplodetela aviso](img/03-wireframe1.png)  | ![ExemplodetelaleitordeQRCode](img/03-wireframe5.png)  |
 
 
+| Cadastro bens  | Busca | Resultado Busca  | 
+| ------------- | ------------- |------------- |
 
-
-
+|![Exemplo de tela cadastro de bens](img/03-wireframe4.png)  |![Exemplo de tela de busca](img/03-wireframe7.png)  | ![Exemplo de tela resultado de busca](img/03-wireframe6.png)  | 
 
 
 
  
-![Exemplo de tela cadastro de bens](!img/03-wireframe4.png)
 
-![Exemplo de tela de busca](!img/03-wireframe7.png)
 
-![Exemplo de tela resultado de busca](!img/03-wireframe6.png)
+
+
+
 
