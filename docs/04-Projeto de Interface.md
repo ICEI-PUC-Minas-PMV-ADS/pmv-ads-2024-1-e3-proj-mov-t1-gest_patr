@@ -27,7 +27,6 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 
 | Cadastro bens  | Busca | Resultado Busca  | 
 | ------------- | ------------- |------------- |
-
 |![Exemplo de tela cadastro de bens](img/03-wireframe4.png)  |![Exemplo de tela de busca](img/03-wireframe7.png)  | ![Exemplo de tela resultado de busca](img/03-wireframe6.png)  | 
 
 
