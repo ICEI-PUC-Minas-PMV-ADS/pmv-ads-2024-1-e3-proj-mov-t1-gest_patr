@@ -18,10 +18,10 @@ Os requisitos para realização dos testes de software são:
     Garantir que o sistema vai criar um usuário para acesso ao sistema quando não houver nenhum cadastrado
 
 - Procedimentos:
-    - Abrir o sistema 
-    - Clicar no botão entrar
-    - Preencher os campos necessários para o cadastro do usuário.
-    - Confirmar o cadastro
+    . Abrir o sistema 
+    . Clicar no botão entrar
+    . Preencher os campos necessários para o cadastro do usuário.
+    . Confirmar o cadastro
 
 - Resultado esperado:
     O sistema deverá mostrar uma mensagem dizendo que o usuário foi criado e a senha está em branco.
@@ -34,11 +34,10 @@ Os requisitos para realização dos testes de software são:
     Garantir que o sistema permita aos usuários realizar buscas de bens utilizando filtros específicos, como categoria, valor, setor, etc.
 
 - Procedimentos:
-
- - Abrir a página de busca de bens no sistema.
- - Selecionar os filtros desejados, como categoria, valor, setor, etc.
- - Inserir os critérios de busca nos campos correspondentes.
- - Clicar no botão de busca ou acionar o comando de busca.
+    . Abrir a página de busca de bens no sistema.
+    . Selecionar os filtros desejados, como categoria, valor, setor, etc.
+    . Inserir os critérios de busca nos campos correspondentes.
+    . Clicar no botão de busca ou acionar o comando de busca.
 
 - Resultado esperado:
     O sistema deve exibir uma lista de bens que correspondam aos critérios de busca especificados, permitindo ao usuário visualizar e selecionar os resultados conforme suas necessidades.
@@ -51,11 +50,10 @@ Os requisitos para realização dos testes de software são:
     Assegurar que o sistema possua a funcionalidade de criar usuários que tenham permissão apenas para consultar bens, sem a capacidade de realizar outras operações no sistema.
 
 - Procedimentos:
-
-- Acessar a função de criação de usuário no sistema.
-- Selecionar a opção de criar usuário para consulta de bens.
-- Preencher os campos obrigatórios do formulário de criação de usuário.
-- Confirmar a criação do usuário.
+    . Acessar a função de criação de usuário no sistema.
+    . Selecionar a opção de criar usuário para consulta de bens.
+    . Preencher os campos obrigatórios do formulário de criação de usuário.
+    . Confirmar a criação do usuário.
 
 - Resultado esperado:
     O sistema deve criar um novo usuário com permissões restritas, permitindo apenas a consulta de bens disponíveis no sistema. Esse usuário não deve ter acesso a funcionalidades de edição, exclusão ou criação de bens, garantindo assim a segurança e integridade dos dados.
@@ -69,12 +67,11 @@ Os requisitos para realização dos testes de software são:
     Garantir que o sistema possibilite aos usuários cadastrarem fotos dos bens, proporcionando uma experiência visual mais completa e informativa.
 
 - Procedimentos:
-
-- Acessar a página de cadastro ou edição de um bem no sistema.
-- Localizar a opção para adicionar fotos ao bem.
-- Selecionar as imagens desejadas nos arquivos do dispositivo ou através de um link.
-- Carregar as fotos selecionadas para o sistema.
-- Confirmar o cadastro ou edição do bem.
+    . Acessar a página de cadastro ou edição de um bem no sistema.
+    . Localizar a opção para adicionar fotos ao bem.
+    . Selecionar as imagens desejadas nos arquivos do dispositivo ou através de um link.
+    . Carregar as fotos selecionadas para o sistema.
+    . Confirmar o cadastro ou edição do bem.
 
 - Resultado esperado:
     Após o procedimento de cadastro ou edição, o sistema deve exibir as fotos associadas ao bem de forma clara e acessível aos usuários. As fotos devem ser exibidas corretamente, permitindo que os usuários visualizem os detalhes do bem com facilidade.
@@ -88,12 +85,11 @@ Os requisitos para realização dos testes de software são:
     Garantir que apenas usuários autenticados tenham acesso ao sistema, aumentando a segurança e controlando o acesso às funcionalidades.
 
 - Procedimentos:
-
-- Acessar a página inicial do sistema.
-- Tentar acessar qualquer funcionalidade ou recurso do sistema.
-- Verificar se o sistema requer autenticação.
-- Caso não esteja logado, realizar o login com as credenciais adequadas.
-- Após o login, tentar novamente acessar a funcionalidade desejada.
+    . Acessar a página inicial do sistema.
+    . Tentar acessar qualquer funcionalidade ou recurso do sistema.
+    . Verificar se o sistema requer autenticação.
+    . Caso não esteja logado, realizar o login com as credenciais adequadas.
+    . Após o login, tentar novamente acessar a funcionalidade desejada.
 
 - Resultado esperado:
     O sistema deve impedir o acesso às funcionalidades caso o usuário não esteja autenticado. Após o login bem-sucedido, o usuário deve ser redirecionado à página inicial ou à funcionalidade desejada, permitindo o acesso pleno ao sistema.
@@ -107,10 +103,9 @@ Os requisitos para realização dos testes de software são:
     Possibilitar o registro dos setores da empresa onde os bens poderão transitar, proporcionando uma organização adequada e controle eficiente sobre o fluxo de itens.
 
 - Procedimentos:
-
-- Acessar a função de cadastro de setores no sistema.
-- Preencher os campos obrigatórios, como nome do setor e outras informações relevantes, se aplicável.
-- Confirmar o cadastro do setor.
+    . Acessar a função de cadastro de setores no sistema.
+    . Preencher os campos obrigatórios, como nome do setor e outras informações relevantes, se aplicável.
+    . Confirmar o cadastro do setor.
 
 - Resultado esperado:
     Após o procedimento de cadastro, o sistema deve armazenar as informações do novo setor e torná-lo disponível para associação com os bens. Os setores cadastrados devem estar listados de forma clara e acessível no sistema, permitindo a gestão eficiente do fluxo de itens dentro da empresa.
@@ -124,11 +119,10 @@ Os requisitos para realização dos testes de software são:
     Permitir que os usuários registrem informações detalhadas sobre os bens, como marca, modelo e outras características relevantes, facilitando a identificação e gestão dos itens no sistema.
 
 - Procedimentos:
-
-- Acessar a função de cadastro ou edição de um bem no sistema.
-- Localizar os campos destinados aos detalhes do bem, como marca e modelo.
-- Preencher os campos com as informações correspondentes, conforme disponíveis e relevantes.
-- Confirmar o cadastro ou edição do bem.
+    . Acessar a função de cadastro ou edição de um bem no sistema.
+    . Localizar os campos destinados aos detalhes do bem, como marca e modelo.
+    . Preencher os campos com as informações correspondentes, conforme disponíveis e relevantes.
+    . Confirmar o cadastro ou edição do bem.
 
 - Resultado esperado:
     Após o procedimento de cadastro ou edição, o sistema deve armazenar os detalhes fornecidos sobre o bem de forma precisa e organizada. Os detalhes cadastrados devem ser exibidos corretamente sempre que o bem for visualizado ou editado, garantindo uma gestão eficiente das informações relacionadas aos itens cadastrados.
@@ -142,13 +136,12 @@ Os requisitos para realização dos testes de software são:
     Facilitar o processo de cadastramento de bens no sistema, permitindo que os usuários utilizem tanto QRCode quanto o nome do bem para realizar o cadastro de forma rápida e eficiente.
 
 - Procedimentos:
-
-- Escolher a opção de cadastramento de bens no sistema.
-- Selecionar a forma de cadastramento, escolhendo entre QRCode ou nome.
-- Se escolhido QRCode, escanear o código utilizando a câmera do dispositivo ou inserir manualmente o código, se necessário.
-- Se escolhido nome, digitar o nome do bem no campo correspondente.
-- Preencher os demais campos obrigatórios do formulário de cadastro.
-- Confirmar o cadastro do bem.
+    . Escolher a opção de cadastramento de bens no sistema.
+    . Selecionar a forma de cadastramento, escolhendo entre QRCode ou nome.
+    . Se escolhido QRCode, escanear o código utilizando a câmera do dispositivo ou inserir manualmente o código, se necessário.
+    . Se escolhido nome, digitar o nome do bem no campo correspondente.
+    . Preencher os demais campos obrigatórios do formulário de cadastro.
+    . Confirmar o cadastro do bem.
 
 - Resultado esperado:
     Após o procedimento de cadastramento, o sistema deve registrar o bem de forma precisa e associá-lo corretamente ao QRCode ou ao nome fornecido. O bem cadastrado deve estar disponível para consulta e gestão dentro do sistema, permitindo que os usuários o encontrem facilmente utilizando o QRCode ou o nome como referência.
@@ -162,11 +155,10 @@ Os requisitos para realização dos testes de software são:
     Permitir que os usuários acessem e utilizem o sistema mesmo quando não estiverem conectados à internet, garantindo a continuidade das operações em ambientes sem conectividade.
 
 - Procedimentos:
-
-- Verificar se o dispositivo está desconectado da internet.
-- Acessar o sistema ou aplicativo normalmente.
-- Realizar as operações desejadas, como consulta de bens, cadastro de informações, etc.
-- Aguardar a reconexão com a internet, se necessário, para sincronizar os dados.
+    . Verificar se o dispositivo está desconectado da internet.
+    . Acessar o sistema ou aplicativo normalmente.
+    . Realizar as operações desejadas, como consulta de bens, cadastro de informações, etc.
+    . Aguardar a reconexão com a internet, se necessário, para sincronizar os dados.
 
 - Resultado esperado:
     O sistema deve permitir que os usuários realizem operações normalmente, mesmo sem conexão com a internet. As funcionalidades principais do sistema devem estar disponíveis offline, permitindo que os usuários consultem informações, cadastrem dados e realizem outras operações básicas. Quando a conexão com a internet for restabelecida, o sistema deve sincronizar os dados automaticamente para garantir a integridade das informações.
@@ -180,11 +172,10 @@ Os requisitos para realização dos testes de software são:
     Permitir que os usuários obtenham informações sobre o total de bens cadastrados no sistema de forma organizada e fácil de entender.
 
 - Procedimentos:
-
-- Acessar a função de geração de relatórios no sistema.
-- Selecionar a opção para gerar um relatório com o total de bens.
-- Escolher os parâmetros desejados, se aplicável (por exemplo, filtro por categoria, valor, setor, etc.).
-- Confirmar a geração do relatório.
+    . Acessar a função de geração de relatórios no sistema.
+    . Selecionar a opção para gerar um relatório com o total de bens.
+    . Escolher os parâmetros desejados, se aplicável (por exemplo, filtro por categoria, valor, setor, etc.).
+    . Confirmar a geração do relatório.
 
 - Resultado esperado:
     O sistema deve criar um relatório que apresente o total de bens cadastrados de acordo com os critérios especificados. O relatório deve ser claro e apresentar as informações de forma organizada, possibilitando que os usuários visualizem facilmente o número total de bens registrados no sistema e, se aplicável, agrupados por diferentes categorias, valor ou setor.
@@ -200,20 +191,21 @@ Os requisitos para realização dos testes de software são:
 - Procedimentos:
     Edição de Bens:
 
-- Acessar a lista de bens cadastrados no sistema.
-- Localizar o bem que deseja editar.
-- Selecionar a opção de edição do bem.
-- Modificar as informações desejadas nos campos correspondentes.
-- Confirmar a atualização do bem.
+    . Acessar a lista de bens cadastrados no sistema.
+    . Localizar o bem que deseja editar.
+    . Selecionar a opção de edição do bem.
+    . Modificar as informações desejadas nos campos correspondentes.
+    . Confirmar a atualização do bem.
 
     Exclusão de Bens:
 
-- Acessar a lista de bens cadastrados no sistema.
-- Localizar o bem que deseja excluir.
-- Selecionar a opção de exclusão do bem.
-- Confirmar a exclusão do bem.
+    . Acessar a lista de bens cadastrados no sistema.
+    . Localizar o bem que deseja excluir.
+    . Selecionar a opção de exclusão do bem.
+    . Confirmar a exclusão do bem.
 
 - Resultado esperado:
+
     Edição de Bens:
     Após a conclusão do procedimento de edição, as informações do bem devem ser atualizadas conforme as modificações realizadas, refletindo as alterações no sistema de forma precisa e imediata.
 
