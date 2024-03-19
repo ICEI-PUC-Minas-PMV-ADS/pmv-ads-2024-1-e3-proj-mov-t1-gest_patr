@@ -20,7 +20,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 ## Wireframes
 
-![Exemplo de tela de login](img/03-wireframe3.png) {: width="100" height="100"}
+![Exemplo de tela de login](img/03-wireframe3.png) 
 
 ![Exemplo de tela cadastro](img/03-wireframe2.png)
 
