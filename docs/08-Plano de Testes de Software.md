@@ -206,10 +206,10 @@ Os requisitos para realização dos testes de software são:
 
 - Resultado esperado:
 
-    Edição de Bens:
+    - Edição de Bens:
         - Após a conclusão do procedimento de edição, as informações do bem devem ser atualizadas conforme as modificações realizadas, refletindo as alterações no sistema de forma precisa e imediata.
 
-    Exclusão de Bens:
+    - Exclusão de Bens:
          - Após a conclusão do procedimento de exclusão, o bem deve ser removido do sistema permanentemente, não sendo mais exibido na lista de bens cadastrados. Qualquer associação ou referência ao bem excluído também deve ser removida do sistema, garantindo a integridade dos dados.
 
 
