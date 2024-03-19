@@ -37,7 +37,7 @@ export function DrawerContent(props) {
             <DrawerItem
               label="Home"
               onPress={() => {
-                props.navigation.navigate("Gestão de Patrimônio");
+                props.navigation.navigate("Gestão Patrimonial");
               }}
             />
             <DrawerItem
