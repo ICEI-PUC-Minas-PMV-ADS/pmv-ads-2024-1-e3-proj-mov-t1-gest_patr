@@ -18,15 +18,15 @@ foi utilizado para hospedagem do repositório.
 
 O projeto segue a seguinte convenção para o nome de branches:
 
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
+- `master`: versão estável já testada do software
+- `realease`: versão já testada do software, porém instável
 - `testing`: versão em testes do software
 - `dev`: versão de desenvolvimento do software
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
 
-- `documentation`: melhorias ou acréscimos à documentação
+- `doc`: melhorias ou acréscimos à documentação
 - `bug`: uma funcionalidade encontra-se com problemas
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
@@ -54,7 +54,9 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Processo
 
-![Diagrama de fluxo](img/diagramafluxo.png) 
+![Diagrama de fluxo de trabalho](img/diagramafluxo.png) 
+
+![Backlog do Projeto](img/Kanban.png)
 
 ### Ferramentas
 
@@ -64,13 +66,13 @@ As ferramentas empregadas no projeto são:
 | --- | --- | 
 | Editor de código | VSCode, Geany | 
 | Ferramentas de comunicação | MS Teams, Whatsapp | 
-| Ferramentas de desenho de tela | DIA, Canvas, Libreoffice, GIMP, MARVEL APP |
+| Ferramentas de desenho de tela | DIA, Canvas, Excel, DrawExpress, MARVEL APP |
 
 
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
+O editor de código foi escolhido porque ele possui uma integração com o sistema de versão, e era um editor já conhecido de todos os membros da equipe. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos a ferramenta DrawExpress, por ter uma versão gratuita e também ser de fácil aprendizagem. 
 
 Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
  
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
+> **Ferramentas que auxiliarão no gerenciamento**: 
+> - [MS Teams](https://www.microsoft.com/pt-br/microsoft-teams/free)
 > - [Github](https://github.com/)

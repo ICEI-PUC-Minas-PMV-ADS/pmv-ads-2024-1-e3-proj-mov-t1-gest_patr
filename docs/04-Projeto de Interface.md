@@ -17,20 +17,20 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
 
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+![Exemplo de tela de login](img/03-wireframe3.png) {: width="100" height="100"}
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+![Exemplo de tela cadastro](img/03-wireframe2.png)
+
+![Exemplo de tela aviso](!img/03-wireframe1.png)
+
+![Exemplo de tela leitor de QRCode](!img/03-wireframe5.png)
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+![Exemplo de tela cadastro de bens](!img/03-wireframe4.png)
+
+![Exemplo de tela de busca](!img/03-wireframe7.png)
+
+![Exemplo de tela resultado de busca](!img/03-wireframe6.png)
+
