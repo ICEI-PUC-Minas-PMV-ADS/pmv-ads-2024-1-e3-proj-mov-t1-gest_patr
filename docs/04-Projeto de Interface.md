@@ -22,7 +22,7 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamen
 
 | Login  | Cadastro | Login  | Cadastro |
 | ------------- | ------------- |------------- | ------------- |
-| ![Exemplo de tela de login](img/03-wireframe3.png)  | ![Exemplo de tela cadastro](img/03-wireframe2.png)  | ![Exemplo de tela aviso](!img/03-wireframe1.png)  | ![Exemplo de tela leitor de QRCode](!img/03-wireframe5.png)  |
+| ![Exemplo de tela de login](img/03-wireframe3.png)  | ![Exemplo de tela cadastro](img/03-wireframe2.png)  | ![Exemplodetela aviso](!img/03-wireframe1.png)  | ![ExemplodetelaleitordeQRCode](!img/03-wireframe5.png)  |
 
 
 
