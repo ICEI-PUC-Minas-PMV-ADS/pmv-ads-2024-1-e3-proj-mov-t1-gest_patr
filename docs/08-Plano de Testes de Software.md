@@ -15,13 +15,13 @@ Os requisitos para realização dos testes de software são:
     RF-001
 
 - Objetivos:
-    Garantir que o sistema vai criar um usuário para acesso ao sistema quando não houver nenhum cadastrado
+    - Garantir que o sistema vai criar um usuário para acesso ao sistema quando não houver nenhum cadastrado
 
 - Procedimentos:
-    . Abrir o sistema 
-    . Clicar no botão entrar
-    . Preencher os campos necessários para o cadastro do usuário.
-    . Confirmar o cadastro
+    - Abrir o sistema 
+    - Clicar no botão entrar
+    - Preencher os campos necessários para o cadastro do usuário.
+    - Confirmar o cadastro
 
 - Resultado esperado:
     O sistema deverá mostrar uma mensagem dizendo que o usuário foi criado e a senha está em branco.
