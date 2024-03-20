@@ -248,6 +248,24 @@ Os requisitos para realização dos testes de software são:
 - Resultado esperado:
     - O sistema deve ser baixado, instalado e executado corretamente nos dispositivos móveis com sistemas operacionais iOS e Android. Os usuários devem ser capazes de acessar todas as funcionalidades e realizar as operações disponíveis no sistema, independentemente do sistema operacional de seus dispositivos móveis.
 
+### CT-14 - O sistema deve carregar suas páginas em menos de um segundo.
+
+- Requisito associado:
+    - RNF-007
+
+- Objetivos:
+    - Garantir que o sistema apresente um desempenho rápido e responsivo, carregando suas páginas em menos de um segundo para proporcionar uma experiência de usuário ágil e eficiente.
+
+- Procedimentos:
+
+    - Acessar o sistema por meio de um navegador da web ou do aplicativo móvel.
+    - Navegar pelas diferentes páginas e funcionalidades do sistema.
+    - Observar o tempo de carregamento de cada página.
+    - Verificar se as páginas são carregadas em menos de um segundo em todas as situações e condições de uso.
+
+- Resultado esperado:
+    - O sistema deve carregar suas páginas em menos de um segundo, atendendo ao requisito de desempenho estabelecido pelo RNF-007. Isso significa que os usuários devem experimentar tempos de resposta rápidos ao interagir com o sistema, garantindo uma experiência de usuário satisfatória e eficiente.
+
 
 
 
