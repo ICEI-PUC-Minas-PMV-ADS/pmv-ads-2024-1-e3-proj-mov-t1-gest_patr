@@ -212,6 +212,46 @@ Os requisitos para realização dos testes de software são:
     - Exclusão de Bens:
          - Após a conclusão do procedimento de exclusão, o bem deve ser removido do sistema permanentemente, não sendo mais exibido na lista de bens cadastrados. Qualquer associação ou referência ao bem excluído também deve ser removida do sistema, garantindo a integridade dos dados.
 
+### CT-12 - O sistema deve permitir o acesso simultâneo por vários usuários.
+
+- Requisito associado:
+    - RNF-001
+
+ - Objetivos:
+    - Garantir que o sistema possa ser acessado e utilizado por múltiplos usuários ao mesmo tempo, sem comprometer o desempenho ou a integridade dos dados.
+
+ - Procedimentos:
+
+ - Vários usuários devem abrir o sistema simultaneamente em diferentes dispositivos ou sessões.
+ - Cada usuário pode realizar as operações desejadas no sistema, como consulta de bens, edição de informações, geração de relatórios, entre outras.
+ - Os usuários podem interagir com o sistema independentemente uns dos outros, sem restrições de acesso ou interferências.
+
+- Resultado esperado:
+    - O sistema deve suportar o acesso concorrente por múltiplos usuários, permitindo que eles realizem suas atividades de forma simultânea e eficiente. Não deve haver conflitos de dados ou interrupções no serviço devido ao acesso simultâneo, garantindo uma experiência de usuário consistente e satisfatória para todos os envolvidos.
+
+### CT-13 - O sistema deve estar disponível para iOS e Android.
+
+- Requisito associado:
+    - RNF-003
+
+- Objetivos:
+    - Garantir que o sistema seja acessível para usuários de dispositivos móveis que utilizem os sistemas operacionais iOS e Android, ampliando o alcance e a usabilidade da aplicação.
+
+ - Procedimentos:
+
+    - Acessar a loja de aplicativos correspondente ao dispositivo móvel (App Store para iOS ou Google Play Store para Android).
+    - Pesquisar pelo aplicativo utilizando o nome ou termos relacionados.
+    - Baixar e instalar o aplicativo em seu dispositivo.
+    - Abrir o aplicativo após a conclusão da instalação.
+    - Realizar o login ou proceder conforme necessário para acessar o sistema.
+
+- Resultado esperado:
+    - O sistema deve ser baixado, instalado e executado corretamente nos dispositivos móveis com sistemas operacionais iOS e Android. Os usuários devem ser capazes de acessar todas as funcionalidades e realizar as operações disponíveis no sistema, independentemente do sistema operacional de seus dispositivos móveis.
+
+
+
+
+
 
 
 
