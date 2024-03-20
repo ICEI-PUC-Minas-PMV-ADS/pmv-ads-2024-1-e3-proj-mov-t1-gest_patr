@@ -1,1 +1,0 @@
-export const BASE_URL = 'https://shy-planes-repair.loca.lt';
