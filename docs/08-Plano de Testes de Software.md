@@ -222,9 +222,9 @@ Os requisitos para realização dos testes de software são:
 
  - Procedimentos:
 
- - Vários usuários devem abrir o sistema simultaneamente em diferentes dispositivos ou sessões.
- - Cada usuário pode realizar as operações desejadas no sistema, como consulta de bens, edição de informações, geração de relatórios, entre outras.
- - Os usuários podem interagir com o sistema independentemente uns dos outros, sem restrições de acesso ou interferências.
+    - Vários usuários devem abrir o sistema simultaneamente em diferentes dispositivos ou sessões.
+    - Cada usuário pode realizar as operações desejadas no sistema, como consulta de bens, edição de informações, geração de relatórios, entre outras.
+    - Os usuários podem interagir com o sistema independentemente uns dos outros, sem restrições de acesso ou interferências.
 
 - Resultado esperado:
     - O sistema deve suportar o acesso concorrente por múltiplos usuários, permitindo que eles realizem suas atividades de forma simultânea e eficiente. Não deve haver conflitos de dados ou interrupções no serviço devido ao acesso simultâneo, garantindo uma experiência de usuário consistente e satisfatória para todos os envolvidos.
