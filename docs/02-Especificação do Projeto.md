@@ -162,6 +162,18 @@ O aplicativo foi desenvolvido para atender a essa demanda, visando agilizar o pr
 
 ![Processo 2](img/02-bpmn-proc2.png)
 
+### Processo 3 – TELA LOGIN
+
+![Processo 3](img/02-processo_login.png)
+
+### Processo 4 – TELA CADASTRO
+
+![Processo 3](img/02-processo_cadastroBem.png)
+
+### Processo 5 – TELA BUSCA
+
+![Processo 3](img/02-processo_buscaBem.png)
+
 ## Indicadores de Desempenho
 
 Os indicadores estabelecidos para a avaliação do desempenho do aplicativo do PatriGest, após sua disponibilização na Play Store e na Apple Store, são detalhados a seguir:
