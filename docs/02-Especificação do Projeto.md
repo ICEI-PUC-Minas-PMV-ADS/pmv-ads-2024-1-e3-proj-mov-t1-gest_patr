@@ -172,7 +172,7 @@ O aplicativo foi desenvolvido para atender a essa demanda, visando agilizar o pr
 
 ### Processo 5 – TELA BUSCA
 
-![Processo 3](img/02-processo_buscaBem.png)
+![Processo 3](img/02-processo_buscarBem.png)
 
 ## Indicadores de Desempenho
 
