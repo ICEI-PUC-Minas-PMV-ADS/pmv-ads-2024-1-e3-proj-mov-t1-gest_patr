@@ -14,6 +14,9 @@
     "ios": {
       "bundleIdentifier": "com.saracristina.apppatrimonio"
     },
+    "android": {
+      "package": "com.saracristina.apppatrimonio"
+    },
     "plugins": [
       [
         "expo-camera",

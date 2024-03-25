@@ -56,11 +56,16 @@
   ],
   "sectors": [
     {
-      "id": "5d11"
+      "id": "eb9c",
+      "name": "Administração"
     },
     {
-      "id": "b841",
-      "name": "teste"
+      "id": "b7e4",
+      "name": "Comercial"
+    },
+    {
+      "id": "9690",
+      "name": "Suporte"
     }
   ]
 }
