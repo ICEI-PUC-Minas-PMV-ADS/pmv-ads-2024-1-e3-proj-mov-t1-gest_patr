@@ -33,21 +33,26 @@ const BarChartComponent = () => {
     setSummedData(summed);
   };
 
+  const renderData = () => {
+    const sectors = Object.keys(summedData);
+    return sectors.map(sector => summedData[sector]);
+  };
+
+  const renderLabels = () => {
+    return Object.keys(summedData);
+  };
+
   return (
     <View>
-      <Text >Bens por setor</Text>
+      <Text>Bens por setor</Text>
       <BarChart
         data={{
-          labels: Object.keys(summedData), 
-          datasets: [
-            {
-              data: Object.values(summedData), 
-            },
-          ],
+          labels: renderLabels(),
+          datasets: [{ data: renderData() }],
         }}
         width={400}
         height={220}
-        yAxisSuffix=" itens"
+        yAxisSuffix=" items"
         chartConfig={{
           backgroundColor: '#ffffff',
           backgroundGradientFrom: '#ffffff',
@@ -63,10 +68,10 @@ const BarChartComponent = () => {
             strokeWidth: '2',
             stroke: '#ffa726',
           },
-          barPercentage: 0.8, 
-          categoryPercentage: 0.8, 
+          barPercentage: 0.5,
+          categoryPercentage: 0.8,
         }}
-        vertical 
+        vertical
         style={{
           marginVertical: 8,
           borderRadius: 16,

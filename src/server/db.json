@@ -85,6 +85,50 @@
       "purchase_site": "site1",
       "warranty": "no",
       "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f21",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Comercial",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f2",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "ADM",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f27",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Suporte",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f7",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Suporte",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
     }
   ],
   "sectors": [
