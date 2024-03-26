@@ -35,19 +35,19 @@ const BarChartComponent = () => {
 
   return (
     <View>
-      <Text>Goods by Sector</Text>
+      <Text >Bens por setor</Text>
       <BarChart
         data={{
-          labels: Object.keys(summedData),
+          labels: Object.keys(summedData), 
           datasets: [
             {
-              data: Object.values(summedData),
+              data: Object.values(summedData), 
             },
           ],
         }}
         width={400}
         height={220}
-        yAxisSuffix=" items"
+        yAxisSuffix=" itens"
         chartConfig={{
           backgroundColor: '#ffffff',
           backgroundGradientFrom: '#ffffff',
@@ -63,8 +63,10 @@ const BarChartComponent = () => {
             strokeWidth: '2',
             stroke: '#ffa726',
           },
+          barPercentage: 0.8, 
+          categoryPercentage: 0.8, 
         }}
-        bezier
+        vertical 
         style={{
           marginVertical: 8,
           borderRadius: 16,

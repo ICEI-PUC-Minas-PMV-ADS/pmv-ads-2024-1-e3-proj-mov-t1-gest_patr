@@ -52,6 +52,39 @@
       "purchase_site": "site1",
       "warranty": "no",
       "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f204",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Comercial",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f207",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Comercial",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f202",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Suporte",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
     }
   ],
   "sectors": [
