@@ -20,12 +20,12 @@
 
 - Responsável - Thiago Muniz Severino dos Santos
 ### RF-011 (O sistema deverá permitir a edição e exclusão dos bens.)
-![Código Fonte ](img/07-code-card.png)
+![Código Fonte Component](img/07-code-card.png)
 
 - Responsável - Tiago Henrique Oliveira Souza
 ### RNF-010 (O sistema deve ser implementado com Node.js como backend.)
-![Código Fonte ](img/07-code-node-json.png)
+![Código Fonte Index](img/07-code-node-json.png)
 
 - Responsável - Sara Cristina Gilberto Pereira
 ### RF-001 (O sistema deverá cadastrar os usuários do sistema.)
-![Código Fonte ](img/07-code-login.png)
+![Código Fonte Page](img/07-code-login.png)
