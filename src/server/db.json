@@ -52,15 +52,97 @@
       "purchase_site": "site1",
       "warranty": "no",
       "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f204",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Comercial",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f207",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Comercial",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f202",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Suporte",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f21",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Comercial",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f2",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "ADM",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f27",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Suporte",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "f7",
+      "name": "cadeira",
+      "price": 30,
+      "sector": "Suporte",
+      "date_purchase": "2020-01-01",
+      "brand": "marca1",
+      "purchase_site": "site1",
+      "warranty": "no",
+      "image": "https://picsum.photos/700"
     }
   ],
   "sectors": [
     {
-      "id": "5d11"
+      "id": "eb9c",
+      "name": "Administração"
     },
     {
-      "id": "b841",
-      "name": "teste"
+      "id": "b7e4",
+      "name": "Comercial"
+    },
+    {
+      "id": "9690",
+      "name": "Suporte"
     }
   ]
 }

@@ -1,5 +1,5 @@
 //webapiServices.js
-import axios, {AxiosInstance} from 'axios';
+import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const onRequest = async(config) => {
