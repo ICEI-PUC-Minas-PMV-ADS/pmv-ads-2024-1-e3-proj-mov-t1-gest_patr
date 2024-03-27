@@ -20,6 +20,8 @@ const BarChartComponent = () => {
     }
   };
 
+  
+
   useEffect(() => {
     sumGoodsBySector();
   }, [goodsData]);
