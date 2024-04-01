@@ -42,7 +42,7 @@ O uso dessas práticas de gerenciamento de branches, tags e issues no GitHub aju
  A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
 - Scrum Master: Amanda ;
 - Product Owner: Sara Pereira;
-- Equipe de Desenvolvimento: Andrey Bibiano, Thiago, Leonardo;
+- Equipe de Desenvolvimento: Andrey Bibiano, Tiago, Leonardo;
 - Equipe de Design: Thiago, Leonardo.
 
 
