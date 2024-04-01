@@ -1,2 +1,2 @@
 //urls.js
-export const BASE_URL = 'https://crazy-dancers-slide.loca.lt';
+export const BASE_URL = 'https://gold-taxes-buy.loca.lt';
