@@ -11,6 +11,7 @@ import SectorPage from "../pages/sectorPage";
 import DashboardPage from "../pages/dashPage";
 // import SettingsPage from "./pages/settingsPage";
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import NewGoodPage from "../pages/newGoodsPage";
 
 
 
@@ -55,6 +56,18 @@ function AppNav() {
     )
   };
 
+  function NewGoodScreen(){
+    return(
+      <SafeAreaProvider>
+        <PaperProvider>
+          <View style={styles.body}>
+            <NewGoodPage/>
+          </View>
+        </PaperProvider>
+      </SafeAreaProvider>
+    )
+  };
+
   
   function SectorScreen(){
     return(
@@ -80,26 +93,27 @@ function AppNav() {
     )
   };
 
-  function SettingsScreen(){
-    return(
-      <SafeAreaProvider>
-        <PaperProvider>
-          <View style={styles.body}>
-            <SettingsPage/>
-          </View>
-        </PaperProvider>
-      </SafeAreaProvider>
-    )
-  };
+  // function SettingsScreen(){
+  //   return(
+  //     <SafeAreaProvider>
+  //       <PaperProvider>
+  //         <View style={styles.body}>
+  //           <SettingsPage/>
+  //         </View>
+  //       </PaperProvider>
+  //     </SafeAreaProvider>
+  //   )
+  // };
 
   return (
       <Drawer.Navigator drawerContent={(props) => <DrawerContent {...props}/>} >
         <Drawer.Screen name="Gestão Patrimonial" component={HomeScreen} />
         <Drawer.Screen name="Perfil" component={DetailsScreen} />
         <Drawer.Screen name="Bens" component={GoodsScreen} />
+        <Drawer.Screen name="Novo Bem" component={NewGoodScreen} />
         <Drawer.Screen name="Setor" component={SectorScreen} />
         <Drawer.Screen name="Dashboard" component={DashboardScreen} />
-        <Drawer.Screen name="Configurações" component={SettingsScreen} />
+        {/* <Drawer.Screen name="Configurações" component={SettingsScreen} /> */}
       </Drawer.Navigator>
   );
   

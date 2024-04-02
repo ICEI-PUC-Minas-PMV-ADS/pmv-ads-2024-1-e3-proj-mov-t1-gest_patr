@@ -18,14 +18,14 @@
       "package": "com.saracristina.apppatrimonio"
     },
     "plugins": [
-      [
-        "expo-camera",
-        {
-          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
-          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
-          "recordAudioAndroid": true
-        }
-      ]
+      // [
+      //   "expo-camera",
+      //   {
+      //     "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+      //     "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+      //     "recordAudioAndroid": true
+      //   }
+      // ]
     ]
   },
   "name": "client"
