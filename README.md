@@ -29,13 +29,14 @@ O projeto consiste no desenvolvimento de um sistema de controle de bens patrimon
 <li>Abrir o projeto no Xcode ou seu editor de código</li>
 <li>Realizar a instalação das dependencias no folder server com o comando *npm install*</li>
 <li>Realizar a instalação das dependências no folder client com o comando *npm install*</li>
-<li>Executar o servidor com o comando **npm start** no terminal do folder server, vai ser criado um proxy para localhost:8080 ([HPM] Proxy created: /  -> http://localhost:8080
+<li>Executar o servidor com o comando **node index.js** no terminal do folder server, vai ser criado um proxy para localhost:8080 ([HPM] Proxy created: /  -> http://localhost:8080
 Server listening on port 8080)</li>
 <li>Ainda no terminal server, executar o comando  *json-server db.json --port 8081*, assim será criado os endpoints da api (Endpoints:
 http://localhost:8081/users
 http://localhost:8081/goods
 http://localhost:8081/sectors)</li>
-<li>Executar o aplicativo com o comando *npm start* no terminal do folder clientw</li>
+<li>Executar **lt --port 8081** com o terminal no folder server, vai gerar um link, copie esse link, atualize o arquivo urls.js. Abra o link e siga as instruções</li>  
+<li>Executar o aplicativo com o comando *npm start* no terminal do folder cliente</li>
 <li>Escolher se quer abrir o app no navegador (w) ou Android Studio</li>
 <li>Se utlizar o navegador o aplicativo vai abrir automaticamente , caso contrário é necessário configurar para para compilar o apk no Android Studio</li>
 
