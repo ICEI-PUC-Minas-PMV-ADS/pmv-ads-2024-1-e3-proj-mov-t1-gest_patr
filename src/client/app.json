@@ -8,25 +8,11 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "9495feae-18cd-4a35-b374-797cbba9b89c"
+        "projectId": "af9c489a-c679-4f62-8cf3-6393bd8bffaa"
       }
     },
-    "ios": {
-      "bundleIdentifier": "com.saracristina.apppatrimonio"
-    },
     "android": {
-      "package": "com.saracristina.apppatrimonio"
-    },
-    "plugins": [
-      // [
-      //   "expo-camera",
-      //   {
-      //     "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
-      //     "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
-      //     "recordAudioAndroid": true
-      //   }
-      // ]
-    ]
-  },
-  "name": "client"
+      "package": "com.sara_cristina.client"
+    }
+  }
 }

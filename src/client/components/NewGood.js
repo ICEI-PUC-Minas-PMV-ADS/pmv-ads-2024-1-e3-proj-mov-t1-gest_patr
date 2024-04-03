@@ -7,17 +7,20 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
+  Picker 
 } from "react-native";
 
 import { Camera } from "expo-camera";
 import { CameraView } from "expo-camera/next";
 import { getSectors } from "../services/sectorsServices";
+import { insertGoods } from "../services/goodsServices";
 
 const NewGood = ({ initialData, onScanQrCode }) => {
   const [data, setData] = useState(initialData);
   const [type, setType] = useState(Camera.Constants.Type.back);
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
+  const [sectors, setSectors] = useState([]);
 
   useEffect(() => {
     (async () => {
@@ -32,9 +35,31 @@ const NewGood = ({ initialData, onScanQrCode }) => {
     }
   }, [scanned]);
 
-  const handleSave = () => {
-    // Logic to save the data
-    console.log("Saving data:", data);
+  useEffect(() => {
+    async function fetchSectors() {
+      const sectorsData = await getSectors();
+      if (sectorsData) {
+        setSectors(sectorsData);
+      }
+    }
+
+    fetchSectors();
+  }, []);
+
+  const handleSave = async () => {
+    try {
+      const response = await insertGoods(data);
+      if (response) {
+        console.log("Data saved:", response);
+        Alert.alert("Success", "Data saved successfully");
+      } else {
+        console.error("Failed to save data");
+        Alert.alert("Error", "Failed to save data");
+      }
+    } catch (error) {
+      console.error("Error saving data:", error);
+      Alert.alert("Error", "Failed to save data");
+    }
   };
 
   const handleScanQrCode = async () => {
@@ -59,42 +84,61 @@ const NewGood = ({ initialData, onScanQrCode }) => {
     onScanQrCode({ type, data });
   };
 
+
   return (
     <View>
       <TextInput
         style={styles.input}
-        keyboardType="decimal-pad"
         placeholder="Name"
         value={data.name}
         onChangeText={(text) => setData({ ...data, name: text })}
       />
       <TextInput
         style={styles.input}
-        keyboardType="decimal-pad"
-        placeholder="Marca"
-        value={data.marca}
-        onChangeText={(text) => setData({ ...data, marca: text })}
-      />
-      <TextInput
-        style={styles.input}
-        keyboardType="decimal-pad"
-        placeholder="Setor"
-        value={data.setor}
-        onChangeText={(text) => setData({ ...data, setor: text })}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Valor"
-        value={data.valor}
-        onChangeText={(text) => setData({ ...data, valor: text })}
+        placeholder="Price"
+        value={data.price}
+        onChangeText={(text) => setData({ ...data, price: text })}
         keyboardType="numeric"
       />
+      <Picker
+        style={styles.input}
+        selectedValue={data.sector}
+        onValueChange={(itemValue, itemIndex) => setData({ ...data, sector: itemValue })}
+      >
+        <Picker.Item label="Select Sector" value="" />
+        {sectors.map((sector, index) => (
+          <Picker.Item key={index} label={sector.name} value={sector.id} />
+        ))}
+      </Picker>
       <TextInput
         style={styles.input}
-        keyboardType="decimal-pad"
-        placeholder="Garantia"
-        value={data.garantia}
-        onChangeText={(text) => setData({ ...data, garantia: text })}
+        placeholder="Date of Purchase"
+        value={data.date_purchase}
+        onChangeText={(text) => setData({ ...data, date_purchase: text })}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Brand"
+        value={data.brand}
+        onChangeText={(text) => setData({ ...data, brand: text })}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Purchase Site"
+        value={data.purchase_site}
+        onChangeText={(text) => setData({ ...data, purchase_site: text })}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Warranty"
+        value={data.warranty}
+        onChangeText={(text) => setData({ ...data, warranty: text })}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Image URL"
+        value={data.image}
+        onChangeText={(text) => setData({ ...data, image: text })}
       />
       {hasPermission ? (
         <View>

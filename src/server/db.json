@@ -129,6 +129,20 @@
       "purchase_site": "site1",
       "warranty": "no",
       "image": "https://picsum.photos/700"
+    },
+    {
+      "id": "2688",
+      "name": "test",
+      "marca": "",
+      "setor": "",
+      "valor": 0,
+      "garantia": false,
+      "price": "3000",
+      "sector": "eb9c",
+      "date_purchase": "03/04/2024",
+      "brand": "test",
+      "purchase_site": "test",
+      "warranty": "no"
     }
   ],
   "sectors": [

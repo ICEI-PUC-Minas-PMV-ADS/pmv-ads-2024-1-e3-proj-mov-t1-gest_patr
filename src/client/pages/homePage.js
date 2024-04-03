@@ -12,8 +12,9 @@ import {
 import { Button } from "react-native-paper";
 import logo from "../logo.png";
 import SearchBar from "../components/SearchBar";
-import QRCodeScanner from "../components/Qrcode";
+// import QRCodeScanner from "../components/Qrcode";
 import GoodsCard from "../components/Cards";
+import NewGoodPage from "./newGoodsPage";
 
 const HomePage = () => {
   const [searchVisible, setSearchVisible] = useState(false);
@@ -120,12 +121,7 @@ const HomePage = () => {
         >
           <View style={styles.modalContainer}>
             <View style={styles.modalContent}>
-              <QRCodeScanner
-                onScanned={(data) => {
-                  console.log(data);
-                  toggleQRCodeScanner();
-                }}
-              />
+              <NewGoodPage/>
               <Button onPress={toggleQRCodeScanner}>Fechar</Button>
             </View>
           </View>
