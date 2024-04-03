@@ -33,6 +33,7 @@ const GoodsPage = () => {
             <GoodsCard
               key={good.id}
               id={good.id}
+              qrcode={good.qrcode}
               name={good.name}
               price={good.price}
               sector={good.sector}

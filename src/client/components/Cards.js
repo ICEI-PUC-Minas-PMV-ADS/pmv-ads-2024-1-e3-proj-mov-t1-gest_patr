@@ -6,7 +6,7 @@ import { deleteGood } from '../services/goodsServices';
 
 const LeftContent = props => <Avatar.Icon {...props} icon="folder" />
 
-const GoodsCard = ({ id, name, price, sector, date_purchase, brand, purchase_site, warranty, fetchGoods }) => {
+const GoodsCard = ({ id, qrcode, name, price, sector, date_purchase, brand, purchase_site, warranty, fetchGoods }) => {
     const [visible, setVisible] = React.useState(false);
 
     
@@ -39,6 +39,7 @@ const GoodsCard = ({ id, name, price, sector, date_purchase, brand, purchase_sit
         <Card.Title title={name} subtitle={`Price: $${price}`} left={LeftContent} />
         <Card.Cover source={{ uri: 'https://picsum.photos/700' }} style={styles.cover}/>
         <Card.Content>
+            <Text variant="bodyMedium"> {qrcode}</Text>
             <Text variant="bodyMedium"> {sector}</Text>
             <Text variant="bodyMedium"> {date_purchase}</Text>
             <Text variant="bodyMedium"> {brand}</Text>

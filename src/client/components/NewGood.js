@@ -89,13 +89,19 @@ const NewGood = ({ initialData, onScanQrCode }) => {
     <View>
       <TextInput
         style={styles.input}
-        placeholder="Name"
+        placeholder="QR Code"
+        value={data.qrcode}
+        onChangeText={(text) => setData({ ...data, qrcode: text })}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Nome"
         value={data.name}
         onChangeText={(text) => setData({ ...data, name: text })}
       />
       <TextInput
         style={styles.input}
-        placeholder="Price"
+        placeholder="Valor"
         value={data.price}
         onChangeText={(text) => setData({ ...data, price: text })}
         keyboardType="numeric"
@@ -105,32 +111,32 @@ const NewGood = ({ initialData, onScanQrCode }) => {
         selectedValue={data.sector}
         onValueChange={(itemValue, itemIndex) => setData({ ...data, sector: itemValue })}
       >
-        <Picker.Item label="Select Sector" value="" />
+        <Picker.Item label="Selecione setor" value="" />
         {sectors.map((sector, index) => (
           <Picker.Item key={index} label={sector.name} value={sector.id} />
         ))}
       </Picker>
       <TextInput
         style={styles.input}
-        placeholder="Date of Purchase"
+        placeholder="Data da compra"
         value={data.date_purchase}
         onChangeText={(text) => setData({ ...data, date_purchase: text })}
       />
       <TextInput
         style={styles.input}
-        placeholder="Brand"
+        placeholder="Marca"
         value={data.brand}
         onChangeText={(text) => setData({ ...data, brand: text })}
       />
       <TextInput
         style={styles.input}
-        placeholder="Purchase Site"
+        placeholder="Local de compra"
         value={data.purchase_site}
         onChangeText={(text) => setData({ ...data, purchase_site: text })}
       />
       <TextInput
         style={styles.input}
-        placeholder="Warranty"
+        placeholder="Garantia"
         value={data.warranty}
         onChangeText={(text) => setData({ ...data, warranty: text })}
       />

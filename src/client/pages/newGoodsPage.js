@@ -21,7 +21,6 @@ const NewGoodPage = () => {
 
   return (
     <View>
-      <Text>Scanned QR Code: {scannedQRCode}</Text>
       <Text>Date/Time: {currentDate}</Text>
       <NewGood initialData={initialData} onScanQrCode={handleScanQrCode} />
     </View>
