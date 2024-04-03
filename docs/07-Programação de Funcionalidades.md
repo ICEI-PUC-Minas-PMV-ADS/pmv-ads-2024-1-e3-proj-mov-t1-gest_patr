@@ -1,31 +1,40 @@
 # Programação de Funcionalidades
 
 
-- Responsável - Leonardo dos Santos
+
 ### Home Page
+- Responsável - Leonardo dos Santos
 
 ![Código Fonte Component](img/07-code-homePage.png)
 
-- Responsável - Amanda Gonçalves Gomes
-### Setores Page
-![Código Fonte Page](img/07-code-sectorsPage.png)
 
-- Responsável - Leonardo Ferreira dos Santos
+### Setores Page
+- Responsável - Amanda Gonçalves Gomes
+![Código Fonte Page](img/07-code-sectorPage.png)
+
+
 ### Bens Page
+- Responsável - Leonardo Ferreira dos Santos
+
 ![Códiogo Fonte Service](img/07-code-goodsPage.png)
 
-- Responsável - Andrey Bibiano Jardim
+
 ### Novo bem Page
+- Responsável - Andrey Bibiano Jardim
+
 ![Código Fonte Component](img/07-code-newGoodPage.png)
 
-- Responsável - Thiago Muniz Severino dos Santos
 ### Cadastro Usuario Page
+- Responsável - Thiago Muniz Severino dos Santos
+
 ![Código Fonte Component]()
 
-- Responsável - Tiago Henrique Oliveira Souza
 ### Detalhes Page
+- Responsável - Tiago Henrique Oliveira Souza
+
 ![Código Fonte Index]()
 
-- Responsável - Sara Cristina Gilberto Pereira
 ### Dashboard Page
+- Responsável - Sara Cristina Gilberto Pereira
+
 ![Código Fonte Page](img/07-code-dashboardPage.png)
