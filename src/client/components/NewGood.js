@@ -106,16 +106,17 @@ const NewGood = ({ initialData, onScanQrCode }) => {
         onChangeText={(text) => setData({ ...data, price: text })}
         keyboardType="numeric"
       />
-      <Picker
-        style={styles.input}
-        selectedValue={data.sector}
-        onValueChange={(itemValue, itemIndex) => setData({ ...data, sector: itemValue })}
-      >
-        <Picker.Item label="Selecione setor" value="" />
-        {sectors.map((sector, index) => (
-          <Picker.Item key={index} label={sector.name} value={sector.id} />
-        ))}
-      </Picker>
+ <Picker
+  style={styles.input}
+  selectedValue={data.sector}
+  onValueChange={(itemValue, itemIndex) => setData({ ...data, sector: itemValue })}
+>
+  <Picker.Item label="Selecione setor" value="" />
+  {sectors.map((sector, index) => (
+    <Picker.Item key={index} label={sector.name} value={sector.name} />
+  ))}
+</Picker>
+
       <TextInput
         style={styles.input}
         placeholder="Data da compra"
