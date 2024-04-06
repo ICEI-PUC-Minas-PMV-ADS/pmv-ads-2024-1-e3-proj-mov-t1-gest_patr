@@ -1,6 +1,6 @@
 # Template Padrão da Aplicação
 | Inicial  | Busca | Tela de Aviso  | 
-| ------------- | ------------- |------------- | ------------- |
+| ------------- | ------------- |------------- | 
 | ![Tela Inicial](img/06-template-home.png)  | ![Tela busca](img/06-template-search.png)  | ![Tela Avisos](img/06-template-confirmacao.png)  | 
 
 
