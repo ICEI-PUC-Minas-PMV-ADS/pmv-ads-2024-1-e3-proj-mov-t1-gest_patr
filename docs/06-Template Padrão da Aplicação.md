@@ -1,13 +1,16 @@
 # Template Padrão da Aplicação
 | Inicial  | Cadastro | Tela de Aviso  | Leitor QRCode |
 | ------------- | ------------- |------------- | ------------- |
-| ![Tela Inicial](img/06-template_inicial.png)  | ![Tela cadastro](img/03-wireframe2.png)  | ![Tela Avisos](img/06-template_avisos.png)  | ![Tela QRCode](img/06-template_leitura.png)  |
+| ![Tela Inicial](img/06-template-home.png)  | ![Tela busca](img/06-template-search.png)  | ![Tela Avisos](img/06-template-confirmacao.png)  | ![Tela QRCode](img/06-template_leitura.png)  |
 
 
 | Lista bens  | Lista/Cadastro Setor | Resultado Busca  | 
 | ------------- | ------------- |------------- |
-|![Tela Lista de bens](img/06-template_bens.png)  |![Tela de busca](img/06-template_setor.png)  | ![Tela resultado de busca](img/06-template_resultadoBusca.png)  | 
+|![Tela Lista de bens](img/06-template-bens.png)  |![Tela QrCode](img/06-template-camera.png)  | ![Tela Permissão](img/06-template-camera-request.png)  | 
 
+| Lista setor  | Tela Perfil | Resultado Busca  | 
+| ------------- | ------------- |------------- |
+|![Tela Lista de setor](img/06-template-setor.png)  |![Tela Perfil Usuário](img/06-template-perfil.png)  | ![Tela Dashboard](img/06-template-dashboard.png)  | 
 
 
 
