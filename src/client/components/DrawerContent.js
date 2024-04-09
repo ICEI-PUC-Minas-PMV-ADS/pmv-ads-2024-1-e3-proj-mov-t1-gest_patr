@@ -40,7 +40,7 @@ export function DrawerContent(props) {
                 props.navigation.navigate("Gestão Patrimonial");
               }}
             />
-            <DrawerItem
+               <DrawerItem
               label="Perfil"
               onPress={() => {
                 props.navigation.navigate("Perfil");
@@ -122,10 +122,6 @@ const styles = StyleSheet.create({
   caption: {
     fontSize: 14,
     lineHeight: 14,
-  },
-  paragraph: {
-    fontWeight: "bold",
-    marginRight: 3,
   },
   bottomDrawerSection: {
     marginBottom: 15,

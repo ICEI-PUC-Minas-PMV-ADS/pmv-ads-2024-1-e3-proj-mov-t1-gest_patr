@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import {
   View,
   TextInput,
@@ -7,20 +7,44 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-  Picker 
-} from "react-native";
+} from 'react-native';
+import { useNavigation, useRoute } from '@react-navigation/native';
+import { getSectors } from '../services/sectorServices';
+import { insertGoods } from '../services/goodServices';
+import { CameraView, Camera } from "expo-camera/next";
 
-import { Camera } from "expo-camera";
-import { CameraView } from "expo-camera/next";
-import { getSectors } from "../services/sectorsServices";
-import { insertGoods } from "../services/goodsServices";
 
-const NewGood = ({ initialData, onScanQrCode }) => {
-  const [data, setData] = useState(initialData);
-  const [type, setType] = useState(Camera.Constants.Type.back);
+const NewGood = () => {
+  const [data, setData] = useState({
+    qrcode: '',
+    date_register: '',
+    name: '',
+    price: '',
+    sector: '',
+    date_purchase: '',
+    brand: '',
+    purchase_site: '',
+    warranty: '',
+    image: '',
+  });
+  const currentDate = new Date().toLocaleString();
+  const [sectors, setSectors] = useState([]);
+  const [searchText, setSearchText] = useState('');
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
-  const [sectors, setSectors] = useState([]);
+  const [scannedData, setScannedData] = useState(null);
+  const [filteredSectors, setFilteredSectors] = useState([]);
+  const navigation = useNavigation();
+  const route = useRoute();
+
+  useEffect(() => {
+    if (route.params && route.params.scannedData) {
+      setData((prevData) => ({
+        ...prevData,
+        ...route.params.scannedData
+      }));
+    }
+  }, [route.params]);
 
   useEffect(() => {
     (async () => {
@@ -46,21 +70,56 @@ const NewGood = ({ initialData, onScanQrCode }) => {
     fetchSectors();
   }, []);
 
-  const handleSave = async () => {
-    try {
-      const response = await insertGoods(data);
-      if (response) {
-        console.log("Data saved:", response);
-        Alert.alert("Success", "Data saved successfully");
-      } else {
-        console.error("Failed to save data");
-        Alert.alert("Error", "Failed to save data");
-      }
-    } catch (error) {
-      console.error("Error saving data:", error);
-      Alert.alert("Error", "Failed to save data");
-    }
+const handleSectorSearch = (text) => {
+  setSearchText(text);
+  const filtered = sectors.length > 0 ? sectors.filter((sector) =>
+    sector.name && sector.name.toLowerCase().includes(text.toLowerCase())
+  ) : [];
+  setFilteredSectors(filtered);
+};
+
+
+const handleSelectSector = (sector) => {
+    setData({ ...data, sector: sector.name });
+    setSearchText('');
+    setFilteredSectors([]);
   };
+
+
+const handleSave = async () => {
+  try {
+    const response = await insertGoods({
+      qrcode: scannedData || data.qrcode, 
+      date_register: currentDate,
+      name: data.name,
+      price: data.price,
+      sector: data.sector,
+      date_purchase: data.date_purchase, 
+      brand: data.brand,
+      purchase_site: data.purchase_site,
+      warranty: data.warranty,
+      image: data.image,
+    });
+    if (response) {
+      console.log('Data saved:', response);
+      Alert.alert('Success', 'Data saved successfully', [
+        {
+          text: 'OK',
+          onPress: () => {
+            navigation.navigate('Home'); 
+          },
+        },
+      ]);
+    } else {
+      console.error('Failed to save data');
+      Alert.alert('Error', 'Failed to save data');
+    }
+  } catch (error) {
+    console.error('Error saving data:', error);
+    Alert.alert('Error', 'Failed to save data');
+  }
+};
+
 
   const handleScanQrCode = async () => {
     if (hasPermission) {
@@ -70,28 +129,22 @@ const NewGood = ({ initialData, onScanQrCode }) => {
     }
   };
 
-  function toggleCameraType() {
-    setType(
-      type === Camera.Constants.Type.back
-        ? Camera.Constants.Type.front
-        : Camera.Constants.Type.back
-    );
-  }
-
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
-    console.log(`Scanned QR code of type ${type} with data: ${data}`);
-    onScanQrCode({ type, data });
+    setScannedData(data); // Update scanned data state
+    alert(`Bar code with type ${type} and data ${data} has been scanned!`);
   };
 
-
   return (
-    <View>
-      <TextInput
+    <View style={styles.container}>
+      <TextInput 
         style={styles.input}
-        placeholder="QR Code"
-        value={data.qrcode}
-        onChangeText={(text) => setData({ ...data, qrcode: text })}
+        value={scannedData || data.qrcode} 
+        onChangeText={(text) => setData({ ...data, qrcode: text })} 
+      />
+      <TextInput 
+        style={styles.input}
+        value={currentDate} 
       />
       <TextInput
         style={styles.input}
@@ -103,20 +156,9 @@ const NewGood = ({ initialData, onScanQrCode }) => {
         style={styles.input}
         placeholder="Valor"
         value={data.price}
-        onChangeText={(text) => setData({ ...data, price: text })}
+        onChangeText={(numeric) => setData({ ...data, price: numeric })}
         keyboardType="numeric"
       />
- <Picker
-  style={styles.input}
-  selectedValue={data.sector}
-  onValueChange={(itemValue, itemIndex) => setData({ ...data, sector: itemValue })}
->
-  <Picker.Item label="Selecione setor" value="" />
-  {sectors.map((sector, index) => (
-    <Picker.Item key={index} label={sector.name} value={sector.name} />
-  ))}
-</Picker>
-
       <TextInput
         style={styles.input}
         placeholder="Data da compra"
@@ -147,58 +189,63 @@ const NewGood = ({ initialData, onScanQrCode }) => {
         value={data.image}
         onChangeText={(text) => setData({ ...data, image: text })}
       />
-      {hasPermission ? (
+      <TextInput
+        style={[styles.input, styles.searchInput]}
+        placeholder="Search Sector"
+        value={searchText}
+        onChangeText={handleSectorSearch}
+      />
+      {searchText !== '' && (
         <View>
-          <CameraView 
-          style={styles.camera} 
-          type={type}
-          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-          >
-            
-            <View style={styles.buttonContainer}>
-              <TouchableOpacity
-                style={styles.button}
-                onPress={toggleCameraType}
-              >
-                <Text style={styles.text}>Flip Camera</Text>
-              </TouchableOpacity>
-            </View>
-          </CameraView>
-
-          <Button
-            style={styles.button}
-            title="Scan QR Code"
-            onScanned={(data) => {
-              console.log(data);
-            }}
-            onPress={handleScanQrCode}
-          />
+          {filteredSectors.map((sector) => (
+            <TouchableOpacity
+              key={sector.id}
+              style={styles.suggestionItem}
+              onPress={() => handleSelectSector(sector)}
+            >
+              <Text>{sector.name}</Text>
+            </TouchableOpacity>
+          ))}
         </View>
-      ) : (
-        <Text>No access to camera</Text>
       )}
+      <View style={styles.camera}>
+      <CameraView
+        onBarcodeScanned={scanned ? undefined : handleBarCodeScanned}
+        barcodeScannerSettings={{
+          barcodeTypes: ["qr", "pdf417"],
+        }}
+        style={StyleSheet.absoluteFillObject}
+      />
+      {scanned && (
+        <Button title={"Tap to Scan Again"} onPress={() => setScanned(false)} />
+      )}
+      </View>
       <Button title="Save" onPress={handleSave} />
+
     </View>
   );
 };
+
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    width: "100%",
+    backgroundColor: "white",
+    justifyContent: 'center',
+    padding: 10,
+  },
   input: {
-    backgroundColor: "#FFF",
-    marginBottom: 8,
+    backgroundColor: '#FFF',
+    width: '100%',
+    borderRadius: 5,
+    borderWidth: 1,
+    borderColor: '#ccc',
+    margin: 5,
   },
   camera: {
-    flex: 1,
-  },
-  buttonContainer: {
-    flex: 1,
-    backgroundColor: "transparent",
-    flexDirection: "row",
-    margin: 20,
-  },
-  button: {
-    flex: 0.1,
-    alignSelf: "flex-end",
-    alignItems: "center",
-  },
+    flex: 1
+  }
 });
+
 export default NewGood;
+

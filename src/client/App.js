@@ -1,28 +1,20 @@
 // app.js
-import React from "react";
-import { StyleSheet } from "react-native";
+import {useState} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import AppNav from "./navigation/appNav";
+import UserProvider from './src/contexts/userContext';
 
+import AppNav from './src/navigation/AppNav'
 
 function App() {
   
-
-
   return (
-    <NavigationContainer>
-      <AppNav/>
-    </NavigationContainer>
+    <UserProvider>
+        <NavigationContainer>
+          <AppNav/>
+        </NavigationContainer>
+    </UserProvider>
   );
   
 }
-
-const styles = StyleSheet.create({
-  body: {
-    flex: 1,
-    justifyContent: 'space-evenly',
-    alignItems: 'center'
-  }
-});
 
 export default App;

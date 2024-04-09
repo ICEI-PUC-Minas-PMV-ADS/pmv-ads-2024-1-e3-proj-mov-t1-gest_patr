@@ -1,11 +1,8 @@
-//route.js
-
-import React from 'react';
 
 import {useUser} from '../contexts/userContext';
 
-import Main from './main';
-import Auth from './auth';
+import AppNav from './AppNav';
+import Auth from './Auth';
 
 const Route = () => {
 
@@ -14,8 +11,8 @@ const Route = () => {
   return (
     <>
     {
-      signed 
-      ? <Main />
+      signed  
+      ? <AppNav />
       : <Auth />
     }
     </>

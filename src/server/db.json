@@ -34,6 +34,44 @@
       "brand": "test",
       "purchase_site": "test",
       "warranty": "no"
+    },
+    {
+      "id": "bcb1",
+      "qrcode": "",
+      "name": "Teste",
+      "price": "4444",
+      "sector": "",
+      "date_purchase": "01/02/2020",
+      "brand": "Teste",
+      "purchase_site": "Teste",
+      "warranty": "Sim",
+      "image": ""
+    },
+    {
+      "id": "afee",
+      "qrcode": "000050",
+      "name": "Teste",
+      "price": "22222",
+      "sector": "",
+      "date_register": "",
+      "date_purchase": "02/01/2020",
+      "brand": "Teste",
+      "purchase_site": "Teste",
+      "warranty": "Sim",
+      "image": ""
+    },
+    {
+      "id": "a7b0",
+      "qrcode": "000050",
+      "name": "Teste3",
+      "price": "1111",
+      "sector": "",
+      "date_register": "",
+      "date_purchase": "01/01/2021",
+      "brand": "Teste",
+      "purchase_site": "Teste",
+      "warranty": "Sim",
+      "image": ""
     }
   ],
   "sectors": [

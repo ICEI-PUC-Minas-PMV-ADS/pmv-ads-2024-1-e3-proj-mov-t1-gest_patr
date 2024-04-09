@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { List, Button, Dialog, Portal, TextInput } from 'react-native-paper';
 import { View, StyleSheet, Text } from 'react-native';
-import { deleteSector, updateSector } from '../services/sectorsServices';
+import { deleteSector, updateSector } from '../services/sectorServices';
 
 const SectorsList = ({ id, name, fetchSectors }) => {
   const [expanded, setExpanded] = React.useState(false);

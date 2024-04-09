@@ -1,7 +1,7 @@
 //GoodsPage.js
 import React, { useRef, useEffect, useState } from "react";
 import { StyleSheet, SafeAreaView, ScrollView, View } from "react-native";
-import { getGoods } from "../services/goodsServices";
+import { getGoods } from "../services/goodServices";
 import GoodsCard from "../components/Cards";
 
 const GoodsPage = () => {

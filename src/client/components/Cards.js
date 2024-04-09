@@ -2,11 +2,11 @@
 import * as React from 'react';
 import { StyleSheet} from "react-native";
 import { Avatar, Button, Card, Text, Dialog, Portal } from 'react-native-paper';
-import { deleteGood } from '../services/goodsServices';
+import { deleteGoods } from '../services/goodServices';
 
 const LeftContent = props => <Avatar.Icon {...props} icon="folder" />
 
-const GoodsCard = ({ id, qrcode, name, price, sector, date_purchase, brand, purchase_site, warranty, fetchGoods }) => {
+const GoodsCard = ({ id, qrcode, name, price, sector, date_purchase, brand, purchase_site, warranty, fetchGoods, date_register }) => {
     const [visible, setVisible] = React.useState(false);
 
     
@@ -15,7 +15,7 @@ const GoodsCard = ({ id, qrcode, name, price, sector, date_purchase, brand, purc
   
     const handleDelete = async () => {
         try {
-          await deleteGood(id);
+          await deleteGoods(id);
           showDialog();
         } catch (error) {
           console.error('Error deleting sector:', error);
@@ -24,7 +24,7 @@ const GoodsCard = ({ id, qrcode, name, price, sector, date_purchase, brand, purc
     
       const confirmDelete = async () => {
         try {
-          await deleteGood(id);
+          await deleteGoods(id);
           hideDialog();
           fetchGoods();
         } catch (error) {
@@ -36,15 +36,16 @@ const GoodsCard = ({ id, qrcode, name, price, sector, date_purchase, brand, purc
     return (
       
     <Card  style={styles.card}>
-        <Card.Title title={name} subtitle={`Price: $${price}`} left={LeftContent} />
+        <Card.Title title={name} subtitle={`Valor: R$${price}`} left={LeftContent} />
         <Card.Cover source={{ uri: 'https://picsum.photos/700' }} style={styles.cover}/>
         <Card.Content>
-            <Text variant="bodyMedium"> {qrcode}</Text>
-            <Text variant="bodyMedium"> {sector}</Text>
-            <Text variant="bodyMedium"> {date_purchase}</Text>
-            <Text variant="bodyMedium"> {brand}</Text>
-            <Text variant="bodyMedium"> {purchase_site}</Text>
-            <Text variant="bodyMedium"> {warranty}</Text>
+            <Text variant="bodyMedium">QR Code: {qrcode}</Text>
+            <Text variant="bodyMedium">Data cadastro: {date_register}</Text>
+            <Text variant="bodyMedium">Setor: {sector}</Text>
+            <Text variant="bodyMedium">Data da compra: {date_purchase}</Text>
+            <Text variant="bodyMedium">Marca: {brand}</Text>
+            <Text variant="bodyMedium">Local da compra: {purchase_site}</Text>
+            <Text variant="bodyMedium">Garantia: {warranty}</Text>
         </Card.Content>
         <Card.Actions>
             <Button
@@ -83,11 +84,6 @@ const styles = StyleSheet.create({
     },
     cover: {
         height: 150,
-    },
-    fixToText: {
-        flexDirection: 'row-reverse',
-        marginHorizontal: 2,
-        marginVertical: 10,
-      },
+    }
 })
 export default GoodsCard;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
 import { BarChart } from 'react-native-chart-kit';
-import { getGoods } from '../services/goodsServices';
+import { getGoods } from '../services/goodServices';
 
 const BarChartComponent = () => {
   const [goodsData, setGoodsData] = useState([]);

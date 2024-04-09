@@ -1,18 +1,30 @@
 {
   "expo": {
-    "name": "client",
-    "slug": "client",
-    "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "af9c489a-c679-4f62-8cf3-6393bd8bffaa"
-      }
-    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        },
+        [
+        "react-native-auth0",
+        {
+          "domain": "dev-ducmjsqdr7zppm0k.us.auth0.com"
+        }
+      ],
+      {
+
     "android": {
-      "package": "com.sara_cristina.client"
+      "package": "YOUR_ANDROID_PACKAGE_NAME_IS_FOUND_HERE"
+    },
+    "ios": {
+      "bundleIdentifier": "YOUR_IOS_BUNDLE_IDENTIFIER_IS_FOUND_HERE"
     }
+  }
+
+      ]
+    ]
   }
 }

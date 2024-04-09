@@ -1,17 +1,15 @@
-// app.js
-import React from "react";
+// appNav.js
 import { Provider as PaperProvider } from "react-native-paper"; 
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context"; 
 import { DrawerContent } from "../components/DrawerContent"; 
-import HomePage from "../pages/homePage";
-import DetailsPage from "../pages/detailsPage";
-import GoodsPage from "../pages/goodsPage";
-import SectorPage from "../pages/sectorPage";
-import DashboardPage from "../pages/dashPage";
-// import SettingsPage from "./pages/settingsPage";
+import HomePage from "../screens/Home";
+import GoodsPage from "../screens/Goods";
+import SectorPage from "../screens/Sector";
+import DashboardPage from "../screens/Dashboard";
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import NewGoodPage from "../pages/newGoodsPage";
+import NewGoodPage from "../screens/NewGood";
+import ProfilePage from "../screens/Profile"
 
 
 
@@ -30,19 +28,19 @@ function AppNav() {
         </PaperProvider>
       </SafeAreaProvider>
     )
-  };
+  }
 
-  function DetailsScreen() {
+ function ProfileScreen() {
     return (
-     <SafeAreaProvider> 
+      <SafeAreaProvider> 
         <PaperProvider> 
           <View style={styles.body}>
-            <DetailsPage/>
+            <ProfilePage/>
           </View>
         </PaperProvider>
       </SafeAreaProvider>
     )
-  };
+  }
 
   function GoodsScreen(){
     return(
@@ -54,7 +52,7 @@ function AppNav() {
         </PaperProvider>
       </SafeAreaProvider>
     )
-  };
+  }
 
   function NewGoodScreen(){
     return(
@@ -66,7 +64,7 @@ function AppNav() {
         </PaperProvider>
       </SafeAreaProvider>
     )
-  };
+  }
 
   
   function SectorScreen(){
@@ -79,7 +77,7 @@ function AppNav() {
         </PaperProvider>
       </SafeAreaProvider>
     )
-  };
+  }
 
   function DashboardScreen(){
     return(
@@ -91,29 +89,18 @@ function AppNav() {
         </PaperProvider>
       </SafeAreaProvider>
     )
-  };
+  }
 
-  // function SettingsScreen(){
-  //   return(
-  //     <SafeAreaProvider>
-  //       <PaperProvider>
-  //         <View style={styles.body}>
-  //           <SettingsPage/>
-  //         </View>
-  //       </PaperProvider>
-  //     </SafeAreaProvider>
-  //   )
-  // };
+ 
 
   return (
       <Drawer.Navigator drawerContent={(props) => <DrawerContent {...props}/>} >
         <Drawer.Screen name="Gestão Patrimonial" component={HomeScreen} />
-        <Drawer.Screen name="Perfil" component={DetailsScreen} />
+        <Drawer.Screen name="Perfil" component={ProfileScreen} />
         <Drawer.Screen name="Bens" component={GoodsScreen} />
         <Drawer.Screen name="Novo Bem" component={NewGoodScreen} />
         <Drawer.Screen name="Setor" component={SectorScreen} />
         <Drawer.Screen name="Dashboard" component={DashboardScreen} />
-        {/* <Drawer.Screen name="Configurações" component={SettingsScreen} /> */}
       </Drawer.Navigator>
   );
   

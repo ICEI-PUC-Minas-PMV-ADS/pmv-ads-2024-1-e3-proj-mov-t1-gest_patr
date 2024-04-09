@@ -1,37 +1,40 @@
-//authServices.js
-import API from './webapiServices';
-import {BASE_URL} from './urls';
+import { BASE_URL } from './urls';
+
+const handleResponse = async (response) => {
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return await response.json();
+};
 
 export const register = async (param) => {
-  try{
-    return await API.post(`${BASE_URL}/register`, param).then( 
-      response => {
-        return response.data;
+  try {
+    const response = await fetch(`${BASE_URL}/register`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
       },
-      error =>{
-        console.log(error);
-        return  null;
-      }
-    );
-  }catch(error){
-    console.log(error);
+      body: JSON.stringify(param),
+    });
+    return handleResponse(response);
+  } catch (error) {
+    console.error('Error:', error);
     return null;
   }
-}
+};
 
 export const login = async (param) => {
-  try{
-    return await API.post(`${BASE_URL}/login`, param).then( 
-      response => {
-        return response.data;
+  try {
+    const response = await fetch(`${BASE_URL}/login`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
       },
-      error =>{
-        console.log(error);
-        return  null;
-      }
-    );
-  }catch(error){
-    console.log(error);
+      body: JSON.stringify(param),
+    });
+    return handleResponse(response);
+  } catch (error) {
+    console.error('Error:', error);
     return null;
   }
-}
+};

@@ -1,16 +1,13 @@
-//dashsPage.js
-import React from "react";
-import { View, SafeAreaView, ScrollView, StyleSheet } from "react-native";
-import BarChartComponent from '../components/Barchart.js'
+//ProfilePage.js
+import { View, SafeAreaView, ScrollView, StyleSheet, Text } from "react-native";
 
 
-
-const DashboardPage = () => {
+const ProfilePage = () => {
     return (
         <View style={styles.container}>
         <SafeAreaView style={styles.content}>
             <ScrollView style={styles.scrollView}>
-            <BarChartComponent/>
+              <Text> Profile </Text>
             </ScrollView>
         </SafeAreaView>
         </View>
@@ -35,5 +32,5 @@ const styles = StyleSheet.create({
     },
   });
 
-export default  DashboardPage
+export default  ProfilePage
     

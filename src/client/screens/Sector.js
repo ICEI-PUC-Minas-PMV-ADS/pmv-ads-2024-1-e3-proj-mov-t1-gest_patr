@@ -4,7 +4,7 @@ import { StyleSheet, View, ScrollView, SafeAreaView } from "react-native";
 import SectorsList from "../components/List";
 import Button from "../components/Button";
 import Input from "../components/Input";
-import { getSectors, insertSectors } from "../services/sectorsServices";
+import { getSectors, insertSectors } from "../services/sectorServices";
 
 const SectorPage = () => {
   const [sectors, setSectors] = useState([]);
@@ -57,6 +57,7 @@ const SectorPage = () => {
             value={inputValue}
             onChangeText={setInputValue}
             placeholder="Adicionar novo setor"
+            keyboardType="default"
           />
           <Button onPress={handleAddSector}>Adicionar</Button>
         </View>
