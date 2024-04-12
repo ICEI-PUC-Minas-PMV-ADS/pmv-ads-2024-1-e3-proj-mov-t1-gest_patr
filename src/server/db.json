@@ -17,6 +17,12 @@
       "name": "test",
       "email": "admin",
       "role": "admin"
+    },
+    {
+      "id": "1861",
+      "name": "teste1",
+      "email": "teste1",
+      "password": "1111"
     }
   ],
   "goods": [

@@ -9,7 +9,8 @@ import Input from '../components/Input';
 import logo from '../assets/logo.png'
 
 import { useNavigation } from '@react-navigation/native';
-import { register } from '../services/authServices';
+import { getUsers, insertUsers } from '../services/usersServices';
+
 
 const Register = () => {
   const navigation = useNavigation();
@@ -19,43 +20,38 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
 
-  useEffect(() => {
-   
+ useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const jsonValue = await AsyncStorage.getItem('users');
-        const parsedUsers = jsonValue != null ? JSON.parse(jsonValue) : [];
-        setUsers(parsedUsers);
+        const fetchedUsers = await getUsers();
+        setUsers(fetchedUsers);
       } catch (error) {
         console.error('Error fetching users:', error);
       }
     };
+
     fetchUsers();
   }, []);
 
   const handleRegister = async () => {
-  try {
-    const response = await register({
-      name: name,
-      email: email,
-      password: password
-    });
+    try {
+      // Call insertUsers function to register user
+      const response = await insertUsers({ name, email, password });
 
-    console.log('Response from register:', response); 
+      console.log('Response from register:', response);
 
-    if (response && response.success) {
-      Alert.alert('Success', 'User registered successfully!', [
-        { text: 'OK', onPress: () => navigation.goBack() }
-      ]);
-    } else {
-      Alert.alert('Error', response.message || 'Failed to register user');
+      if (response && response.success) {
+        Alert.alert('Success', 'User registered successfully!', [
+          { text: 'OK', onPress: () => navigation.goBack() }
+        ]);
+      } else {
+        Alert.alert('Error', response.message || 'Failed to register user');
+      }
+    } catch (error) {
+      console.error('Error registering user:', error);
+      Alert.alert('Error', 'Failed to register user. Please try again later.');
     }
-  } catch (error) {
-    console.error('Error registering user:', error);
-    Alert.alert('Error', 'Failed to register user. Please try again later.');
   }
-}
-
 
   return (
     <Container style={styles.container}>

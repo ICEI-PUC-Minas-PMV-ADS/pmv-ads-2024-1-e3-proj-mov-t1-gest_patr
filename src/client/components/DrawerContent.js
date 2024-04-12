@@ -2,34 +2,35 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
+import { useNavigation } from '@react-navigation/native';
 
 import {
   Title,
   Caption,
-  Drawer,
-  Text,
-  TouchableRipple,
-  Switch,
+  Drawer
 } from "react-native-paper";
 
+import { useUser } from '../contexts/userContext';
+
+
 export function DrawerContent(props) {
+  const navigation = useNavigation();
+  const { name, logout } = useUser();
+
+const handleLogout = () => {
+    logout(); 
+    navigation.navigate('Route')
+  };
+  
   return (
     <View style={{ flex: 1 }}>
       <DrawerContentScrollView {...props}>
         <View style={styles.drawerContent}>
-            {/* user info */}
-        <View style={[styles.userInfoSection, { flexDirection: "row" }]}>
+             {/* User info */}
+          <View style={[styles.userInfoSection, { flexDirection: "row" }]}>
             <View style={{ marginLeft: 15, flexDirection: "column" }}>
-              <Title style={styles.title}>User Name</Title>
+              <Title style={styles.title}>{name}</Title>
               <Caption style={styles.caption}>@username</Caption>
-            </View>
-          </View>
-          <View style={[styles.row, styles.userInfoSection]}>
-            <View style={[styles.section, { marginLeft: 15 }]}>
-              <Caption style={styles.caption}>Setor</Caption>
-            </View>
-            <View style={[styles.section, { marginLeft: 15 }]}>
-              <Caption style={styles.caption}>Cargo</Caption>
             </View>
           </View>
           {/* Drawer Content */}
@@ -77,27 +78,11 @@ export function DrawerContent(props) {
               }}
             />
           </Drawer.Section>
-          {/* Preferences */}
-          <Drawer.Section title="Preferences">
-            <TouchableRipple
-              onPress={() => {
-                toggleTheme();
-              }}
-            >
-              <View style={styles.preference}>
-                <Text>Dark Theme</Text>
-                <Switch />
-              </View>
-            </TouchableRipple>
-          </Drawer.Section>
         </View>
       </DrawerContentScrollView>
       {/* Sign Out */}
-      <Drawer.Section style={styles.bottomDrawerSection}>
-        <DrawerItem
-          label="Sign Out"
-          onPress={() => {}}
-        />
+     <Drawer.Section style={styles.bottomDrawerSection}>
+        <DrawerItem label="Sign Out" onPress={handleLogout} /> 
       </Drawer.Section>
     </View>
   );

@@ -7,6 +7,13 @@ export default function UserProvider({ children }) {
   const [signed, setSigned] = useState(false);
   const [name, setName] = useState('');
 
+
+  const logout = () => {
+    setSigned(false);
+    setName(''); 
+  };
+
+
   return (
     <UserContext.Provider
       value={{
@@ -14,6 +21,7 @@ export default function UserProvider({ children }) {
         setSigned,
         name,
         setName,
+        logout
       }}>
       {children}
     </UserContext.Provider>
@@ -22,6 +30,6 @@ export default function UserProvider({ children }) {
 
 export function useUser() {
   const context = useContext(UserContext);
-  const { signed, setSigned, name, setName } = context;
-  return { signed, setSigned, name, setName };
+  const { signed, setSigned, name, setName, logout } = context;
+  return { signed, setSigned, name, setName, logout };
 }

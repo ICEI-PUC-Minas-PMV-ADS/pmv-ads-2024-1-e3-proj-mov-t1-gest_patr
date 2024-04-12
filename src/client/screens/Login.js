@@ -1,52 +1,48 @@
-//loginPage.js
+// loginPage.js
 import React, { useState } from 'react';
 import { StyleSheet, View, Alert, Image } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextInput, Button, Headline } from 'react-native-paper';
 import Container from '../components/Container';
 import Body from '../components/Body';
 import Input from '../components/Input';
-import logo from '../assets/logo.png'
-
+import logo from '../assets/logo.png';
 
 import { useNavigation } from '@react-navigation/native';
-
-
-import {useUser} from '../contexts/userContext';
-import {login} from '../services/authServices';
+import { getUsers } from '../services/usersServices'; 
+import { useUser } from '../contexts/userContext';
 
 const Login = () => {
-
   const navigation = useNavigation();
-  
-  const {setSigned, setName} = useUser();
+  const { setSigned } = useUser();
+  const { name, setName } = useUser();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+ const handleLogin = async () => {
+    try {
+      const users = await getUsers();
+      const user = users.find(u => u.email === email && u.password === password);
 
-   const handleLogin= () => {
-
-    login({
-      email: email,
-      password: password
-    }).then( res => {
-      console.log(res);
-
-      if(res && res.user){
-        setSigned(true);
-        setName(res.user.name);
-        AsyncStorage.setItem('@TOKEN_KEY', res.accessToken).then();
-      }else{
-         Alert.alert('Atenção', 'Usuário ou senha inválidos!');
+      if (user) {
+        console.log('User logged in:', user);
+        setSigned(true); 
+        setName(user.name);
+        navigation.navigate('AppNav');
+      } else {
+        Alert.alert('Atenção', 'Usuário ou senha inválidos!');
       }
-
-    });    
+    } catch (error) {
+      console.error('Login error:', error);
+      Alert.alert('Erro', 'Falha ao fazer login. Por favor, tente novamente mais tarde.');
+    }
   }
+
+
 
   return (
     <Container style={styles.container}>
-      <View style={styles.header}>
-      <Image source={logo} style={styles.logo} className="App-logo" alt="logo" />
+      <View style={styles.content}>
+        <Image source={logo} style={styles.logo} className="App-logo" alt="logo" />
       </View>
 
       <Headline style={styles.textHeader}>Gestão de Patrimônio</Headline>
@@ -56,6 +52,7 @@ const Login = () => {
           label="Email"
           value={email}
           onChangeText={(text) => setEmail(text)}
+          keyboardType="email-address"
           left={<TextInput.Icon name="account" />}
         />
         <Input
@@ -75,7 +72,7 @@ const Login = () => {
           style={styles.button}
           mode="outlined"
           onPress={() => navigation.navigate('Register')}
-          >
+        >
           Registrar
         </Button>
       </Body>
@@ -84,8 +81,13 @@ const Login = () => {
 };
 
 const styles = StyleSheet.create({
-  container:{
-    flex: 1
+  container: {
+    flex: 1,
+    justifyContent: 'center'
+  },
+  content: {
+    alignItems: 'center',
+    marginTop: 30,
   },
   button: {
     marginBottom: 8,
@@ -98,7 +100,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
     marginBottom: 12
   },
-    logo: {
+  logo: {
     marginBottom: 30,
     width: 150,
     height: 150,

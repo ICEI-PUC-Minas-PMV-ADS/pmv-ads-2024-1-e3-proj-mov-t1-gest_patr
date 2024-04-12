@@ -3,18 +3,17 @@ import {useState} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import UserProvider from './src/contexts/userContext';
 
-import AppNav from './src/navigation/AppNav'
+import Route from './src/navigation/Route'
 
 function App() {
   
   return (
     <UserProvider>
         <NavigationContainer>
-          <AppNav/>
+          <Route/>
         </NavigationContainer>
     </UserProvider>
-  );
-  
+  ); 
 }
 
 export default App;

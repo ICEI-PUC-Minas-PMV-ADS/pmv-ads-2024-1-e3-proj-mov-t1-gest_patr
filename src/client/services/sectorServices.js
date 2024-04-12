@@ -1,3 +1,4 @@
+//sectorService.js
 import { BASE_URL } from './urls';
 
 const handleResponse = async (response) => {
