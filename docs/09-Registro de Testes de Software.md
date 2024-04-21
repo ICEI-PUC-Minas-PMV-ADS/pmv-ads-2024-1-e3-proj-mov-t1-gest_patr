@@ -12,7 +12,7 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 - Requisito associado:
     - RF-001
 
- Teste:
+ - Teste:
      Criar um usuário para acessar ao sistema
 
 ### - Resultado: 
@@ -23,20 +23,20 @@ A funcionalidade ainda está sendo desenvolvida e no momento incompleta. O siste
     - RF-002
 
 - Teste:
-    - Realizar buscas de bens utilizando filtros específicos, como categoria, valor, setor, etc.
+Realizar buscas de bens utilizando filtros específicos, como categoria, valor, setor, etc.
 
 ### - Resultado:
-    - A funcionalidade ainda está sendo desenvolvida e no momento incompleta. O sistema deve exibir uma lista de bens mas ao clicar em Bens apresenta uma tela vermelha. A funcionalidade ainda está sendo desenvolvida
+A funcionalidade ainda está sendo desenvolvida e no momento incompleta. O sistema deve exibir uma lista de bens mas ao clicar em Bens apresenta uma tela vermelha. A funcionalidade ainda está sendo desenvolvida
     - 
 ### Registro -3 - Apenas usuários cadastrados e logados podem consultar e cadastrar bens
 - Requisito associado:
     - RF-003
 
 - Teste:
-    - A consultar de bens apenas aos usuários logados no sistema.
+A consultar de bens apenas aos usuários logados no sistema.
 
 ### - Resultado:
-    - O acesso a lista de bens só é perimitido aos usuários logados.
+O acesso a lista de bens só é perimitido aos usuários logados.
     
  ### Registro - 4 - Cadastrar fotos dos bens
 - Requisito associado:
