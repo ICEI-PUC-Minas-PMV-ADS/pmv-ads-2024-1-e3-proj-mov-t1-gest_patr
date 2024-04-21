@@ -15,8 +15,7 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
  Teste:
      Criar um usuário para acessar ao sistema
 
-### - Resultado:
-    A funcionalidade ainda está sendo desenvolvida e no momento incompleta. O sistema cadastra os usuários mas não emite uma mensagem que informa que "Cadastro feito com sucesso"
+### - Resultado: A funcionalidade ainda está sendo desenvolvida e no momento incompleta. O sistema cadastra os usuários mas não emite uma mensagem que informa que "Cadastro feito com sucesso"
  
 ### Registro - 2- Busca de bens por filtro
 - Requisito associado:
