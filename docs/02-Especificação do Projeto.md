@@ -291,7 +291,7 @@ Para construir um bom diagrama, deve-se partir de um conjunto de atividades defi
 
 O diagrama de rede pode ser entendido como um gráfico que mostra as tarefas que precisam ser realizadas para a finalização de um projeto. Além de mostrar as relações contínuas de atividades, mostra como fazer as atividades e o cronograma determina quando fazer as tarefas do projeto.
 
-![Gerenciamento de tempo](img/gerenTempo2.png)
+![Gerenciamento de tempo](img/gerenTempo3.png)
 
 O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
 
