@@ -34,24 +34,24 @@ const Register = () => {
   }, []);
 
   const handleRegister = async () => {
-    try {
-      // Call insertUsers function to register user
-      const response = await insertUsers({ name, email, password });
+  try {
+    const response = await insertUsers({ name, email, password });
 
-      console.log('Response from register:', response);
+    console.log('Response from register:', response);
 
-      if (response && response.success) {
-        Alert.alert('Success', 'User registered successfully!', [
-          { text: 'OK', onPress: () => navigation.goBack() }
-        ]);
-      } else {
-        Alert.alert('Error', response.message || 'Failed to register user');
-      }
-    } catch (error) {
-      console.error('Error registering user:', error);
-      Alert.alert('Error', 'Failed to register user. Please try again later.');
+    if (response && response.id) {
+      Alert.alert('Success', 'User registered successfully!', [
+        { text: 'OK', onPress: () => navigation.goBack() }
+      ]);
+    } else {
+      Alert.alert('Error', 'Failed to register user');
     }
+  } catch (error) {
+    console.error('Error registering user:', error);
+    Alert.alert('Error', 'Failed to register user. Please try again later.');
   }
+}
+
 
   return (
     <Container style={styles.container}>

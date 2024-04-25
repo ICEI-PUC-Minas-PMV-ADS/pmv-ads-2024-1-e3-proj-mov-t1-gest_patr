@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {
   View,
   TextInput,
@@ -11,7 +11,8 @@ import {
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { getSectors } from '../services/sectorServices';
 import { insertGoods } from '../services/goodServices';
-import { CameraView, Camera } from "expo-camera/next";
+import { Camera } from "expo-camera";
+import { BarCodeScanner  } from "expo-barcode-scanner"
 
 
 const NewGood = () => {
@@ -46,18 +47,43 @@ const NewGood = () => {
     }
   }, [route.params]);
 
-  useEffect(() => {
-    (async () => {
-      const { status } = await Camera.requestCameraPermissionsAsync();
-      setHasPermission(status === "granted");
-    })();
-  }, []);
-
-  useEffect(() => {
-    if (scanned) {
-      handleScanQrCode();
+ useEffect(() => {
+  (async () => {
+    const { status } = await Camera.requestCameraPermissionsAsync();
+    if (status !== "granted") {
+      Alert.alert(
+        "Permissão",
+        "Permissão para usar camêra",
+        [
+          {
+            text: "OK",
+            onPress: () => setHasPermission(false), 
+          },
+        ],
+        { cancelable: false }
+      );
+    } else {
+      setHasPermission(true);
     }
-  }, [scanned]);
+  })();
+}, []);
+
+
+useEffect(() => {
+  const handleScanQrCode = async () => {
+    if (hasPermission) {
+      setScanned(true);
+    } else {
+      Alert.alert("Sem permissão para uso da camêra");
+    }
+  };
+
+  if (scanned) {
+    handleScanQrCode();
+  }
+}, [scanned, hasPermission]);
+
+
 
   useEffect(() => {
     async function fetchSectors() {
@@ -102,7 +128,7 @@ const handleSave = async () => {
     });
     if (response) {
       console.log('Data saved:', response);
-      Alert.alert('Success', 'Data saved successfully', [
+      Alert.alert('Sucesso', 'Bem cadastrado', [
         {
           text: 'OK',
           onPress: () => {
@@ -112,26 +138,27 @@ const handleSave = async () => {
       ]);
     } else {
       console.error('Failed to save data');
-      Alert.alert('Error', 'Failed to save data');
+      Alert.alert('Erro', 'Erro ao salvar bem');
     }
   } catch (error) {
     console.error('Error saving data:', error);
-    Alert.alert('Error', 'Failed to save data');
+    Alert.alert('Erro', 'Erro ao salvar bem');
   }
 };
 
 
-  const handleScanQrCode = async () => {
-    if (hasPermission) {
-      setScanned(true);
-    } else {
-      Alert.alert("Camera permission not granted");
-    }
-  };
+const handleScanQrCode = useCallback(async () => {
+  if (hasPermission) {
+    setScanned(true);
+  } else {
+    Alert.alert("Camera permission not granted");
+  }
+}, [hasPermission]);
+
 
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
-    setScannedData(data); // Update scanned data state
+    setScannedData(data); 
     alert(`Bar code with type ${type} and data ${data} has been scanned!`);
   };
 
@@ -209,13 +236,10 @@ const handleSave = async () => {
         </View>
       )}
       <View style={styles.camera}>
-      <CameraView
-        onBarcodeScanned={scanned ? undefined : handleBarCodeScanned}
-        barcodeScannerSettings={{
-          barcodeTypes: ["qr", "pdf417"],
-        }}
-        style={StyleSheet.absoluteFillObject}
-      />
+       <BarCodeScanner 
+          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+          style={StyleSheet.absoluteFillObject}
+        />
       {scanned && (
         <Button title={"Tap to Scan Again"} onPress={() => setScanned(false)} />
       )}
@@ -248,4 +272,3 @@ const styles = StyleSheet.create({
 });
 
 export default NewGood;
-

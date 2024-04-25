@@ -1,6 +1,6 @@
 // loginPage.js
 import React, { useState } from 'react';
-import { StyleSheet, View, Alert, Image } from 'react-native';
+import { StyleSheet, View, Alert, Image, SafeAreaView } from 'react-native';
 import { TextInput, Button, Headline } from 'react-native-paper';
 import Container from '../components/Container';
 import Body from '../components/Body';
@@ -40,8 +40,9 @@ const Login = () => {
 
 
   return (
-    <Container style={styles.container}>
-      <View style={styles.content}>
+    <SafeAreaView style={styles.container}>
+    <Container >
+      <View style={styles.header}>
         <Image source={logo} style={styles.logo} className="App-logo" alt="logo" />
       </View>
 
@@ -52,7 +53,7 @@ const Login = () => {
           label="Email"
           value={email}
           onChangeText={(text) => setEmail(text)}
-          keyboardType="email-address"
+          keyboardType={email }
           left={<TextInput.Icon name="account" />}
         />
         <Input
@@ -77,17 +78,14 @@ const Login = () => {
         </Button>
       </Body>
     </Container>
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center'
-  },
-  content: {
-    alignItems: 'center',
-    marginTop: 30,
+    justifyContent: 'center',
   },
   button: {
     marginBottom: 8,

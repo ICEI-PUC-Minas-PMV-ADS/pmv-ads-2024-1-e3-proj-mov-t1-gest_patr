@@ -1,8 +1,9 @@
-//GoodsPage.js
+// GoodsPage.js
 import React, { useRef, useEffect, useState } from "react";
-import { StyleSheet, SafeAreaView, ScrollView, View } from "react-native";
+import { StyleSheet, SafeAreaView, ScrollView, View, TouchableOpacity, Text } from "react-native";
 import { getGoods } from "../services/goodServices";
 import GoodsCard from "../components/Cards";
+
 
 const GoodsPage = () => {
   const [goods, setGoods] = React.useState([]);
@@ -25,6 +26,9 @@ const GoodsPage = () => {
     fetchGoods();
   }, []);
 
+ 
+
+
   return (
     <View style={styles.container}>
       <SafeAreaView style={styles.content}>
@@ -44,6 +48,7 @@ const GoodsPage = () => {
               fetchGoods={fetchGoods}
             />
           ))}
+          
         </ScrollView>
       </SafeAreaView>
     </View>
@@ -65,7 +70,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     marginHorizontal: 0,
     minHeight: "100%",
-  },
+  }
 });
 
 export default GoodsPage;

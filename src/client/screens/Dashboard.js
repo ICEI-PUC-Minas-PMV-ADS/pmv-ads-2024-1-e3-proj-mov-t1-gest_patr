@@ -1,14 +1,19 @@
 //dashsPage.js
 import { View, SafeAreaView, ScrollView, StyleSheet } from "react-native";
 import BarChartComponent from '../components/Barchart.js'
-
+import Report from '../components/Report'
 
 const DashboardPage = () => {
     return (
         <View style={styles.container}>
         <SafeAreaView style={styles.content}>
             <ScrollView style={styles.scrollView}>
+
+            <Report/>
+
             <BarChartComponent/>
+
+            
             </ScrollView>
         </SafeAreaView>
         </View>

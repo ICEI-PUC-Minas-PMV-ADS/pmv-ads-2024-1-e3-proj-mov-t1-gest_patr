@@ -2,7 +2,7 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
-import { useNavigation } from '@react-navigation/native';
+
 
 import {
   Title,
@@ -14,13 +14,8 @@ import { useUser } from '../contexts/userContext';
 
 
 export function DrawerContent(props) {
-  const navigation = useNavigation();
-  const { name, logout } = useUser();
+  const { name } = useUser();
 
-const handleLogout = () => {
-    logout(); 
-    navigation.navigate('Route')
-  };
   
   return (
     <View style={{ flex: 1 }}>
@@ -82,7 +77,7 @@ const handleLogout = () => {
       </DrawerContentScrollView>
       {/* Sign Out */}
      <Drawer.Section style={styles.bottomDrawerSection}>
-        <DrawerItem label="Sign Out" onPress={handleLogout} /> 
+        <DrawerItem label="Sign Out"  /> 
       </Drawer.Section>
     </View>
   );
