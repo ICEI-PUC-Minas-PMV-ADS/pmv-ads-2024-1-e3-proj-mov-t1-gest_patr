@@ -27,12 +27,12 @@
 ### Cadastro Usuario Page
 - Responsável - Thiago Muniz Severino dos Santos
 
-![Código Fonte Component]()
+![Código Fonte Component](img/07-code-register.png)
 
 ### Detalhes Page
 - Responsável - Tiago Henrique Oliveira Souza
 
-![Código Fonte Index]()
+![Código Fonte Index](img/07-code-profile.png)
 
 ### Dashboard Page
 - Responsável - Sara Cristina Gilberto Pereira

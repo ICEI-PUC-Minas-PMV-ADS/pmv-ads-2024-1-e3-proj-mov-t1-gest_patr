@@ -2,14 +2,6 @@
 
 O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
-
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
-
 
 # Plano de Testes de Usabilidade
 ## Objetivo
@@ -44,11 +36,50 @@ Os seguintes cenários serão conduzidos pelo moderador:
 | Critério de Avaliação | - Facilidade de preenchimento dos campos. <br> - Clareza das mensagens de erro em caso de problemas.|
 |  	|  	|
 
-| **Caso de Teste** 	| **CTU-03 – ** |
+| **Caso de Teste** 	| **CTU-03 – Teste de Navegação Intuitiva** |
 |:---:	|:---:	|
-| Requisito Associado | RF-000:  .|
-| Objetivo do Teste | . |
-| Testes | 1 - . <br> 2 - . <br> 3 - . <br> 4 - . <br> 5 - . |
-| Critério de Avaliação | - . <br> - .|
+| Requisito Associado | RF-004  .|
+| Objetivo do Teste | Avaliar se os usuários conseguem navegar pelo aplicativo de forma intuitiva, sem encontrar dificuldades para encontrar as funcionalidades desejadas. |
+| Testes | 1 - Buscar bens pelo nome. <br> 2 - Adicionar um novo setor. <br> 3 - Gerar um gráfico de bens por setor. |
+| Critério de Avaliação | - É possível realizar as tarefas sem hesitação excessiva ou a necessidade de instruções adicionais. <br> - .|
 |  	|  	|
 
+| **Caso de Teste** 	| **CTU-04 – Teste de Feedback do Sistema** |
+|:---:	|:---:	|
+| Requisito Associado | RF-00:  .|
+| Objetivo do Teste |Avaliar se o sistema fornece feedback claro e útil para as ações dos usuários, ajudando-os a entender o que está acontecendo no aplicativo. |
+| Testes | 1 - Realize ações diferentes no aplicativo, como cadastro de um novo bem ou exclusão de um item, e observe se o sistema fornece feedback imediato e compreensível. |
+| Critério de Avaliação | - O sistema fornece feedback visual ou auditivo sempre que uma ação é realizada, indicando sucesso, erro ou status de progresso. <br> - .|
+|  	|  	|
+
+| **Caso de Teste** 	| **CTU-05 – Teste de Eficiência de Navegação** |
+|:---:	|:---:	|
+| Requisito Associado | RF-008:  .|
+| Objetivo do Teste |Avaliar a eficiência da navegação no aplicativo, medindo o tempo necessário para os usuários realizarem tarefas comuns. |
+| Testes | 1 - Cronometre o tempo que os usuários levam para concluir tarefas específicas, como encontrar um bem específico ou editar detalhes de um item. |
+| Critério de Avaliação | - O tempo médio para completar a tarefa deve ser razoável.  <br> - .|
+|  	|  	|
+
+| **Caso de Teste** 	| **CTU-06 – Teste de Legibilidade de Texto** |
+|:---:	|:---:	|
+| Requisito Associado | RF-000:  .|
+| Objetivo do Teste |Avaliar se o texto no aplicativo é fácil de ler e compreender, independentemente do tamanho da tela ou da resolução. |
+| Testes | 1 - Abrir o aplicativo em diferentes páginas e observar se existe a dificuldade de ler o texto neles contidos. |
+| Critério de Avaliação | - O texto no aplicativo é claro, bem formatado e legível em todas as condições de visualização.  <br> - .|
+|  	|  	|
+
+| **Caso de Teste** 	| **CTU-07 – Teste de Acessibilidade de Botões e Controles** |
+|:---:	|:---:	|
+| Requisito Associado | RF-000:  .|
+| Objetivo do Teste | Avaliar se os botões e controles do aplicativo são facilmente acessíveis e clicáveis, em diferentes dispositivos móveis.|
+| Testes | 1 - Abrir o aplicativo em diferentes aparelhos e interagir com botões e controles, como botões de navegação e campos de entrada de texto. |
+| Critério de Avaliação | - Os botões e controles são fáceis de acessar e clicar, mesmo em telas menores ou em dispositivos com diferentes tamanhos de tela.  <br> - .|
+|  	|  	|
+
+| **Caso de Teste** 	| **CTU-08 – Teste de Consistência de Design** |
+|:---:	|:---:	|
+| Requisito Associado | RF-000:  .|
+| Objetivo do Teste | Avaliar se o design do aplicativo é consistente em todas as telas e funcionalidades, proporcionando uma experiência coesa ao usuário.|
+| Testes | 1 -  Navegue por diferentes partes do aplicativo e observe se os elementos de design, como cores, ícones e disposição de elementos, são consistentes em todas as telas. |
+| Critério de Avaliação | - O design do aplicativo segue um padrão consistente em todas as telas, proporcionando uma experiência visual uniforme.  <br> - .|
+|  	|  	|

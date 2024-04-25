@@ -92,7 +92,7 @@ Os requisitos para realização dos testes de software são:
     - Após o login, tentar novamente acessar a funcionalidade desejada.
 
 - Resultado esperado:
-    - O sistema deve impedir o acesso às funcionalidades caso o usuário não esteja autenticado. Após o login bem-sucedido, o usuário deve ser redirecionado à página inicial ou à funcionalidade desejada, permitindo o acesso pleno ao sistema.
+    - O sistema deve impedir o acesso às funcionalidades caso o usuário não esteja autenticado. Após o login bem-sucedido, de aparecer algum ícone que informa que o usuário está logado e deve ser redirecionado à página inicial ou à funcionalidade desejada, permitindo o acesso pleno ao sistema.
 
 ### CT-6 - O sistema deve permitir o cadastro de setores da empresa.
 
@@ -103,12 +103,14 @@ Os requisitos para realização dos testes de software são:
     - Possibilitar o registro dos setores da empresa onde os bens poderão transitar, proporcionando uma organização adequada e controle eficiente sobre o fluxo de itens.
 
 - Procedimentos:
-    - Acessar a função de cadastro de setores no sistema.
+    - Clicar em setores
+    - Cadastrar setor
     - Preencher os campos obrigatórios, como nome do setor e outras informações relevantes, se aplicável.
     - Confirmar o cadastro do setor.
+   
 
 - Resultado esperado:
-    - Após o procedimento de cadastro, o sistema deve armazenar as informações do novo setor e torná-lo disponível para associação com os bens. Os setores cadastrados devem estar listados de forma clara e acessível no sistema, permitindo a gestão eficiente do fluxo de itens dentro da empresa.
+    - Após o procedimento de cadastro, o sistema deve apresentar uma mensagem que o cadasro do setor foi feito com sucesso e armazenar as informações do novo setor e torná-lo disponível para associação com os bens. Os setores cadastrados devem estar listados de forma clara e acessível no sistema, permitindo a gestão eficiente do fluxo de itens dentro da empresa.
 
 ### CT-7 - O sistema deve permitir o cadastro de detalhes dos bens, como marca e modelo.
 

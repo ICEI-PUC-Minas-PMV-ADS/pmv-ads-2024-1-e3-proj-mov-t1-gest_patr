@@ -50,7 +50,7 @@ O uso dessas práticas de gerenciamento de branches, tags e issues no GitHub aju
 
 ![Diagrama de fluxo de trabalho](img/diagramafluxo.png) 
 
-![Backlog do Projeto](img/Kanban.png)
+![Backlog do Projeto](img/kanban2.png)
 
 ### Ferramentas
 
