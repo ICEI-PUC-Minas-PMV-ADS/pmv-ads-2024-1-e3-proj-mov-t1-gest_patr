@@ -40,7 +40,7 @@ Server listening on port 8080)</li>
 http://localhost:8081/users
 http://localhost:8081/goods
 http://localhost:8081/sectors)</li>
-<li>Executar **lt --port 8081** com o terminal no folder server, vai gerar um link, copie esse link, atualize o arquivo urls.js. Abra o link e siga as instruções</li>  
+<li>Executar **lt --port 8081** com o terminal no folder server, vai gerar um link, copie esse link, atualize o arquivo /src/client/services/urls.js. Abra o link e siga as instruções</li>  
 <li>Executar o aplicativo com o comando *npm start* no terminal do folder cliente</li>
 <li>Escolher se quer abrir o app no navegador (w) ou Android Studio</li>
 <li>Se utlizar o navegador o aplicativo vai abrir automaticamente , caso contrário é necessário configurar para para compilar o apk no Android Studio</li>
