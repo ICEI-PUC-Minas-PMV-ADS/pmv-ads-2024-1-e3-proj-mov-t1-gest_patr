@@ -27,7 +27,11 @@ O projeto consiste no desenvolvimento de um sistema de controle de bens patrimon
 <ol>
 <li>Baixar repositório</li>
 <li>Abrir o projeto no Xcode ou seu editor de código</li>
-<li>Realizar a instalação do node server na dependências na pasta server com o comando *npm --verbose install -g node-server*</li>
+<LI> Na pasta src/server, executar:
+  <OL>
+    <LI> npm --verbose install -g localtunnel
+    <LI> npm --verbose install -g node-server
+ </OL>
 <li>Realizar a instalação das dependencias na pasta server com o comando *npm --verbose install*</li>
 <li>Realizar a instalação das dependências na pasta client com o comando *npm --verbose install*</li>
 <li>Executar o servidor com o comando **node index.js** no terminal do folder server, vai ser criado um proxy para localhost:8080 ([HPM] Proxy created: /  -> http://localhost:8080
