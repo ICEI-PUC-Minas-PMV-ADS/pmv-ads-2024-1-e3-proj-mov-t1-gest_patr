@@ -1,7 +1,7 @@
 {
   "name": "app-patrimonio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js"
   },
