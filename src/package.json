@@ -4,8 +4,10 @@
     "description": "",
     "main": "server/index.js",
     "scripts": {
-      "start": "node server/index.js"
-    },
+    "start": "node src/server/index.js",
+    "start:client": "cd src/client && npm start",
+    "start:server": "cd src/server && npm start"
+  },
     "keywords": [],
     "author": "",
     "license": "ISC",
