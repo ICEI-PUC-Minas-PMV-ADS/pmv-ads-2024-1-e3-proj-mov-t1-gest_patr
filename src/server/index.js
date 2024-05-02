@@ -1,9 +1,20 @@
-const jsonServer = require("json-server"); 
-const server = jsonServer.create();
-const router = jsonServer.router("db.json");
-const middlewares = jsonServer.defaults();
-const port = process.env.PORT || 8080; 
-server.use(middlewares);
-server.use(router);
+//index.js server
 
-server.listen(port);
+const express = require("express");
+const cors = require("cors");
+const { createProxyMiddleware } = require("http-proxy-middleware");
+
+const app = express();
+
+// Proxy requests to JSON Server
+app.use(
+  "/api",
+  createProxyMiddleware({ target: "http://localhost:8080", changeOrigin: true })
+);
+
+app.use(cors());
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});
