@@ -37,7 +37,7 @@ export function DrawerContent(props) {
               }}
             />
                <DrawerItem
-              label="Perfil"
+              label="Perfil (Usuarios)"
               onPress={() => {
                 props.navigation.navigate("Perfil");
               }}
@@ -67,7 +67,7 @@ export function DrawerContent(props) {
               }}
             />
             <DrawerItem
-              label="Confirgurações"
+              label="Configurações"
               onPress={() => {
                 props.navigation.navigate("Configurações");
               }}
@@ -77,7 +77,7 @@ export function DrawerContent(props) {
       </DrawerContentScrollView>
       {/* Sign Out */}
      <Drawer.Section style={styles.bottomDrawerSection}>
-        <DrawerItem label="Sign Out"  /> 
+        <DrawerItem label="Sair do Sistema"  /> 
       </Drawer.Section>
     </View>
   );

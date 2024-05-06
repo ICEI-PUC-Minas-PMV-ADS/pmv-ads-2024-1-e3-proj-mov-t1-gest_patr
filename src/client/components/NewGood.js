@@ -126,23 +126,17 @@ const handleSave = async () => {
       warranty: data.warranty,
       image: data.image,
     });
-    if (response) {
-      console.log('Data saved:', response);
-      Alert.alert('Sucesso', 'Bem cadastrado', [
-        {
-          text: 'OK',
-          onPress: () => {
-            navigation.navigate('Home'); 
-          },
-        },
-      ]);
+    
+    if (response) {				
+		alert('Bem cadastrado com sucesso!');
+        navigation.navigate("Bens"); 
     } else {
-      console.error('Failed to save data');
-      Alert.alert('Erro', 'Erro ao salvar bem');
+      console.error('Falha ao salvar os dados');
+      alert( 'Erro ao salvar bem');
     }
   } catch (error) {
     console.error('Error saving data:', error);
-    Alert.alert('Erro', 'Erro ao salvar bem');
+    alert('Erro ao salvar bem');
   }
 };
 
@@ -164,8 +158,10 @@ const handleScanQrCode = useCallback(async () => {
 
   return (
     <View style={styles.container}>
+		
       <TextInput 
         style={styles.input}
+        placeholder="QRCode (Código)"
         value={scannedData || data.qrcode} 
         onChangeText={(text) => setData({ ...data, qrcode: text })} 
       />
@@ -218,7 +214,7 @@ const handleScanQrCode = useCallback(async () => {
       />
       <TextInput
         style={[styles.input, styles.searchInput]}
-        placeholder="Search Sector"
+        placeholder="Buscar setor"
         value={searchText}
         onChangeText={handleSectorSearch}
       />
@@ -241,10 +237,10 @@ const handleScanQrCode = useCallback(async () => {
           style={StyleSheet.absoluteFillObject}
         />
       {scanned && (
-        <Button title={"Tap to Scan Again"} onPress={() => setScanned(false)} />
+        <Button title={"Escanear novamente"} onPress={() => setScanned(false)} />
       )}
       </View>
-      <Button title="Save" onPress={handleSave} />
+      <Button title="Salvar" onPress={handleSave} />
 
     </View>
   );

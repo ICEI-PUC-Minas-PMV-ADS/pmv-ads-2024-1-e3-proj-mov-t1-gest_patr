@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { StyleSheet} from "react-native";
 import { Avatar, Button, Card, Text, Dialog, Portal } from 'react-native-paper';
-import { deleteGoods } from '../services/goodServices';
+import { deleteGoods, updateGoods } from '../services/goodServices';
 
 const LeftContent = props => <Avatar.Icon {...props} icon="folder" />
 
@@ -18,24 +18,33 @@ const GoodsCard = ({ id, qrcode, name, price, sector, date_purchase, brand, purc
           await deleteGoods(id);
           showDialog();
         } catch (error) {
-          console.error('Error deleting sector:', error);
+          console.error('Erro ao excluir um bem:', error);
         }
       };
-    
+      
+    const acaoEditar = async () => {
+        try {
+          await editGoods(id);
+          showDialog();
+        } catch (error) {
+          console.error('Erro ao editar um bem:', error);
+        }
+      };
+      
       const confirmDelete = async () => {
         try {
           await deleteGoods(id);
           hideDialog();
           fetchGoods();
         } catch (error) {
-          console.error('Error deleting sector:', error);
+          console.error('Erro ao excluir um setor:', error);
           hideDialog();
         }
       };
 
     return (
       
-    <Card  style={styles.card}>
+    <Card style={styles.card}>
         <Card.Title title={name} subtitle={`Valor: R$${price}`} left={LeftContent} />
         <Card.Cover source={{ uri: 'https://picsum.photos/700' }} style={styles.cover}/>
         <Card.Content>
@@ -47,13 +56,19 @@ const GoodsCard = ({ id, qrcode, name, price, sector, date_purchase, brand, purc
             <Text variant="bodyMedium">Local da compra: {purchase_site}</Text>
             <Text variant="bodyMedium">Garantia: {warranty}</Text>
         </Card.Content>
+        
+        
         <Card.Actions>
+            
+            
             <Button
                 theme={{colors: {primary:"#6d85db"}}}
                 icon="pen"
                 mode="contained"
-                title="Right button"
+                title="Editar"
+                onPress={acaoEditar}
             />
+
             <Button
                 theme={{colors: {primary:"#6d85db"}}}
                 icon="cancel" 
@@ -61,6 +76,7 @@ const GoodsCard = ({ id, qrcode, name, price, sector, date_purchase, brand, purc
                 onPress={handleDelete}
             />
         </Card.Actions>
+        
         <Portal>
         <Dialog visible={visible} onDismiss={hideDialog}>
           <Dialog.Title>Confirmar exclusão</Dialog.Title>
