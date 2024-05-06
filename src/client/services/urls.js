@@ -1,5 +1,5 @@
 //urls.js
-export const BASE_URL = 'https://red-foxes-wash.loca.lt/';
+export const BASE_URL = 'https://floppy-flies-accept.loca.lt/';
 
 
 

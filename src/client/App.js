@@ -1,9 +1,9 @@
 // app.js
 import {useState} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import UserProvider from './src/contexts/userContext';
+import UserProvider from './contexts/userContext';
 
-import Route from './src/navigation/Route'
+import Route from './navigation/route'
 
 function App() {
   
