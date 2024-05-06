@@ -1,7 +1,7 @@
 // route.js
 import React from 'react';
 import { useUser } from '../contexts/userContext';
-import AppNav from './AppNav';
+import AppNav from './appNav';
 import Auth from './Auth';
 
 const Route = () => {

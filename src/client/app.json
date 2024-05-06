@@ -8,21 +8,6 @@
           "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
           "recordAudioAndroid": true
         }
-      ],
-        [
-        "react-native-auth0",
-        {
-          "domain": "dev-ducmjsqdr7zppm0k.us.auth0.com"
-        },
-      {
-    "android": {
-      "package": "YOUR_ANDROID_PACKAGE_NAME_IS_FOUND_HERE"
-    },
-    "ios": {
-      "bundleIdentifier": "YOUR_IOS_BUNDLE_IDENTIFIER_IS_FOUND_HERE"
-    }
-  }
-
       ]
     ]
   }
