@@ -1,9 +1,9 @@
 @TOKEN=eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.bQTnz6AuMJvmXXQsVPrxeQNvzDkimo7VNXxHeSBfClLufmCVZRUuyTwJF311JHuh
 ### Users
-GET http://localhost:8081/users
+GET https://gestpatrimonioserver.onrender.com/users
 
 ### REGISTER
-POST http://localhost:8081/users
+POST https://gestpatrimonioserver.onrender.com/users
 content-type: application/json
 
 {
@@ -13,7 +13,7 @@ content-type: application/json
 }
 
 ### LOGIN
-PUT http://localhost:8081/users/1
+PUT https://gestpatrimonioserver.onrender.com/users/1
 content-type: application/json
 
 {
@@ -23,7 +23,7 @@ content-type: application/json
 }
 
 ### GET Users
-GET http://localhost:8081/users/1
+GET https://gestpatrimonioserver.onrender.com/users/1
 
 ### DELETE Users
-DELETE http://localhost:8081/users/1
+DELETE https://gestpatrimonioserver.onrender.com/users/1
