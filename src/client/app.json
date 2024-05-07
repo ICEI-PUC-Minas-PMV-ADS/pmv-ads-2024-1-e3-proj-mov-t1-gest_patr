@@ -9,6 +9,17 @@
           "recordAudioAndroid": true
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b6a8b1ff-2172-49c3-adf4-2dadd35e78c8"
+      }
+    },
+    "android": {
+      "package": "com.sh3.gestpatrimonio"
+    },
+    "ios": {
+      "bundleIdentifier": "com.sh3.gestpatrimonio"
+    }
   }
 }

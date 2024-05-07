@@ -6,6 +6,7 @@ const Header = (props) => {
   return (
       <TextInput 
         style={styles.input} 
+        keyboardType='default'
         {...props}      
       />)
     ;
