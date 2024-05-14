@@ -7,12 +7,14 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
+  ScrollView
 } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { getSectors } from '../services/sectorServices';
 import { insertGoods } from '../services/goodServices';
 import { Camera } from "expo-camera";
 import { BarCodeScanner  } from "expo-barcode-scanner"
+import PhotoUpload from './PhotoUpload';
 
 
 const NewGood = () => {
@@ -159,10 +161,11 @@ const handleScanQrCode = useCallback(async () => {
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
     setScannedData(data); 
-    alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+    alert(`Tipo de dado ${type} e dado scaneado ${data}`);
   };
 
   return (
+    <ScrollView style={styles.scrollView}>
     <View style={styles.container}>
       <TextInput 
         style={styles.input}
@@ -210,12 +213,7 @@ const handleScanQrCode = useCallback(async () => {
         value={data.warranty}
         onChangeText={(text) => setData({ ...data, warranty: text })}
       />
-      <TextInput
-        style={styles.input}
-        placeholder="Image URL"
-        value={data.image}
-        onChangeText={(text) => setData({ ...data, image: text })}
-      />
+      
       <TextInput
         style={[styles.input, styles.searchInput]}
         placeholder="Search Sector"
@@ -236,6 +234,7 @@ const handleScanQrCode = useCallback(async () => {
         </View>
       )}
       <View style={styles.camera}>
+      <PhotoUpload/>
        <BarCodeScanner 
           onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
           style={StyleSheet.absoluteFillObject}
@@ -247,6 +246,7 @@ const handleScanQrCode = useCallback(async () => {
       <Button title="Save" onPress={handleSave} />
 
     </View>
+    </ScrollView>
   );
 };
 
@@ -257,6 +257,9 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     justifyContent: 'center',
     padding: 10,
+  },
+  scrollView: {
+    flexGrow: 1,
   },
   input: {
     backgroundColor: '#FFF',

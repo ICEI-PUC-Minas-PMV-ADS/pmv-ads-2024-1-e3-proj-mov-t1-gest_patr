@@ -14,7 +14,7 @@ import { useUser } from '../contexts/userContext';
 
 
 export function DrawerContent(props) {
-  const { name, email } = useUser();
+  const { name, email, logout } = useUser();
 
   
   return (
@@ -77,7 +77,7 @@ export function DrawerContent(props) {
       </DrawerContentScrollView>
       {/* Sign Out */}
      <Drawer.Section style={styles.bottomDrawerSection}>
-        <DrawerItem label="Sign Out"  /> 
+        <DrawerItem label="Sign Out" onPress={logout} /> 
       </Drawer.Section>
     </View>
   );

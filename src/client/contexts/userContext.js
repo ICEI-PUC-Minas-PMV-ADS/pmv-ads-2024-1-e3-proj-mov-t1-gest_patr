@@ -8,6 +8,8 @@ export default function UserProvider({ children }) {
   const [id, setId] = useState(''); 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
 
   const logout = () => {
     setSigned(false);
@@ -26,14 +28,17 @@ export default function UserProvider({ children }) {
       value={{
         signed,
         setSigned,
-        id, 
-        setId, 
         name,
         setName,
         email,
         setEmail,
+        id,
+        setId,
+        password, 
+        setPassword, 
         logout
-      }}>
+      }}
+    >
       {children}
     </UserContext.Provider>
   );

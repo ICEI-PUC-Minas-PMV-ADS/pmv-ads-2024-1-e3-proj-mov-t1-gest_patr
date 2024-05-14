@@ -28,7 +28,7 @@ const Login = () => {
         setName(user.name); 
         setUserEmail(user.email); 
         setId(user.id);
-        setUserPassword(user.password)
+        setUserPassword(user.password); // Set user password
         navigation.navigate('AppNav');
       } else {
         Alert.alert('Atenção', 'Usuário ou senha inválidos!');

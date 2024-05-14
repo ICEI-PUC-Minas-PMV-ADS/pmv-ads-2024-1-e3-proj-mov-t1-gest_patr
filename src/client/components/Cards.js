@@ -124,6 +124,8 @@ const handlePurchase_SitePress = (value) => {
       <ScrollView contentContainerStyle={styles.scrollView}>
         <Card style={styles.card}>
             <Card.Title title={name} subtitle={`Valor: R$${price}`} left={LeftContent} />
+            <Card.Cover source={{ uri: 'https://picsum.photos/700' }} style={styles.cover}/>
+            <Card.Content>
             <Text variant="bodyMedium">QR Code: {qrcode}</Text>
             {/* Editable fields */}
             <TouchableOpacity onPress={handleNamePress}>
@@ -137,6 +139,7 @@ const handlePurchase_SitePress = (value) => {
                     <Text variant="bodyMedium">Nome: {name}</Text>
                 )}
             </TouchableOpacity>
+            
             <TouchableOpacity onPress={handlePricePress}>
                 {editablePrice ? (
                     <Input
@@ -203,6 +206,7 @@ const handlePurchase_SitePress = (value) => {
                     <Text variant="bodyMedium">Local de compra: {purchase_site}</Text>
                 )}
             </TouchableOpacity>
+            </Card.Content>
             <Card.Actions>
                 <Button
                     theme={{ colors: { primary: "#6d85db" } }}
