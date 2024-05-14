@@ -1,26 +1,37 @@
-//userContext.js
-import React, { createContext, useState, useContext } from 'react';
+// userContext.js
+import React, { createContext, useState, useContext, useEffect } from 'react';
 
 export const UserContext = createContext();
 
 export default function UserProvider({ children }) {
   const [signed, setSigned] = useState(false);
+  const [id, setId] = useState(''); 
   const [name, setName] = useState('');
-
+  const [email, setEmail] = useState('');
 
   const logout = () => {
     setSigned(false);
-    setName(''); 
+    setId(''); 
+    setName('');
+    setEmail('');
   };
 
+  // Log user data whenever it changes
+  useEffect(() => {
+    console.log("User Data:", { signed, id, name, email });
+  }, [signed, id, name, email]);
 
   return (
     <UserContext.Provider
       value={{
         signed,
         setSigned,
+        id, 
+        setId, 
         name,
         setName,
+        email,
+        setEmail,
         logout
       }}>
       {children}
@@ -30,6 +41,6 @@ export default function UserProvider({ children }) {
 
 export function useUser() {
   const context = useContext(UserContext);
-  const { signed, setSigned, name, setName, logout } = context;
-  return { signed, setSigned, name, setName, logout };
+  const { signed, setSigned, id, setId, name, setName, email, setEmail, logout } = context;
+  return { signed, setSigned, id, setId, name, setName, email, setEmail, logout };
 }

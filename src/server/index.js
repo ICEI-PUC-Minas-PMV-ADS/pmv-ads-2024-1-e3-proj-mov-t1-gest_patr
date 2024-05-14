@@ -9,7 +9,7 @@ const app = express();
 // Proxy requests to JSON Server
 app.use(
   "/api",
-  createProxyMiddleware({ target: "http://localhost:8080", changeOrigin: true })
+  createProxyMiddleware({ target: "https://gestpatrimonioserver.onrender.com", changeOrigin: true })
 );
 
 app.use(cors());

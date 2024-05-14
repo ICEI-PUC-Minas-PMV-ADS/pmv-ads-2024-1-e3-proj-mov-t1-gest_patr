@@ -4,7 +4,7 @@ import React, { useState, useRef } from 'react';
 import { View, Text, StyleSheet, SafeAreaView, Image, Modal, ScrollView } from 'react-native';
 import { Button } from 'react-native-paper';
 import logo from '../assets/logo.png';
-import Searchbar from '../components/SearchBar';
+import Searchbar from '../components/Searchbar';
 import GoodsCard from '../components/Cards';
 import NewGoodPage from './NewGood';
 

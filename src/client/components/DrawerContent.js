@@ -14,7 +14,7 @@ import { useUser } from '../contexts/userContext';
 
 
 export function DrawerContent(props) {
-  const { name } = useUser();
+  const { name, email } = useUser();
 
   
   return (
@@ -25,7 +25,7 @@ export function DrawerContent(props) {
           <View style={[styles.userInfoSection, { flexDirection: "row" }]}>
             <View style={{ marginLeft: 15, flexDirection: "column" }}>
               <Title style={styles.title}>{name}</Title>
-              <Caption style={styles.caption}>@username</Caption>
+              <Caption style={styles.caption}>{email}</Caption>
             </View>
           </View>
           {/* Drawer Content */}
@@ -37,7 +37,7 @@ export function DrawerContent(props) {
               }}
             />
                <DrawerItem
-              label="Perfil (Usuarios)"
+              label="Perfil"
               onPress={() => {
                 props.navigation.navigate("Perfil");
               }}
@@ -67,7 +67,7 @@ export function DrawerContent(props) {
               }}
             />
             <DrawerItem
-              label="Configurações"
+              label="Confirgurações"
               onPress={() => {
                 props.navigation.navigate("Configurações");
               }}
@@ -77,7 +77,7 @@ export function DrawerContent(props) {
       </DrawerContentScrollView>
       {/* Sign Out */}
      <Drawer.Section style={styles.bottomDrawerSection}>
-        <DrawerItem label="Sair do Sistema"  /> 
+        <DrawerItem label="Sign Out"  /> 
       </Drawer.Section>
     </View>
   );
@@ -107,11 +107,5 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     borderTopColor: "#f4f4f4",
     borderTopWidth: 1,
-  },
-  preference: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    paddingVertical: 12,
-    paddingHorizontal: 16,
-  },
+  }
 });

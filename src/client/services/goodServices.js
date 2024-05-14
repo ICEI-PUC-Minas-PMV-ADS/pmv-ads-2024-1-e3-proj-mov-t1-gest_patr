@@ -34,12 +34,9 @@ export const insertGoods = async (param) => {
   }
 };
 
-export const updateGoods = async (id) => {
-	
-	alert('updateGoods ' + id)
-	
+export const updateGoods = async (param) => {
   try {
-    const response = await fetch(`${BASE_URL}/goods/edit/` + id, {
+    const response = await fetch(`${BASE_URL}/goods/${param.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

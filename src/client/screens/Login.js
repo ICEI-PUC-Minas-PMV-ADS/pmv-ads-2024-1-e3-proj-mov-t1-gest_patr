@@ -13,12 +13,11 @@ import { useUser } from '../contexts/userContext';
 
 const Login = () => {
   const navigation = useNavigation();
-  const { setSigned } = useUser();
-  const { name, setName } = useUser();
+  const { setSigned, setName, setEmail: setUserEmail, setId, setPassword: setUserPassword } = useUser(); 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
- const handleLogin = async () => {
+  const handleLogin = async () => {
     try {
       const users = await getUsers();
       const user = users.find(u => u.email === email && u.password === password);
@@ -26,7 +25,10 @@ const Login = () => {
       if (user) {
         console.log('User logged in:', user);
         setSigned(true); 
-        setName(user.name);
+        setName(user.name); 
+        setUserEmail(user.email); 
+        setId(user.id);
+        setUserPassword(user.password)
         navigation.navigate('AppNav');
       } else {
         Alert.alert('Atenção', 'Usuário ou senha inválidos!');
@@ -36,7 +38,6 @@ const Login = () => {
       Alert.alert('Erro', 'Falha ao fazer login. Por favor, tente novamente mais tarde.');
     }
   }
-
 
 
   return (
