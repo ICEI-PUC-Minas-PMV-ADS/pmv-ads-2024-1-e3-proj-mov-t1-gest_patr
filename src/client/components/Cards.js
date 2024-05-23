@@ -119,6 +119,16 @@ const handlePurchase_SitePress = (value) => {
             hideDialog();
         }
     };
+    const confirmEdit = async () => {
+        try {
+            await updateGoodsGoods(id);
+            hideDialog();
+            fetchGoods();
+        } catch (error) {
+            console.error('Error editing goods:', error);
+            hideDialog();
+        }
+    };
 
     return (
       <ScrollView contentContainerStyle={styles.scrollView}>
@@ -233,6 +243,18 @@ const handlePurchase_SitePress = (value) => {
                     </Dialog.Content>
                     <Dialog.Actions>
                         <Button onPress={confirmDelete}>Sim</Button>
+                        <Button onPress={hideDialog}>Cancelar</Button>
+                    </Dialog.Actions>
+                </Dialog>
+            </Portal>
+            <Portal>
+                <Dialog visible={visible} onDismiss={hideDialog}>
+                    <Dialog.Title>Confirmar edição</Dialog.Title>
+                    <Dialog.Content>
+                        <Text>Tem certeza que deseja editar este item?</Text>
+                    </Dialog.Content>
+                    <Dialog.Actions>
+                        <Button onPress={confirmEdit}>Sim</Button>
                         <Button onPress={hideDialog}>Cancelar</Button>
                     </Dialog.Actions>
                 </Dialog>
