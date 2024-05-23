@@ -4,7 +4,8 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "install": "npm install --force "
   },
   "dependencies": {
     "@expo/metro-runtime": "~3.1.3",
