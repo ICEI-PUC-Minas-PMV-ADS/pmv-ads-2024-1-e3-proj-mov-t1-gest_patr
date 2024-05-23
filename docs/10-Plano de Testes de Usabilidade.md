@@ -30,7 +30,7 @@ Os seguintes cenários serão conduzidos pelo moderador:
 
 | **Caso de Teste** 	| **CTU-02 – Login de Usuário Cadastrado** |
 |:---:	|:---:	|
-| Requisito Associado | RF-001: O sistema deverá cadastrar os usuários do sistema. <br> RF-005: O usuário deverá estar logado para acessar o sistema.|
+| Requisito Associado | RF-005: O usuário deverá estar logado para acessar o sistema.|
 | Objetivo do Teste | Avaliar a facilidade no cadastro de um novo usuário. |
 | Testes | 1 - Abrir o aplicativo. <br> 2 - Acessar a página de login. <br> 3 - Preencher os campos com os dados cadastrados no teste anterior. <br> 4 - Clicar em "Logar-se". <br> 5 - Verificar o sucesso ao se Logar. |
 | Critério de Avaliação | - Facilidade de preenchimento dos campos. <br> - Clareza das mensagens de erro em caso de problemas.|

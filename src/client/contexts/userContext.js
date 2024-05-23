@@ -46,6 +46,9 @@ export default function UserProvider({ children }) {
 
 export function useUser() {
   const context = useContext(UserContext);
-  const { signed, setSigned, id, setId, name, setName, email, setEmail, logout } = context;
-  return { signed, setSigned, id, setId, name, setName, email, setEmail, logout };
+  if (!context) {
+    throw new Error('useUser must be used within a UserProvider');
+  }
+  const { signed, setSigned, id, setId, name, setName, email, setEmail, password, setPassword, logout } = context;
+  return { signed, setSigned, id, setId, name, setName, email, setEmail, password, setPassword, logout };
 }
