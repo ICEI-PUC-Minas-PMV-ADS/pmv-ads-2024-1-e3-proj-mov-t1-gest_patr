@@ -7,7 +7,7 @@ Este registro resume os resultados dos testes de usabilidade conduzidos com base
 | **Caso de Teste** | **Resultado** | **Observações** | Vídeo |
 |:---:|:---:|:---|:---|
 | CTU-01 – Cadastro de Novo Usuário | Realizado com sucesso | O processo de cadastro foi intuitivo e os campos obrigatórios foram claros. | 
-| CTU-02 – Login de Usuário Cadastrado | Realizado com sucesso | O login foi feito sem problemas, e as mensagens de erro foram claras quando necessário. |
+| CTU-02 – Login de Usuário Cadastrado | Realizado com sucesso | O login foi feito sem problemas, e as mensagens de erro foram claras quando necessário. | 
 | CTU-03 – Teste de Navegação Intuitiva | Realizado com sucesso | Os participantes conseguiram navegar pelo aplicativo de forma intuitiva e completaram as tarefas sem hesitação. |
 | CTU-04 – Teste de Feedback do Sistema | Realizado com sucesso | O sistema forneceu feedback claro e imediato para todas as ações dos usuários. |
 | CTU-05 – Teste de Eficiência de Navegação | Não foi possível realizar teste | Não houve tempo suficiente para conduzir este teste. |
