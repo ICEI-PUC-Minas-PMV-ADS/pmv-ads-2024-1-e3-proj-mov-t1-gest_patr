@@ -55,32 +55,6 @@ O uso dessas práticas de gerenciamento de branches, tags e issues no GitHub aju
 
 ![Backlog do Projeto](img/kanban2.png)
 
-| Title                                       | URL                                                                                         | Assignees                      | Status       |
-|---------------------------------------------|---------------------------------------------------------------------------------------------|--------------------------------|--------------|
-| Criar tabelas, gráficos ou dashboards com no mínimo 5 indicadores de desempenho e metas para o processo de negócio | [Issue #9](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/9) |                                | Done         |
-| 05 - Arquitetura da Solução                | [Issue #4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/4) | andreyjardim, saragilberto    | Done         |
-| 11 - Registro de Testes de Usabilidade      | [Issue #11](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/11) |                                | Done         |
-| Deploy json-server no Render               | [Issue #58](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/58) | saragilberto                  | Done         |
-| DER na documentação                        | [Issue #53](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/53) | saragilberto                  | Done         |
-| RF-010 - Relatório                         | [Issue #20](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/20) |                                | Done         |
-| RF-003 - Cadastro e permissão              | [Issue #15](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/15) |                                | Done         |
-| 06 - Template Padrão da Aplicação          | [Issue #12](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/12) |                                | Done         |
-| RF-008 - Cadastro Bem QRCode               | [Issue #19](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/19) |                                | Done         |
-| RF-001 e RF-005 - Cadastro usuário         | [Issue #13](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/13) |                                | Done         |
-| Page - 02 - Cadastro                       | [Issue #27](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/27) |                                | Done         |
-| Page - 03 - Cadastro bem                   | [Issue #28](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/28) |                                | Done         |
-| RF-007 - Cadastro bem                      | [Issue #18](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/18) |                                | Done         |
-| 10 - Plano de Testes de Usabilidade        | [Issue #10](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/10) |                                | Done         |
-| 08 - Planos de Testes de Funcionalidades e Usabilidade | [Issue #7](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/7) |                                | Done         |
-| 04 - Projeto de Interface                  | [Issue #5](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/5) |                                | Done         |
-| 03 - Metodologia                           | [Issue #3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/3) |                                | Done         |
-| 01 - Documentação de Contexto              | [Issue #1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/1) |                                | Done         |
-| 02 - Especificação do Projeto              | [Issue #2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/2) |                                | Done         |
-| Component - 03 - SideMenu                  | [Issue #24](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/24) |                                | Done         |
-| Component - 04 - Modal                     | [Issue #25](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/25) |                                | Done         |
-| RF-006 - Cadastro setores                  | [Issue #17](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/17) | saragilberto                  | Done         |
-| component - 02 - SearchBar                 | [Issue #23](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/issues/23) |                                | Done         |
-|
 
 
 ### Controle contribuição do Time
