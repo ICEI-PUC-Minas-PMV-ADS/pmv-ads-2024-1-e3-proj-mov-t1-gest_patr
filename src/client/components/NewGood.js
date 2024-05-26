@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import {
   View,
-  TextInput,
   Button,
   Alert,
   Text,
@@ -11,11 +10,11 @@ import {
 } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { getSectors } from '../services/sectorServices';
-import { insertGoods } from '../services/goodServices';
+import { insertGoods, checkIfQrCodeExists, getGoods } from '../services/goodServices';
 import { Camera } from "expo-camera";
-import { BarCodeScanner  } from "expo-barcode-scanner"
+import { BarCodeScanner } from "expo-barcode-scanner";
 import PhotoUpload from './PhotoUpload';
-
+import Input from './Input';
 
 const NewGood = () => {
   const [data, setData] = useState({
@@ -49,43 +48,26 @@ const NewGood = () => {
     }
   }, [route.params]);
 
- useEffect(() => {
-  (async () => {
-    const { status } = await Camera.requestCameraPermissionsAsync();
-    if (status !== "granted") {
-      Alert.alert(
-        "Permissão",
-        "Permissão para usar camêra",
-        [
-          {
-            text: "OK",
-            onPress: () => setHasPermission(false), 
-          },
-        ],
-        { cancelable: false }
-      );
-    } else {
-      setHasPermission(true);
-    }
-  })();
-}, []);
-
-
-useEffect(() => {
-  const handleScanQrCode = async () => {
-    if (hasPermission) {
-      setScanned(true);
-    } else {
-      Alert.alert("Sem permissão para uso da camêra");
-    }
-  };
-
-  if (scanned) {
-    handleScanQrCode();
-  }
-}, [scanned, hasPermission]);
-
-
+  useEffect(() => {
+    (async () => {
+      const { status } = await Camera.requestCameraPermissionsAsync();
+      if (status !== "granted") {
+        Alert.alert(
+          "Permissão",
+          "Permissão para usar camêra",
+          [
+            {
+              text: "OK",
+              onPress: () => setHasPermission(false),
+            },
+          ],
+          { cancelable: false }
+        );
+      } else {
+        setHasPermission(true);
+      }
+    })();
+  }, []);
 
   useEffect(() => {
     async function fetchSectors() {
@@ -98,154 +80,161 @@ useEffect(() => {
     fetchSectors();
   }, []);
 
-const handleSectorSearch = (text) => {
-  setSearchText(text);
-  const filtered = sectors.length > 0 ? sectors.filter((sector) =>
-    sector.name && sector.name.toLowerCase().includes(text.toLowerCase())
-  ) : [];
-  setFilteredSectors(filtered);
-};
+  const handleSectorSearch = (text) => {
+    setSearchText(text);
+    const filtered = sectors.length > 0 ? sectors.filter((sector) =>
+      sector.name && sector.name.toLowerCase().includes(text.toLowerCase())
+    ) : [];
+    setFilteredSectors(filtered);
+  };
 
-
-const handleSelectSector = (sector) => {
+  const handleSelectSector = (sector) => {
     setData({ ...data, sector: sector.name });
     setSearchText('');
     setFilteredSectors([]);
   };
 
-
-const handleSave = async () => {
-  try {
-    const response = await insertGoods({
-      qrcode: scannedData || data.qrcode, 
-      date_register: currentDate,
-      name: data.name,
-      price: data.price,
-      sector: data.sector,
-      date_purchase: data.date_purchase, 
-      brand: data.brand,
-      purchase_site: data.purchase_site,
-      warranty: data.warranty,
-      image: data.image,
-    });
-    if (response) {
-      console.log('Data saved:', response);
-      Alert.alert('Sucesso', 'Bem cadastrado', [
-        {
-          text: 'OK',
-          onPress: () => {
-            navigation.navigate('Home'); 
+  const handleSave = async () => {
+    try {
+      const response = await insertGoods({
+        qrcode: scannedData || data.qrcode,
+        date_register: currentDate,
+        name: data.name,
+        price: data.price,
+        sector: data.sector,
+        date_purchase: data.date_purchase,
+        brand: data.brand,
+        purchase_site: data.purchase_site,
+        warranty: data.warranty,
+        image: data.image,
+      });
+      if (response) {
+        console.log('Data saved:', response);
+        Alert.alert('Sucesso', 'Bem cadastrado', [
+          {
+            text: 'OK',
+            onPress: () => {
+              navigation.navigate('Home');
+            },
           },
-        },
-      ]);
-    } else {
-      console.error('Failed to save data');
+        ]);
+      } else {
+        console.error('Failed to save data');
+        Alert.alert('Erro', 'Erro ao salvar bem');
+      }
+    } catch (error) {
+      console.error('Error saving data:', error);
       Alert.alert('Erro', 'Erro ao salvar bem');
     }
-  } catch (error) {
-    console.error('Error saving data:', error);
-    Alert.alert('Erro', 'Erro ao salvar bem');
-  }
-};
+  };
 
+  const handleScanQrCode = useCallback(async () => {
+    if (hasPermission) {
+      setScanned(true);
+    } else {
+      Alert.alert("Camera permission not granted");
+    }
+  }, [hasPermission]);
 
-const handleScanQrCode = useCallback(async () => {
-  if (hasPermission) {
+  const handleBarCodeScanned = async ({ type, data }) => {
     setScanned(true);
-  } else {
-    Alert.alert("Camera permission not granted");
-  }
-}, [hasPermission]);
+    try {
+      const qrCodeExists = await checkIfQrCodeExists(data);
 
-
-  const handleBarCodeScanned = ({ type, data }) => {
-    setScanned(true);
-    setScannedData(data); 
-    alert(`Tipo de dado ${type} e dado scaneado ${data}`);
+      if (qrCodeExists) {
+        Alert.alert('Erro', 'Código QR já existe no banco de dados');
+      } else {
+        setScannedData(data);
+        alert(`Código  - ${data}`);
+      }
+    } catch (error) {
+      Alert.alert('Erro', 'Erro ao verificar código QR');
+    }
   };
 
   return (
     <ScrollView style={styles.scrollView}>
-    <View style={styles.container}>
-      <TextInput 
-        style={styles.input}
-        value={scannedData || data.qrcode} 
-        onChangeText={(text) => setData({ ...data, qrcode: text })} 
-      />
-      <TextInput 
-        style={styles.input}
-        value={currentDate} 
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Nome"
-        value={data.name}
-        onChangeText={(text) => setData({ ...data, name: text })}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Valor"
-        value={data.price}
-        onChangeText={(numeric) => setData({ ...data, price: numeric })}
-        keyboardType="numeric"
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Data da compra"
-        value={data.date_purchase}
-        onChangeText={(text) => setData({ ...data, date_purchase: text })}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Marca"
-        value={data.brand}
-        onChangeText={(text) => setData({ ...data, brand: text })}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Local de compra"
-        value={data.purchase_site}
-        onChangeText={(text) => setData({ ...data, purchase_site: text })}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Garantia"
-        value={data.warranty}
-        onChangeText={(text) => setData({ ...data, warranty: text })}
-      />
-      
-      <TextInput
-        style={[styles.input, styles.searchInput]}
-        placeholder="Search Sector"
-        value={searchText}
-        onChangeText={handleSectorSearch}
-      />
-      {searchText !== '' && (
-        <View>
-          {filteredSectors.map((sector) => (
-            <TouchableOpacity
-              key={sector.id}
-              style={styles.suggestionItem}
-              onPress={() => handleSelectSector(sector)}
-            >
-              <Text>{sector.name}</Text>
-            </TouchableOpacity>
-          ))}
-        </View>
-      )}
+      <View style={styles.container}>
       <View style={styles.camera}>
-      <PhotoUpload/>
-       <BarCodeScanner 
-          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-          style={StyleSheet.absoluteFillObject}
-        />
-      {scanned && (
-        <Button title={"Tap to Scan Again"} onPress={() => setScanned(false)} />
-      )}
-      </View>
-      <Button title="Save" onPress={handleSave} />
+          <PhotoUpload />
+          <BarCodeScanner
+            onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+            style={StyleSheet.absoluteFillObject}
+          />
+          {scanned && (
+            <Button title={"Tap to Scan Again"} onPress={() => setScanned(false)} />
+          )}
+        </View>
 
-    </View>
+        <Input
+          style={styles.input}
+          value={scannedData || data.qrcode}
+          onChangeText={(text) => setData({ ...data, qrcode: text })}
+        />
+        <Input
+          style={styles.input}
+          value={currentDate}
+        />
+        <Input
+          style={styles.input}
+          placeholder="Nome"
+          value={data.name}
+          onChangeText={(text) => setData({ ...data, name: text })}
+        />
+        <Input
+          style={styles.input}
+          placeholder="Valor"
+          value={data.price}
+          onChangeText={(numeric) => setData({ ...data, price: numeric })}
+          keyboardType="numeric"
+        />
+        <Input
+          style={styles.input}
+          placeholder="Data da compra"
+          value={data.date_purchase}
+          onChangeText={(text) => setData({ ...data, date_purchase: text })}
+        />
+        <Input
+          style={styles.input}
+          placeholder="Marca"
+          value={data.brand}
+          onChangeText={(text) => setData({ ...data, brand: text })}
+        />
+        <Input
+          style={styles.input}
+          placeholder="Local de compra"
+          value={data.purchase_site}
+          onChangeText={(text) => setData({ ...data, purchase_site: text })}
+        />
+        <Input
+          style={styles.input}
+          placeholder="Garantia"
+          value={data.warranty}
+          onChangeText={(text) => setData({ ...data, warranty: text })}
+        />
+
+        <Input
+          style={[styles.input, styles.searchInput]}
+          placeholder="Search Sector"
+          value={searchText}
+          onChangeText={handleSectorSearch}
+        />
+        {searchText !== '' && (
+          <View>
+            {filteredSectors.map((sector) => (
+              <TouchableOpacity
+                key={sector.id}
+                style={styles.suggestionItem}
+                onPress={() => handleSelectSector(sector)}
+              >
+                <Text>{sector.name}</Text>
+              </TouchableOpacity>
+            ))}
+          </View>
+        )}
+        <PhotoUpload />
+        <Button title="Save" onPress={handleSave} />
+      </View>
     </ScrollView>
   );
 };
@@ -267,10 +256,11 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderWidth: 1,
     borderColor: '#ccc',
-    margin: 5,
+    margin: 5
   },
   camera: {
-    flex: 1
+    flex: 1, 
+    height: 100
   }
 });
 

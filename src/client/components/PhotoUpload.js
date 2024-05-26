@@ -1,24 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { useState } from 'react';
+import { Button, Image, View, StyleSheet } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 
-const PhotoUpload = () => {
+export default function ImagePickerExample() {
   const [image, setImage] = useState(null);
-
-  useEffect(() => {
-    (async () => {
-      if (Platform.OS !== 'web') {
-        const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
-        if (status !== 'granted') {
-          alert('Desculpe, precisamos de permissões de acesso à câmera para fazer isso funcionar!');
-        }
-      }
-    })();
-  }, []);
 
   const pickImage = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      mediaTypes: ImagePicker.MediaTypeOptions.All,
       allowsEditing: true,
       aspect: [4, 3],
       quality: 1,
@@ -26,43 +15,27 @@ const PhotoUpload = () => {
 
     console.log(result);
 
-    if (!result.cancelled) {
-      setImage(result.uri);
+    if (!result.canceled) {
+      setImage(result.assets[0].uri);
     }
   };
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.button} onPress={pickImage}>
-        <Text style={styles.buttonText}>Selecionar Imagem</Text>
-      </TouchableOpacity>
+      <Button title="Escolha uma imagem" onPress={pickImage} />
       {image && <Image source={{ uri: image }} style={styles.image} />}
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  button: {
-    backgroundColor: '#6d85db',
-    padding: 10,
-    borderRadius: 5,
-    marginBottom: 10,
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 12,
+    alignItems: "center",
+    justifyContent: "center",
   },
   image: {
-    width: 300,
-    height: 300,
-    marginTop: 20,
-    resizeMode: 'cover',
+    width: 200,
+    height: 200,
   },
 });
-
-export default PhotoUpload;

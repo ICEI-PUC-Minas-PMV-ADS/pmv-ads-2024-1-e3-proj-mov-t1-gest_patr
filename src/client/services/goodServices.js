@@ -61,3 +61,16 @@ export const deleteGoods = async (id) => {
     return null;
   }
 };
+
+
+export const checkIfQrCodeExists = async (qrCode) => {
+  try {
+    const response = await fetch(`${BASE_URL}/goods?qrCode=${qrCode}`);
+    const result = await response.json();
+    return result.exists; 
+  } catch (error) {
+    console.error('Error checking QR code:', error);
+    throw error;
+  }
+};
+

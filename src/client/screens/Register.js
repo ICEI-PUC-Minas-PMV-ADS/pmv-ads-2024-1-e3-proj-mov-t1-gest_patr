@@ -40,15 +40,15 @@ const Register = () => {
     console.log('Response from register:', response);
 
     if (response && response.id) {
-      Alert.alert('Success', 'User registered successfully!', [
+      Alert.alert('Successo', 'Usuário cadastrado com sucesso!', [
         { text: 'OK', onPress: () => navigation.goBack() }
       ]);
     } else {
-      Alert.alert('Error', 'Failed to register user');
+      Alert.alert('Erro', 'Usuário não cadastrado. Tente novamente.');
     }
   } catch (error) {
     console.error('Error registering user:', error);
-    Alert.alert('Error', 'Failed to register user. Please try again later.');
+    Alert.alert('Erro', 'Email já cadastrado.');
   }
 }
 

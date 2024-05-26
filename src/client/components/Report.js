@@ -81,21 +81,22 @@ const Report = () => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.generateButton} onPress={generatePDF}>
-        <Text style={styles.buttonText}>Gerar PDF do Relatório</Text>
-      </TouchableOpacity>
+
 
       <Text style={styles.title}>Relatório</Text>
-      <Text style={styles.totalText}>Total: {totalGoods}</Text>
+      <Text style={styles.totalText}>Total bens cadastrados: {totalGoods}</Text>
       <Text style={styles.totalText}>Total por setor:</Text>
       {Object.entries(sectorGoodsTotal).map(([sector, total]) => (
         <Text key={sector}>{sector}: {total}</Text>
       ))}
-      <Text style={styles.totalText}>Total por bem:</Text>
+      <Text style={styles.totalText}>Total por tipo de bem:</Text>
       {Object.entries(nameGoodsTotal).map(([name, total]) => (
         <Text key={name}>{name}: {total}</Text>
       ))}
       <Text style={styles.totalText}>Valor total de bens: R$ {overallSum}</Text>
+      <TouchableOpacity style={styles.generateButton} onPress={generatePDF}>
+        <Text style={styles.buttonText}>Gerar PDF do Relatório</Text>
+      </TouchableOpacity>
     </View>
   );
 };

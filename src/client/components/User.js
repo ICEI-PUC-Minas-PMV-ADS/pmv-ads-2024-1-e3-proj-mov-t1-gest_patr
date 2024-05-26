@@ -1,6 +1,8 @@
 //user.js
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
 import Input from './Input'; 
 import Button from './Button';
 import { updateUsers } from '../services/usersServices'; 
@@ -14,6 +16,9 @@ const User = ({ id, name, email, password }) => {
   const [newName, setNewName] = useState(name);
   const [newEmail, setNewEmail] = useState(email);
   const [newPassword, setNewPassword] = useState(password);
+  const navigation = useNavigation();
+
+
 
   const handleNamePress = () => {
     setEditableName(true);
@@ -44,19 +49,37 @@ const User = ({ id, name, email, password }) => {
       if (newName !== name || newEmail !== email || newPassword !== password) {
         console.log('User data:', { id, name, email, password });
 
-        await updateUsers({ id, name: newName, email: newEmail, password: newPassword });
-        setEditableName(false);
-        setEditableEmail(false);
-        setEditablePassword(false);
+        const response = await updateUsers({ id, name: newName, email: newEmail, password: newPassword });
+        
+        if (response) {
+          console.log('User saved:', response);
+          Alert.alert('Sucesso', 'Dados editados', [
+            {
+              text: 'OK',
+              onPress: () => {
+                navigation.navigate('Perfil'); 
+              },
+            },
+          ]);
+          setEditableName(false);
+          setEditableEmail(false);
+          setEditablePassword(false);
+        } else {
+          console.error('Failed to save data');
+          Alert.alert('Erro', 'Erro ao salvar bem');
+        }
       }
     } catch (error) {
       console.error('Error updating user data:', error);
+      Alert.alert('Erro', 'Erro ao salvar bem');
     }
   };
 
+
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={handleNamePress}>
+      <View>      
+        <TouchableOpacity onPress={handleNamePress}>
         {editableName ? (
           <Input
             style={styles.input}
@@ -70,6 +93,8 @@ const User = ({ id, name, email, password }) => {
           </>
         )}
       </TouchableOpacity>
+      </View>
+
       <TouchableOpacity onPress={handleEmailPress}>
         {editableEmail ? (
           <Input
@@ -120,6 +145,7 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: '#FFF',
     marginBottom: 8,
+    fontSize: 18
   },
 });
 

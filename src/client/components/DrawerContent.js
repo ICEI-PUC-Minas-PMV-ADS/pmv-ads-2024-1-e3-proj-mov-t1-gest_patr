@@ -14,8 +14,9 @@ import { useUser } from '../contexts/userContext';
 
 
 export function DrawerContent(props) {
-  const { name, email } = useUser();
+  const { name, email, logout } = useUser();
 
+  
   
   return (
     <View style={{ flex: 1 }}>
@@ -33,7 +34,7 @@ export function DrawerContent(props) {
             <DrawerItem
               label="Home"
               onPress={() => {
-                props.navigation.navigate("Gestão Patrimonial");
+                props.navigation.navigate("Home");
               }}
             />
                <DrawerItem
@@ -77,7 +78,7 @@ export function DrawerContent(props) {
       </DrawerContentScrollView>
       {/* Sign Out */}
      <Drawer.Section style={styles.bottomDrawerSection}>
-        <DrawerItem label="Sign Out"  /> 
+        <DrawerItem onPress={logout} label="Sign Out"  /> 
       </Drawer.Section>
     </View>
   );

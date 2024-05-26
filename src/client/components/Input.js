@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: '#FFF',
     marginBottom: 8,
+    fontSize: 14
   },
 });
 
