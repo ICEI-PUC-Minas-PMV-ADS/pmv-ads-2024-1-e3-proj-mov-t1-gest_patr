@@ -6,14 +6,14 @@ Este registro resume os resultados dos testes de usabilidade conduzidos com base
 
 | **Caso de Teste** | **Resultado** | **Observações** | Vídeo |
 |:---:|:---:|:---|:---|
-| CTU-01 – Cadastro de Novo Usuário | Realizado com sucesso | O processo de cadastro foi intuitivo e os campos obrigatórios foram claros. | 
-| CTU-02 – Login de Usuário Cadastrado | Realizado com sucesso | O login foi feito sem problemas, e as mensagens de erro foram claras quando necessário. | 
-| CTU-03 – Teste de Navegação Intuitiva | Realizado com sucesso | Os participantes conseguiram navegar pelo aplicativo de forma intuitiva e completaram as tarefas sem hesitação. |
-| CTU-04 – Teste de Feedback do Sistema | Realizado com sucesso | O sistema forneceu feedback claro e imediato para todas as ações dos usuários. |
-| CTU-05 – Teste de Eficiência de Navegação | Não foi possível realizar teste | Não houve tempo suficiente para conduzir este teste. |
-| CTU-06 – Teste de Legibilidade de Texto | Realizado com sucesso | O texto foi facilmente legível em diferentes dispositivos e condições de visualização. |
-| CTU-07 – Teste de Acessibilidade de Botões e Controles | Realizado com sucesso | Os botões e controles foram facilmente acessíveis e clicáveis em diversos dispositivos móveis. |
-| CTU-08 – Teste de Consistência de Design | Realizado, porém é necessário correções | Algumas telas apresentaram inconsistências no design, especialmente na disposição dos elementos. |
+| CTU-01 – Cadastro de Novo Usuário | Realizado com sucesso | O processo de cadastro foi intuitivo e os campos obrigatórios foram claros. | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/blob/379be4314c1ad82a63cff48c3471f6d267c09205/docs/img/login.MP4|
+| CTU-02 – Login de Usuário Cadastrado | Realizado com sucesso | O login foi feito sem problemas, e as mensagens de erro foram claras quando necessário. | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/blob/379be4314c1ad82a63cff48c3471f6d267c09205/docs/img/registrar.MP4|
+| CTU-03 – Teste de Navegação Intuitiva | Realizado com sucesso | Os participantes conseguiram navegar pelo aplicativo de forma intuitiva e completaram as tarefas sem hesitação. | 
+| CTU-04 – Teste de Feedback do Sistema | Realizado com sucesso | O sistema forneceu feedback claro e imediato para todas as ações dos usuários. | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/blob/379be4314c1ad82a63cff48c3471f6d267c09205/docs/img/testeFeedback.mov|
+| CTU-05 – Teste de Eficiência de Navegação | Não foi possível realizar teste | Não houve tempo suficiente para conduzir este teste. |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/blob/379be4314c1ad82a63cff48c3471f6d267c09205/docs/img/testeNavegacao.MP4|
+| CTU-06 – Teste de Legibilidade de Texto | Realizado com sucesso | O texto foi facilmente legível em diferentes dispositivos e condições de visualização. | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/blob/379be4314c1ad82a63cff48c3471f6d267c09205/docs/img/testeLegibilidade.MP4|
+| CTU-07 – Teste de Acessibilidade de Botões e Controles | Realizado com sucesso | Os botões e controles foram facilmente acessíveis e clicáveis em diversos dispositivos móveis. | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/blob/379be4314c1ad82a63cff48c3471f6d267c09205/docs/img/testeBotoes.MP4|
+| CTU-08 – Teste de Consistência de Design | Realizado, porém é necessário correções | Algumas telas apresentaram inconsistências no design, especialmente na disposição dos elementos. | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/blob/379be4314c1ad82a63cff48c3471f6d267c09205/docs/img/testeDesing.MP4 |
 
 ## Observações Adicionais
 
