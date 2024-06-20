@@ -1,0 +1,30 @@
+message: Please cite this software using these metadata.
+title: Gestão de Patrimônio
+authors:
+  - family-names: Bibiano Jardim
+    given-names: Andrey
+  - family-names: Gonçalves Gomes
+    given-names: Amanda
+  - family-names: dos Santos
+    given-names: Leonardo
+  - family-names: Ferreira dos Santos
+    given-names: Leonardo
+  - family-names: Cristina Gilberto Pereira
+    given-names: Sara
+  - family-names: Muniz Severino dos Santos
+    given-names: Thiago
+  - family-names: Henrique Oliveira Souza
+    given-names: Tiago 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Ricardo dos Santos Machado
+    given-names: Will
+keywords:
+  - Gestão
+  - Patrimônio
+  - Patrimonial
+  - Controle
+  - Bem
+repository-code: 
+version: 2024.06.20
+date-released: 2024-06-20
