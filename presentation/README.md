@@ -23,3 +23,7 @@ Uma grande preocupação do time foi escrever os códigos de forma consistente e
 
 Não foi simples manter essa consistência, mas a como aplicamos o Scrum de maneira eficiênte, e mantivemos boas práticas de desenvolvimento, isso nos permitiu resolver as dores identificadas no início do projeto de forma eficiente e eficaz. E estamos satisfeitos com a nossa entrega final, pois, além de todos os CRUDs propostos estarem funcionando, também conseguimos desenvolver mais de 90% dos requisitos que foram levantados ao início inclusive a leitura de QRCode para cadastro de bens como para pesquisa de bens cadastrados. A aplicação roda perfeitamente no Expo Go. 
 
+
+Video de apresentação
+
+[presentation/Video-Apresentacao-Final.mp4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/blob/e46ae41278d1e3738c28c5ec822282432ff0e786/presentation/Video-Apresentacao-Final.mp4)
