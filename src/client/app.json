@@ -8,27 +8,7 @@
           "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
           "recordAudioAndroid": true
         }
-      ],
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "The app accesses your photos to let you share them with your friends."
-        }
-      ],
-      [
-        "react-native-auth0",
-        {
-          "domain": "dev-ducmjsqdr7zppm0k.us.auth0.com"
-        }
       ]
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "b6a8b1ff-2172-49c3-adf4-2dadd35e78c8"
-      }
-    },
-    "ios": {
-      "bundleIdentifier": "ios.expo.gestpatri"
-    }
+    ]
   }
 }
