@@ -26,4 +26,4 @@ Não foi simples manter essa consistência, mas a como aplicamos o Scrum de mane
 
 Video de apresentação
 
-[presentation/Video-Apresentacao-Final.mp4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/blob/e46ae41278d1e3738c28c5ec822282432ff0e786/presentation/Video-Apresentacao-Final.mp4)
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t1-gest_patr/blob/2ec2258d600d8880f56cfe82682adb237a9dcd03/presentation/VideoGestaoPatrimonio.mp4
